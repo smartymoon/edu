@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="rounded-md bg-red-50 p-4">
+  <div class="rounded-md bg-red-50 p-4" v-show="errors.length > 0">
     <div class="flex">
       <div class="flex-shrink-0">
         <XCircleIcon class="h-5 w-5 text-red-400" aria-hidden="true" />
@@ -11,8 +11,8 @@
         </h3>
         <div class="mt-2 text-sm text-red-700">
           <ul role="list" class="list-disc pl-5 space-y-1">
-            <li v-for="(k, error) in errors" :key="k">
-              {{ error }}
+            <li v-for="(error, k) in errors" :key="k">
+                {{ error }}
             </li>
           </ul>
         </div>
