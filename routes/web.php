@@ -17,3 +17,4 @@ Route::middleware('auth')->group(function() {
 
 Route::get('/login', 'Auth\\LoginController@showLoginForm')->name('login');
 Route::get('/register', 'Auth\\RegisterController@showRegistrationForm')->name('register');
+Route::post('/register', 'Auth\\RegisterController@register')->name('register');
