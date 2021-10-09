@@ -41609,17 +41609,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Alert_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Alert.vue */ "./resources/assets/js/components/Alert.vue");
-
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Alert_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Alert.vue */ "./resources/assets/js/components/Alert.vue");
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    Alert: _components_Alert_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+    Alert: _components_Alert_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   props: {
     errors: Object
@@ -41633,7 +41631,11 @@ __webpack_require__.r(__webpack_exports__);
     return {
       form: form,
       handleSubmit: function handleSubmit() {
-        _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.post('/register', form);
+        axios__WEBPACK_IMPORTED_MODULE_1___default().post('/register', form).then(function (res) {
+          return console.log(res);
+        })["catch"](function (error) {
+          return console.log(error);
+        });
       }
     };
   }

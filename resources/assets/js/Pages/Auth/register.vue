@@ -83,7 +83,6 @@
 
 <script>
 import { reactive } from 'vue'
-import {Inertia} from "@inertiajs/inertia";
 import axios from 'axios';
 import Alert from '../../components/Alert.vue'
 export default {
@@ -102,7 +101,8 @@ export default {
     return {
       form,
       handleSubmit() {
-          Inertia.post('/register', form);
+          axios.post('/register', form).then(res => console.log(res))
+          .catch(error => console.log(error));
       }
     }
   }
