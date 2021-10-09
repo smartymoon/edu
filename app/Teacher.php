@@ -10,6 +10,9 @@ class Teacher extends Authenticatable
 {
     use Notifiable, HasApiTokens;
 
+    const Principal =  'principal';
+    const Normal =  'normal';
+
     protected $guarded = [];
 
     public function findForPassport($email)

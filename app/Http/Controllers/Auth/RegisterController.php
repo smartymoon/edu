@@ -9,7 +9,6 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Inertia\Inertia;
 
 class RegisterController extends Controller
 {
@@ -43,10 +42,6 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    public function showRegistrationForm()
-    {
-        return Inertia::render('Auth/register');
-    }
 
     /**
      * Get a validator for an incoming registration request.
@@ -58,7 +53,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:20',
-            'email' => 'required|string|email|max:255|unique:users',
+            // todo email should be unique in students ether
+            'email' => 'required|string|email|max:255|unique:teachers',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -89,8 +85,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'role' => 1, // todo
-            'if_approve' => false,
+            'role' => Teacher::Principal,
         ]);
     }
 }

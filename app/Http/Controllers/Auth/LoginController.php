@@ -7,7 +7,6 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use Inertia\Inertia;
 
 class LoginController extends Controller
 {
@@ -22,11 +21,6 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function showLoginForm()
-    {
-        return Inertia::render('Auth/login');
-    }
-
     public function token(Request $request)
     {
         $validated = $this->validate($request, [
@@ -37,20 +31,17 @@ class LoginController extends Controller
         $http = new Client();
         // todo check email belongs to which provider, for now just focus on teacher
         try {
-            $request = $http->request('POST', request()->root() . '/api/oauth/token', [
+            $response = $http->request('POST', request()->root() . '/oauth/token', [
                 'form_params' => config('passport') + [
-                        'username' => $validated['email'],
-                        'password' => $validated['password']
-                    ]
+                    'username' => $validated['email'],
+                    'password' => $validated['password']
+                ]
             ]);
         } catch (RequestException $e) {
-            throw  new UnauthorizedHttpException('', '账号验证失败');
+            return $this->fail('login failed');
         }
 
-        if ($request->getStatusCode() == 401) {
-            throw  new UnauthorizedHttpException('', '账号验证失败');
-        }
-        return response()->json($request->getBody()->getContents());
+        return  $this->success('login successful', json_decode((string) $response->getBody(), true));
     }
 
 }
