@@ -7,9 +7,26 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
+use Inertia\Inertia;
 
 class LoginController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+
+    public function showLoginForm()
+    {
+        return Inertia::render('Auth/login');
+    }
+
     public function token(Request $request)
     {
         $validated = $this->validate($request, [
@@ -22,9 +39,9 @@ class LoginController extends Controller
         try {
             $request = $http->request('POST', request()->root() . '/api/oauth/token', [
                 'form_params' => config('passport') + [
-                    'username' => $validated['email'],
-                    'password' => $validated['password']
-                ]
+                        'username' => $validated['email'],
+                        'password' => $validated['password']
+                    ]
             ]);
         } catch (RequestException $e) {
             throw  new UnauthorizedHttpException('', '账号验证失败');
@@ -35,4 +52,5 @@ class LoginController extends Controller
         }
         return response()->json($request->getBody()->getContents());
     }
+
 }

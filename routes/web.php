@@ -11,16 +11,9 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-
-Route::middleware('auth:api')->group(function() {
-
+Route::middleware('auth')->group(function() {
+    Route::get('/', 'HomeController@index');
 });
 
-Route::get('/register', 'Auth\\RegisterController@showRegistrationForm');
-
-/*
-Route::middleware('auth:student_api')->group(function() {
-
-});
-*/
+Route::get('/login', 'Auth\\LoginController@showLoginForm')->name('login');
+Route::get('/register', 'Auth\\RegisterController@showRegistrationForm')->name('register');
