@@ -11,4 +11,10 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+
+Route::middleware('auth')->group(function() {
+    Route::get('/', 'HomeController@index');
+});
+
+Route::get('/login', 'Auth\\LoginController@showLoginForm')->name('login');
+Route::get('/register', 'Auth\\RegisterController@showRegistrationForm')->name('register');
