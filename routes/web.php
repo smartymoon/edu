@@ -17,6 +17,8 @@ Route::middleware('auth:api')->group(function() {
 
 });
 
+Route::get('/register', 'Auth\\RegisterController@showRegistrationForm');
+
 /*
 Route::middleware('auth:student_api')->group(function() {
 
