@@ -11,10 +11,7 @@
 |
 */
 
-Route::middleware('auth')->group(function() {
+Route::middleware('auth:api')->group(function() {
     Route::get('/', 'HomeController@index');
 });
 
-Route::get('/login', 'Auth\\LoginController@showLoginForm')->name('login');
-Route::get('/register', 'Auth\\RegisterController@showRegistrationForm')->name('register');
-Route::post('/register', 'Auth\\RegisterController@register')->name('register');
