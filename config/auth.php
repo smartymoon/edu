@@ -40,10 +40,9 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
         'api' => [
             'driver' => 'passport',
-            'provider' => 'users',
+            'provider' => 'teachers',
         ],
     ],
 
@@ -68,6 +67,14 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        'teachers' => [
+            'driver' => 'eloquent',
+            'model' => App\Teacher::class,
+        ],
+        'students' => [
+            'driver' => 'eloquent',
+            // 'model' => App\Students::class,
         ],
 
         // 'users' => [

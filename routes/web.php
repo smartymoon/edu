@@ -12,3 +12,13 @@
 */
 
 Route::get('/', 'HomeController@index');
+
+Route::middleware('auth:api')->group(function() {
+
+});
+
+/*
+Route::middleware('auth:student_api')->group(function() {
+
+});
+*/
