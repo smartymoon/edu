@@ -14,6 +14,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         //
+        \League\OAuth2\Server\Exception\OAuthServerException::class,
     ];
 
     /**
@@ -47,16 +48,6 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        $response = parent::render($request, $exception);
-
-        /*
-        if ($response->status() === 419) {
-            return back()->with([
-                'message' => 'The page expired, please try again.',
-            ]);
-        }
-        */
-
-        return $response;
+        return parent::render($request, $exception);
     }
 }

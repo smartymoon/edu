@@ -25,4 +25,19 @@ class SchoolController extends Controller
         ]);
         return $this->success('school created, wait approving', $school);
     }
+
+    public function students(School $school, Request $request)
+    {
+        $teacher = $request->user();
+        // dump($teacher->toArray(), $school->toArray());
+        if (!$school->if_approve) {
+            return $this->fail('this school is not approved');
+        }
+
+        if ($school->principal_id != $teacher->id && $teacher->school_id != $school->id) {
+            return $this->fail('sorry, you do not have permission to see students in other school');
+        }
+
+        return $school->students;
+    }
 }

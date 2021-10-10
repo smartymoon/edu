@@ -29,4 +29,9 @@ class School extends Model
     {
         return $this->where('if_approve', false);
     }
+
+    public function students(): HasMany
+    {
+        return $this->hasMany(Student::class);
+    }
 }

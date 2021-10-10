@@ -15,6 +15,7 @@ class Teacher extends Authenticatable
     const Normal =  'normal';
 
     protected $guarded = [];
+    protected $hidden = ['password'];
 
     public function findForPassport($email)
     {

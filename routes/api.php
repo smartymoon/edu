@@ -1,5 +1,6 @@
 <?php
 
+use App\Teacher;
 use Illuminate\Http\Request;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::post('/students', 'StudentController@store');
+
 Route::post('/register', 'Auth\\RegisterController@register')->name('register');
 Route::post('/login', 'Auth\\LoginController@token');
 Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
@@ -21,16 +24,25 @@ Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
 
 Route::middleware('auth:api')->group(function() {
 
-    Route::middleware('scope:'.\App\Teacher::Principal)->group(function() {
+    // for principal only
+    Route::middleware('scope:'. Teacher::Principal)->group(function() {
         Route::get('/schools',  'SchoolController@index');
         Route::post('/schools', 'SchoolController@store');
+
         Route::get('/invitations', 'InvitationController@index');
         Route::post('/invitations', 'InvitationController@store');
+
     });
 
-    Route::middleware('scope:'.\App\Teacher::Normal)->group(function() {
+    // for normal teacher only
+    Route::middleware('scope:'. Teacher::Normal)->group(function() {
         Route::get('hello', function() {
             return auth()->user();
         });
+    });
+
+    // for all teacher
+    Route::middleware("scope:". Teacher::Principal . "," . Teacher::Normal)->group(function() {
+        Route::get('/schools/{school}/students', 'SchoolController@students');
     });
 });
