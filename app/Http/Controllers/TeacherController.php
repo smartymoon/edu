@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Follows;
 use App\Invitation;
 use App\Teacher;
 use Illuminate\Http\Request;
@@ -46,13 +47,13 @@ class TeacherController extends Controller
         );
     }
 
-    public function students()
+    public function studentsFollowMe(Request $request)
     {
-
-    }
-
-    public function studentsFollowMe()
-    {
-
+        $teacher = $request->user();
+        $students = Follows::where('teacher_id', $teacher->id)
+            ->leftJoin('students', 'follows.student_id', '=', 'students.id')
+            ->select(['students.id', 'students.name'])
+            ->get();
+        return $students;
     }
 }

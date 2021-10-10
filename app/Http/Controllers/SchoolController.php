@@ -29,7 +29,6 @@ class SchoolController extends Controller
     public function students(School $school, Request $request)
     {
         $teacher = $request->user();
-        // dump($teacher->toArray(), $school->toArray());
         if (!$school->if_approve) {
             return $this->fail('this school is not approved');
         }

@@ -31,7 +31,7 @@ class StudentController extends Controller
     public function teachers(Request $request)
     {
         $student = $request->user();
-        $teachers = Teacher::where('school_id', $student->school_id)
+        $teachers = Teacher::where('school_id', $student->school_id)->orWhere('teachers.id', $student->school->principal_id)
             ->leftJoin('follows', function($join) use ($student) {
                $join->on('teachers.id', '=', 'follows.teacher_id')
                     ->where('follows.student_id', $student->id);

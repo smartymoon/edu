@@ -1,9 +1,6 @@
 <?php
 
-use App\Http\Middleware\StudentAuthMiddleware;
-use App\Http\Middleware\TeacherAuthMiddleware;
 use App\Teacher;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +44,7 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
     // for both principal and normal teacher
     Route::middleware("scope:". Teacher::Principal . "," . Teacher::Normal)->group(function() {
         Route::get('/schools/{school}/students', 'SchoolController@students');
+        Route::get('/students_follow_me', 'TeacherController@studentsFollowMe');
     });
 });
 
