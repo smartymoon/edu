@@ -2,9 +2,12 @@
 
 namespace App\Providers;
 
+use App\Http\Middleware\OAuthMiddleware;
+use App\Student;
 use App\Teacher;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Route;
 use Laravel\Passport\Passport;
 use Laravel\Passport\RouteRegistrar;
 
@@ -32,13 +35,13 @@ class AuthServiceProvider extends ServiceProvider
         Passport::tokensCan([
             Teacher::Principal => 'Principal is great',
             Teacher::Normal => 'normal teacher is better',
+            Student::Student => 'student in a school',
         ]);
 
         Passport::routes(function(RouteRegistrar $router) {
-           // todo find a way get set provider here
-           // config(['auth.guards.api.provider' => 'teacher|student']);
-           config(['auth.guards.api.provider' => 'teachers']);
-           $router->forAccessTokens();
+            Route::middleware(OAuthMiddleware::class)->group(function() use ($router) {
+                $router->forAccessTokens();
+            });
         });
     }
 }
