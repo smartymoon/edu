@@ -45,4 +45,14 @@ class TeacherController extends Controller
             $teacher->createToken('After invitation', [Teacher::Normal])
         );
     }
+
+    public function students()
+    {
+
+    }
+
+    public function studentsFollowMe()
+    {
+
+    }
 }

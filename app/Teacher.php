@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -30,5 +31,10 @@ class Teacher extends Authenticatable
     public function invitations()
     {
         return $this->hasMany(Invitation::class, 'principal_id');
+    }
+
+    public function studentsFollowMe(): BelongsToMany
+    {
+        return $this->belongsToMany(Student::class, 'follows');
     }
 }

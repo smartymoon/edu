@@ -41,16 +41,19 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
 
     // for normal teacher
     Route::middleware('scope:'. Teacher::Normal)->group(function() {
+
     });
 
-    // for all teacher
+    // for both principal and normal teacher
     Route::middleware("scope:". Teacher::Principal . "," . Teacher::Normal)->group(function() {
         Route::get('/schools/{school}/students', 'SchoolController@students');
     });
 });
 
+
+// for student
 Route::middleware(['student', 'auth:api'])->group(function() {
-    Route::get('/student_test', function() {
-        return 'abc';
-    });
+    Route::get('/students/teachers', 'StudentController@teachers');
+    Route::post('/follow/{teacher}', 'StudentController@follow');
+    Route::post('/unfollow/{teacher}', 'StudentController@unfollow');
 });
