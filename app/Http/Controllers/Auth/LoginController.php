@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Teacher;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
@@ -34,7 +35,8 @@ class LoginController extends Controller
             $response = $http->request('POST', request()->root() . '/oauth/token', [
                 'form_params' => config('passport') + [
                     'username' => $validated['email'],
-                    'password' => $validated['password']
+                    'password' => $validated['password'],
+                    'scope' => Teacher::Principal
                 ]
             ]);
         } catch (RequestException $e) {

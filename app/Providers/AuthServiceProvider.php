@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Teacher;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Laravel\Passport\Passport;
@@ -26,6 +27,12 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+
+
+        Passport::tokensCan([
+            Teacher::Principal => 'Principal is great',
+            Teacher::Normal => 'normal teacher is better',
+        ]);
 
         Passport::routes(function(RouteRegistrar $router) {
            // todo find a way get set provider here

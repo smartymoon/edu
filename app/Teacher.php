@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
@@ -18,5 +19,10 @@ class Teacher extends Authenticatable
     public function findForPassport($email)
     {
         return $this->where('email', $email)->first();
+    }
+
+    public function manageSchools(): HasMany
+    {
+        return $this->hasMany(School::class, 'principal_id');
     }
 }
