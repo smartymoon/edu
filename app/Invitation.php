@@ -18,5 +18,4 @@ class Invitation extends Model
     {
         return $this->belongsTo(Teacher::class, 'principal_id');
     }
-
 }

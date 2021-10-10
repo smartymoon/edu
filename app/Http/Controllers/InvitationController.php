@@ -38,8 +38,4 @@ class InvitationController extends Controller
         return $this->success('invitation email was sent', $invitation);
     }
 
-    public function show(string $slug)
-    {
-       return $slug;
-    }
 }

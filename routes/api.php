@@ -15,7 +15,9 @@ use Illuminate\Http\Request;
 
 Route::post('/register', 'Auth\\RegisterController@register')->name('register');
 Route::post('/login', 'Auth\\LoginController@token');
-Route::get('/invitations/{slug}', 'InvitationController@show')->name('invitation');
+Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
+Route::get('/invitations/{slug}', 'TeacherController@showInvitation');
+Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
 
 Route::middleware('auth:api')->group(function() {
 
