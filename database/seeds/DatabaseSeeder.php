@@ -32,5 +32,12 @@ class DatabaseSeeder extends Seeder
                    factory(\App\School::class, 3)->states('approve')->make()
                 );
             });
+
+        \App\School::approve()->get()->map(function($school) {
+            factory(\App\Invitation::class, 5)->create([
+                'school_id' => $school->id,
+                'principal_id' => $school->principal_id
+            ]);
+        });
     }
 }

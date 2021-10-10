@@ -13,17 +13,10 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\School::class, function (Faker $faker) {
+$factory->define(App\Invitation::class, function (Faker $faker) {
     return [
-        'name' => $faker->name,
+        'slug' => $faker->uuid,
+        'email' => $faker->email,
+        'if_register' => false
     ];
 });
-
-$factory->state(App\School::class, 'approve', [
-    'if_approve' => true
-]);
-
-$factory->state(App\School::class, 'not', [
-    'if_approve' => false
-]);
-

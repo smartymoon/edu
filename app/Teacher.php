@@ -25,4 +25,9 @@ class Teacher extends Authenticatable
     {
         return $this->hasMany(School::class, 'principal_id');
     }
+
+    public function invitations()
+    {
+        return $this->hasMany(Invitation::class, 'principal_id');
+    }
 }
