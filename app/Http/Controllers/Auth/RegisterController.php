@@ -53,8 +53,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:20',
-            // todo email should be unique in students ether
-            'email' => 'required|string|email|max:255|unique:teachers',
+            'email' => 'required|string|email|max:255|unique:teachers|unique:students',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
