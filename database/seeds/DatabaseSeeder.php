@@ -30,10 +30,10 @@ class DatabaseSeeder extends Seeder
             ->create()
             ->each(function($teacher) {
                 $teacher->manageSchools()->saveMany(
-                    factory(\App\School::class, 3)->states('not')->make()
+                    factory(\App\School::class, 1)->states('not')->make()
                 );
                 $teacher->manageSchools()->saveMany(
-                   factory(\App\School::class, 3)->states('approve')->make()
+                   factory(\App\School::class, 2)->states('approve')->make()
                 );
             });
 
@@ -78,5 +78,8 @@ class DatabaseSeeder extends Seeder
             'school_id' => $school->id,
             'principal_id' => $school->principal_id
         ]);
+
+        Artisan::call('admin:install');
+        Artisan::call('admin:generate-menu');
     }
 }

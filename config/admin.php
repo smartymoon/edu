@@ -289,7 +289,8 @@ return [
     | "sidebar-mini".
     |
     */
-    'layout' => ['sidebar-mini', 'sidebar-collapse'],
+    // 'layout' => ['sidebar-mini', 'sidebar-collapse'],
+    'layout' => ['fixed'],
 
     /*
     |--------------------------------------------------------------------------
@@ -305,7 +306,7 @@ return [
     |--------------------------------------------------------------------------
     | Show version at footer
     |--------------------------------------------------------------------------
-    |
+    'sidebar-mini', 'sidebar-collapse'|
     | Whether to display the version number of laravel-admin at the footer of
     | each page
     |

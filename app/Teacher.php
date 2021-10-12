@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -17,6 +18,16 @@ class Teacher extends Authenticatable
 
     protected $guarded = [];
     protected $hidden = ['password'];
+
+    public function school(): BelongsTo
+    {
+        return $this->belongsTo(School::class);
+    }
+
+    public function line(): BelongsTo
+    {
+        return $this->belongsTo(LineUser::class, 'line_id');
+    }
 
     public function findForPassport($email)
     {
