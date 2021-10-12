@@ -68,15 +68,46 @@ class DatabaseSeeder extends Seeder
         });
 
         $school = \App\School::approve()->first();
-        factory(\App\Student::class)->create([
-            'email' => 'student@student.com',
-            'school_id' => $school->id,
-        ]);
+        $student = \App\Student::first();
+        $student->email = 'student@student.com';
+        $student->school_id = $school->id;
+        $student->save();
 
         factory(\App\Invitation::class)->create([
             'slug' => 'c5c796e6-00ac-3d80-8d37-9188e62dd275',
             'school_id' => $school->id,
             'principal_id' => $school->principal_id
+        ]);
+
+        factory(\App\Message::class, 5)->create([
+            'from_type' => 'teacher',
+            'from_id' => 1,
+            'to_type' => 'student',
+            'to_id' => 1,
+            'seen' => true
+        ]);
+
+        factory(\App\Message::class, 5)->create([
+            'from_type' => 'teacher',
+            'from_id' => 1,
+            'to_type' => 'student',
+            'to_id' => 1,
+            'seen' => false,
+        ]);
+        factory(\App\Message::class, 5)->create([
+            'to_type' => 'teacher',
+            'to_id' => 1,
+            'from_type' => 'student',
+            'from_id' => 1,
+            'seen' => true
+        ]);
+
+        factory(\App\Message::class, 5)->create([
+            'to_type' => 'teacher',
+            'to_id' => 1,
+            'from_type' => 'student',
+            'from_id' => 1,
+            'seen' => false
         ]);
     }
 }

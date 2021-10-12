@@ -50,6 +50,10 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
     Route::middleware("scope:". Teacher::Principal . "," . Teacher::Normal)->group(function() {
         Route::get('/schools/{school}/students', 'SchoolController@students');
         Route::get('/students_follow_me', 'TeacherController@studentsFollowMe');
+
+        Route::get('/messages/teacher/unread', 'MessageController@getTeacherUnreadMessages');
+        Route::post('/messages/teacher', 'MessageController@sendTeacherMessage');
+        Route::get('/messages/teacher/{fromId}', 'MessageController@getTeacherMessageFrom');
     });
 });
 
@@ -59,4 +63,8 @@ Route::middleware(['student', 'auth:api'])->group(function() {
     Route::get('/students/teachers', 'StudentController@teachers');
     Route::post('/follow/{teacher}', 'StudentController@follow');
     Route::post('/unfollow/{teacher}', 'StudentController@unfollow');
+
+    Route::get('/messages/student/unread', 'MessageController@getStudentUnreadMessages');
+    Route::post('/messages/student', 'MessageController@sendStudentMessage');
+    Route::get('/messages/student/{fromId}', 'MessageController@getStudentMessageFrom');
 });
