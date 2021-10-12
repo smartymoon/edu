@@ -26,6 +26,12 @@ class LineUserController extends AdminController
     {
         $grid = new Grid(new LineUser());
 
+        $grid->disableCreateButton();
+        $grid->actions(function($actions) {
+            $actions->disableEdit();
+            $actions->disableView();
+        });
+
         $grid->column('id', __('Id'));
         $grid->column('official_id', __('Official id'));
         $grid->column('name', __('Name'));

@@ -26,6 +26,12 @@ class StudentController extends AdminController
     {
         $grid = new Grid(new Student());
 
+        $grid->disableCreateButton();
+        $grid->actions(function($actions) {
+            $actions->disableEdit();
+            $actions->disableView();
+        });
+
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('email', __('Email'));

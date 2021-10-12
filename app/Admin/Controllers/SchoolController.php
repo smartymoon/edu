@@ -25,11 +25,16 @@ class SchoolController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new School());
+        $grid->disableCreateButton();
+        $grid->actions(function($actions) {
+           $actions->disableEdit();
+           $actions->disableView();
+        });
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('principal.name', __('Principal Name'));
-        $grid->column('if_approve', __('If approve'))->bool();
+        $grid->column('if_approve', __('If approve'))->switch();
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 

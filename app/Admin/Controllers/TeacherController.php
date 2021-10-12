@@ -26,17 +26,22 @@ class TeacherController extends AdminController
     {
         $grid = new Grid(new Teacher());
 
+        $grid->disableCreateButton();
+        $grid->actions(function($actions) {
+            $actions->disableEdit();
+            $actions->disableView();
+        });
+
         $grid->model()->load(['school:name', 'manageSchools' => function($query) {
             $query->select('id','name', 'principal_id');
         }, 'line']);
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
+        $grid->column('line.name', 'Line name');
         $grid->column('email', __('Email'));
         $grid->column('role', __('Role'));
         $grid->column('school.name', 'Belong To School');
-        $grid->column('manageSchools', 'Manage Schools')->pluck('name')->label()->width(300);
-        $grid->column('line.name', 'Line name');
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
