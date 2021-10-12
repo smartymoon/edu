@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
-use phpDocumentor\Reflection\Types\Boolean;
 
 class Teacher extends Authenticatable
 {
@@ -39,9 +38,9 @@ class Teacher extends Authenticatable
         return $this->belongsToMany(Student::class, 'follows');
     }
 
-    public function hasBindLine(): Boolean
+    public function hasBindLine(): bool
     {
-        return is_null($this->line_id);
+        return !is_null($this->line_id);
     }
 
     public function bindToLine($line_id)

@@ -18,12 +18,15 @@ class LineController extends Controller
 
     public function callback()
     {
-        $user = Socialite::driver('line')->stateless()->user();
-        return $user;
-        // return redirect('/line/login?official_id=' . '  ');
+        try {
+            $user = Socialite::driver('line')->stateless()->user();
+        } catch (\Exception $e) {
+            return 'error happened';
+        }
+        LineUser::firstOrCreate([ 'official_id' => $user->id], ['name' => $user->name]);
+        return redirect('/line/login?official_id=' . $user->id);
     }
 
-    // todo make api
     public function getBindUsers($official_id)
     {
         $lineUser = LineUser::where('official_id', $official_id)->firstOrFail();
@@ -32,15 +35,14 @@ class LineController extends Controller
 
         $bindUsers = [];
         foreach ($teachers as $teacher) {
-            $bindUsers[] = $teacher + ['role' => 'teacher'];
+            $bindUsers[] = $teacher->toArray() + ['role' => 'teacher'];
         }
         foreach ($students as $student) {
-            $bindUsers[] = $student + ['role' => 'student'];
+            $bindUsers[] = $student->toArray() + ['role' => 'student'];
         }
         return $bindUsers;
     }
 
-    // todo make api
     public function bindUser($official_id, Request $request)
     {
         $validated = $this->validate($request, [

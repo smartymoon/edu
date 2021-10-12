@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17ded1556d749073758ec0476140879c",
+    "content-hash": "81c3123796e97ddf9fac4f987e14d4ca",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3377,6 +3377,49 @@
                 }
             ],
             "time": "2021-09-25T23:07:42+00:00"
+        },
+        {
+            "name": "royalmar/laravel-line-notify",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ZiJie-Li/laravel-line-notify.git",
+                "reference": "8d42bdfb7dc37c58af291381eabfe38b0daec3a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ZiJie-Li/laravel-line-notify/zipball/8d42bdfb7dc37c58af291381eabfe38b0daec3a2",
+                "reference": "8d42bdfb7dc37c58af291381eabfe38b0daec3a2",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Royalmar\\LineNotify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "royalmar",
+                    "email": "royal-mar@hotmail.com"
+                }
+            ],
+            "description": "LINE Notify for laravel",
+            "support": {
+                "issues": "https://github.com/ZiJie-Li/laravel-line-notify/issues",
+                "source": "https://github.com/ZiJie-Li/laravel-line-notify/tree/1.0.1"
+            },
+            "time": "2019-10-30T08:12:09+00:00"
         },
         {
             "name": "socialiteproviders/line",

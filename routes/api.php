@@ -21,7 +21,6 @@ Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
 Route::get('/invitations/{slug}', 'TeacherController@showInvitation');
 Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
 
-Route::get('/line/login', 'LineController@redirectToLine');
 Route::get('/line/callback', 'LineController@callback');
 Route::get('/line/{official_id}/users', 'LineController@getBindUsers');
 Route::post('/line/{official_id}/users', 'LineController@bindUser');
