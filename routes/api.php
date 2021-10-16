@@ -25,6 +25,8 @@ Route::get('/line/callback', 'LineController@callback');
 Route::get('/line/{official_id}/users', 'LineController@getBindUsers');
 Route::post('/line/{official_id}/users', 'LineController@bindUser');
 
+Route::post('/line/login', 'LineController@loginUsingId');
+
 
 // for teacher
 Route::middleware(['teacher', 'auth:api'])->group(function() {

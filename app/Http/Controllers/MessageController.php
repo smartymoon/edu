@@ -30,7 +30,7 @@ class MessageController extends Controller
             return $this->fail('message send failed, please try again later');
         }
 
-        return $this->success('');
+        return $this->success('', $message);
     }
 
     public function getTeacherUnreadMessages(Request $request)
@@ -45,7 +45,7 @@ class MessageController extends Controller
     {
         return Message::getMessageFrom(
             Message::Student,
-            $fromId,
+            $fromId + 0,
             Message::Teacher,
             $request->user()->id
         );
@@ -72,7 +72,7 @@ class MessageController extends Controller
             return $this->fail('message send failed, please try again later');
         }
 
-        return $this->success('');
+        return $this->success('', $message);
     }
 
     public function getStudentUnreadMessages(Request $request)
@@ -87,7 +87,7 @@ class MessageController extends Controller
     {
         return Message::getMessageFrom(
             Message::Teacher,
-            $fromId,
+            $fromId + 0,
             Message::Student,
             $request->user()->id
         );

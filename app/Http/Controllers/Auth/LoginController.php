@@ -8,6 +8,7 @@ use App\Teacher;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class LoginController extends Controller
@@ -15,13 +16,7 @@ class LoginController extends Controller
 
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
 
     public function token(Request $request)
     {
@@ -30,29 +25,34 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
-        $isStudent = Student::where('email', $validated['email'])->value('id');
-        $teacherRole = Teacher::where('email', $validated['email'])->value('role');
+        $student = Student::where('email', $validated['email'])->select(['email', 'name', 'school_id', 'id'])->first();
+        $teacher = $student ? null : Teacher::where('email', $validated['email'])->select(['email', 'name', 'school_id', 'id', 'role'])->first();
 
-        if (!$isStudent && !$teacherRole) {
+        if (!$student && !$teacher) {
             return $this->fail('sorry, email not in our system');
         }
 
-
-
         $http = new Client();
+        $scope = $student ? Student::Student : $teacher->role;
+
         try {
             $response = $http->request('POST', request()->root() . '/oauth/token', [
                 'form_params' => config('passport') + [
                     'username' => $validated['email'],
                     'password' => $validated['password'],
-                    'scope' => $isStudent ? Student::Student : $teacherRole,
+                    'scope' => $scope
                 ]
             ]);
         } catch (RequestException $e) {
             return $this->fail('login failed, ' . $e->getMessage());
         }
 
-        return  $this->success('login successful', json_decode((string) $response->getBody(), true));
+        $auth = json_decode((string) $response->getBody(), true);
+        $auth['accessToken'] = $auth['access_token'];
+        return  $this->success('login successful', [
+            'auth' => $auth,
+            'role' => $scope,
+            'user' => $teacher ?: $student,
+        ]);
     }
-
 }

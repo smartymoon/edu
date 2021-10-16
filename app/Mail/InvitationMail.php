@@ -19,14 +19,14 @@ class InvitationMail extends Mailable
 
     protected string $school_name;
     protected string $principal_name;
-    protected string $slug;
+    protected string $url;
 
 
-    public function __construct(Invitation $invitation)
+    public function __construct(Invitation $invitation, string $url)
     {
         $this->school_name = $invitation->school->name;
         $this->principal_name = $invitation->principal->name;
-        $this->slug = $invitation->slug;
+        $this->url = $url;
     }
 
     /**
@@ -38,9 +38,7 @@ class InvitationMail extends Mailable
     {
         return $this->markdown('emails.invitation', [
             'message' => "I am {$this->principal_name},  principal of {$this->school_name}. Welcome to our school, click the button below to join us",
-            'url' => route('invitation', [
-                'slug' => $this->slug
-            ])
+            'url' => $this->url,
         ]);
     }
 }

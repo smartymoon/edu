@@ -48,4 +48,9 @@ class Teacher extends Authenticatable
         $this->line_id = $line_id;
         $this->save();
     }
+
+    public function lineUser()
+    {
+        return $this->belongsTo(LineUser::class, 'line_id');
+    }
 }

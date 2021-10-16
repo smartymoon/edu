@@ -36,6 +36,7 @@ class TeacherController extends Controller
                 'email' => $invitation->email,
                 'password' => bcrypt($validated['password']),
                 'role' => Teacher::Normal,
+                'school_id' => $invitation->school_id,
             ]);
             $invitation->if_register = true;
             $invitation->save();
@@ -43,7 +44,16 @@ class TeacherController extends Controller
 
         return $this->success(
             'Welcome '. $teacher->name,
-            $teacher->createToken('After invitation', [Teacher::Normal])
+            [
+                'role' => $teacher->role,
+                'auth' => $teacher->createToken('After invitation', [Teacher::Normal]),
+                'user' => [
+                    'id' => $teacher->id,
+                    'email' => $teacher->email,
+                    'name' => $teacher->name,
+                    'school_id' => $teacher->school_id
+                ]
+            ]
         );
     }
 

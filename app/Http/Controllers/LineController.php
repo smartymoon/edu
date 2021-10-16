@@ -65,7 +65,13 @@ class LineController extends Controller
                 // give a token and role
                 return $this->success('bind successful', [
                     'role' => $teacher->role,
-                    'tokenInfo' => $teacher->createToken('After Bind Line', [$teacher->role])
+                    'auth' => $teacher->createToken('After Bind Line', [$teacher->role]),
+                    'user' => [
+                        'id' => $teacher->id,
+                        'email' => $teacher->email,
+                        'name' => $teacher->name,
+                        'school_id' => $teacher->school_id
+                    ]
                 ]);
             }
         }
@@ -74,17 +80,57 @@ class LineController extends Controller
         if ($student) {
             if ($student->hasBindLine()) {
                 return $this->fail("email {$validated['email']}  has already bind to a line user");
-            } else if (!\Hash::check($validated['password'], $teacher->password)){
+            } else if (!\Hash::check($validated['password'], $student->password)){
                 return $this->fail("password is wrong");
             } else {
                 $student->bindToLine($lineUser->id);
                 return $this->success('bind successful', [
                     'role' => Student::Student,
-                    'tokenInfo' => $teacher->createToken('After Bind Line', [Student::Student])
+                    'auth' => $student->createToken('After Bind Line', [Student::Student]),
+                    'user' => [
+                        'id' => $student->id,
+                        'email' => $student->email,
+                        'name' => $student->name,
+                        'school_id' => $student->school_id
+                    ]
                 ]);
             }
         }
 
         return $this->fail("email {$validated['email']}  not exists");
+    }
+
+    public function loginUsingId(Request $request)
+    {
+        $validated = $this->validate($request, [
+            'type' => 'required',
+            'user_id' => 'required',
+            'official_id' => 'required'
+        ]);
+
+        if ($validated['type'] === Student::Student)
+        {
+            $user =  Student::findOrFail($validated['user_id']);
+        } else if ($validated['type'] === Teacher::Principal || $validated['type'] === Teacher::Normal) {
+            $user =  Teacher::findOrFail($validated['user_id']);
+        } else {
+            return $this->fail('login fail');
+        }
+
+        if ($user->lineUser->official_id != $validated['official_id']) {
+            return $this->fail('login fail');
+        }
+
+        // issue token
+        return $this->success('login successful', [
+            'role' => $validated['type'],
+            'auth' => $user->createToken('login by line', [$validated['type']]),
+            'user' => [
+                'id' => $user->id,
+                'email' => $user->email,
+                'name' => $user->name,
+                'school_id' => $user->school_id
+            ]
+        ]);
     }
 }
