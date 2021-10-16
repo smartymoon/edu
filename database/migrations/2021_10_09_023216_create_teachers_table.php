@@ -20,6 +20,7 @@ class CreateTeachersTable extends Migration
             $table->string('password');
             $table->string('role');
             $table->unsignedBigInteger('school_id')->index()->nullable();
+            $table->unsignedBigInteger('line_id')->index()->nullable();
             $table->timestamps();
         });
     }

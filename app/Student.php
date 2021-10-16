@@ -10,7 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Student extends Authenticatable
 {
-    protected $fillable = ['name', 'password', 'email', 'school_id'];
+    protected $fillable = ['name', 'password', 'email', 'school_id', 'line_id'];
     protected $hidden = ['password'];
     const Student = 'student';
 
@@ -26,4 +26,19 @@ class Student extends Authenticatable
         return $this->belongsToMany(Teacher::class, 'follows');
     }
 
+    public function lineUser()
+    {
+        return $this->belongsTo(LineUser::class, 'line_id');
+    }
+
+    public function hasBindLine(): bool
+    {
+        return !is_null($this->line_id);
+    }
+
+    public function bindToLine($line_id)
+    {
+        $this->line_id = $line_id;
+        $this->save();
+    }
 }

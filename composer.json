@@ -5,14 +5,17 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.4",
         "ext-json": "*",
         "encore/laravel-admin": "^1.8",
         "fideloper/proxy": "~3.3",
+        "fruitcake/laravel-cors": "^1.0",
         "laravel/framework": "5.5.*",
         "laravel/passport": "~4.0",
         "laravel/tinker": "~1.0",
         "lcobucci/jwt": "3.3.3",
+        "royalmar/laravel-line-notify": "^1.0",
+        "socialiteproviders/line": "^2",
         "webpatser/laravel-uuid": "^4.0"
     },
     "require-dev": {

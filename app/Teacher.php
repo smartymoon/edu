@@ -37,4 +37,20 @@ class Teacher extends Authenticatable
     {
         return $this->belongsToMany(Student::class, 'follows');
     }
+
+    public function hasBindLine(): bool
+    {
+        return !is_null($this->line_id);
+    }
+
+    public function bindToLine($line_id)
+    {
+        $this->line_id = $line_id;
+        $this->save();
+    }
+
+    public function lineUser()
+    {
+        return $this->belongsTo(LineUser::class, 'line_id');
+    }
 }

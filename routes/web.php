@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/api/line/login', 'LineController@redirectToLine');
+
 Route::middleware('auth:api')->group(function() {
     Route::get('/', 'HomeController@index');
 });
