@@ -41,4 +41,9 @@ class Student extends Authenticatable
         $this->line_id = $line_id;
         $this->save();
     }
+
+    public function adminMessage()
+    {
+       return $this->morphOne(AdminMessage::class, 'messageable');
+    }
 }

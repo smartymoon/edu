@@ -59,6 +59,9 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
 
         Route::post('/broadcast/auth/teacher', 'Auth\LoginController@teacherEchoAuth');
         Route::put('/message/teacher/{message}/read', 'MessageController@setSeen');
+
+        Route::get('/teacher/admin-messages', 'MessageController@getAdminMessage');
+        Route::get('/teacher/admin-messages/check', 'MessageController@checkAdminMessage');
     });
 });
 
@@ -75,4 +78,6 @@ Route::middleware(['student', 'auth:api'])->group(function() {
 
     Route::post('/broadcast/auth/student', 'Auth\LoginController@studentEchoAuth');
     Route::put('/message/student/{message}/read', 'MessageController@setSeen');
+    Route::get('/student/admin-messages', 'MessageController@getAdminMessage');
+    Route::get('/student/admin-messages/check', 'MessageController@checkAdminMessage');
 });

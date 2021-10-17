@@ -106,4 +106,19 @@ class MessageController extends Controller
         $message->save();
         return $this->success();
     }
+
+    public function checkAdminMessage(Request $request)
+    {
+        $count =  $request->user()->adminMessage()->latest()->select(['id', 'message', 'created_at'])->where('seen', false)->count();
+        return $this->success($count ? 'you have ' . $count . ' unread admin messages' : '', $count);
+    }
+
+    public function getAdminMessage(Request $request)
+    {
+        $query = $request->user()->adminMessage()->latest()->select(['id', 'message', 'created_at']);
+        $messages = $request->user()->adminMessage()->latest()->select(['id', 'message', 'created_at'])->get();
+        $query->where('seen', false)->update(['seen' => true]);
+        return $messages;
+    }
+
 }

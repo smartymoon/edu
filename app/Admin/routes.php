@@ -16,4 +16,6 @@ Route::group([
     $router->resource('schools', 'SchoolController');
     $router->resource('students', 'StudentController');
     $router->resource('line-users', 'LineUserController');
+    $router->post('send', 'MessageController@send');
+    $router->resource('admin-messages', 'AdminMessageController');
 });

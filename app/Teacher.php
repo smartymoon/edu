@@ -34,7 +34,7 @@ class Teacher extends Authenticatable
         return $this->where('email', $email)->first();
     }
 
-    public function manageSchools(): HasManMessCony
+    public function manageSchools(): HasMany
     {
         return $this->hasMany(School::class, 'principal_id');
     }
@@ -44,7 +44,7 @@ class Teacher extends Authenticatable
         return $this->hasMany(Invitation::class, 'principal_id');
     }
 
-    public function studentsFollowMe(): BelongsToManMessCony
+    public function studentsFollowMe(): BelongsToMany
     {
         return $this->belongsToMany(Student::class, 'follows');
     }
@@ -58,5 +58,10 @@ class Teacher extends Authenticatable
     {
         $this->line_id = $line_id;
         $this->save();
+    }
+
+    public function adminMessage()
+    {
+        return $this->morphOne(AdminMessage::class, 'messageable');
     }
 }

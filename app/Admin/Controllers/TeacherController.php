@@ -3,10 +3,12 @@
 namespace App\Admin\Controllers;
 
 use App\Teacher;
+use Encore\Admin\Admin;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Encore\Admin\Widgets\Form as ModalForm;
 
 class TeacherController extends AdminController
 {
@@ -37,13 +39,23 @@ class TeacherController extends AdminController
         }, 'line']);
 
         $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'));
+        $grid->column('name', __('Name'))->modal('send message', function($model) {
+            $form = new ModalForm();
+            $form->hidden('type')->default('teacher');
+            $form->hidden('user_id')->default($model->id);
+            $form->action('/admin/send');
+            $form->method('POST');
+            $form->textarea('message');
+            return $form->render();
+        });
         $grid->column('line.name', 'Line name');
         $grid->column('email', __('Email'));
         $grid->column('role', __('Role'));
         $grid->column('school.name', 'Belong To School');
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
+
+        Admin::script("$('.modal-backdrop').remove();");
 
         return $grid;
     }
