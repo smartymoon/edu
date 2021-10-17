@@ -16,7 +16,6 @@ class StudentAuthMiddleware
     public function handle($request, Closure $next)
     {
         config(['auth.guards.api.provider' => 'students']);
-        \Log::info('ssssss');
         return $next($request);
     }
 }

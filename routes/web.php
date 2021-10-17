@@ -17,3 +17,5 @@ Route::middleware('auth:api')->group(function() {
     Route::get('/', 'HomeController@index');
 });
 
+// dd(\Illuminate\Support\Facades\Broadcast::getFacadeRoot()->channel());
+

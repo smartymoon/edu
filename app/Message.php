@@ -30,7 +30,7 @@ class Message extends Model
         ];
     }
 
-    public function sendMessage($fromType, $fromId, $toType, $toId, $message)
+    public function sendMessage($fromType, $fromId, $fromName, $toType, $toId, $message)
     {
         // check receiver online
         $this->from_type = $fromType;
@@ -38,14 +38,10 @@ class Message extends Model
         $this->to_type = $toType;
         $this->to_id = $toId;
         $this->message = $message;
+        $this->seen = false;
 
-        if ($this->checkOnline($toType, $toId)) {
-            $this->seen = true;
-            // todo send websocket, sent to other
-        } else {
-            $this->seen = false;
-        }
         $this->save();
+        broadcast(new \App\Events\Chat($this->toArray(), $fromName));
     }
 
     public static function getUnreadMessage($userType, $userId)

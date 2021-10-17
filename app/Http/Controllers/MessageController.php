@@ -21,6 +21,7 @@ class MessageController extends Controller
             $message->sendMessage(
                 Message::Teacher,
                 $request->user()->id,
+                Message::Teacher,
                 Message::Student,
                 $validated['toId'],
                 $validated['message']
@@ -60,15 +61,18 @@ class MessageController extends Controller
             'message' => 'required|string',
         ]);
 
+
         try {
             $message->sendMessage(
                 Message::Student,
                 $request->user()->id,
+                $request->user()->name,
                 Message::Teacher,
                 $validated['toId'],
                 $validated['message']
             );
         } catch (\Exception $e) {
+            \Log::error('send Message Error ' .   $e->getMessage());
             return $this->fail('message send failed, please try again later');
         }
 
@@ -91,5 +95,15 @@ class MessageController extends Controller
             Message::Student,
             $request->user()->id
         );
+    }
+
+    public function setSeen(Message $message, Request $request)
+    {
+        if ($message->toId !== $request->user()->id) {
+            return $this->fail('message not belong to you');
+        }
+        $message->seen = true;
+        $message->save();
+        return $this->success();
     }
 }

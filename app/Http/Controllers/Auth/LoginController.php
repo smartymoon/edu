@@ -9,10 +9,21 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Broadcast;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class LoginController extends Controller
 {
+
+    public function studentEchoAuth(Request $request)
+    {
+        return Broadcast::auth($request);
+    }
+
+    public function teacherEchoAuth(Request $request)
+    {
+        return Broadcast::auth($request);
+    }
 
     /**
      * Create a new controller instance.

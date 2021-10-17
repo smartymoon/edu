@@ -56,6 +56,9 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
         Route::get('/messages/teacher/unread', 'MessageController@getTeacherUnreadMessages');
         Route::post('/messages/teacher', 'MessageController@sendTeacherMessage');
         Route::get('/messages/teacher/{fromId}', 'MessageController@getTeacherMessageFrom');
+
+        Route::post('/broadcast/auth/teacher', 'Auth\LoginController@teacherEchoAuth');
+        Route::put('/message/teacher/{message}/read', 'MessageController@setSeen');
     });
 });
 
@@ -69,4 +72,7 @@ Route::middleware(['student', 'auth:api'])->group(function() {
     Route::get('/messages/student/unread', 'MessageController@getStudentUnreadMessages');
     Route::post('/messages/student', 'MessageController@sendStudentMessage');
     Route::get('/messages/student/{fromId}', 'MessageController@getStudentMessageFrom');
+
+    Route::post('/broadcast/auth/student', 'Auth\LoginController@studentEchoAuth');
+    Route::put('/message/student/{message}/read', 'MessageController@setSeen');
 });
