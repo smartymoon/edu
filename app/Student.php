@@ -31,7 +31,6 @@ class Student extends Authenticatable
         return $this->belongsTo(LineUser::class);
     }
 
-
     public function hasBindLine(): bool
     {
         return !is_null($this->line_id);

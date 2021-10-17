@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Follows;
 use App\School;
+use App\Student;
 use Illuminate\Http\Request;
 
 class SchoolController extends Controller
@@ -15,14 +17,15 @@ class SchoolController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required'
+            'school_name' => 'required|unique:schools,name'
         ]);
 
         $school = School::create([
-            'name' => $request->name,
+            'name' => $request->school_name,
             'principal_id' => $request->user()->id,
             'if_approve' => false
         ]);
+
         return $this->success('school created, wait approving', $school);
     }
 
@@ -37,6 +40,13 @@ class SchoolController extends Controller
             return $this->fail('sorry, you do not have permission to see students in other school');
         }
 
-        return $school->students;
+        return \DB::select("
+            select students.id, follows.id as follow_id, students.name, students.email, unread from students
+                left join follows on students.id = follows.student_id and follows.teacher_id = ?
+                left join (select count(messages.id) as unread, from_id from messages 
+                            where seen = 0 and to_id = ? and to_type = 'teacher' and from_type = 'student' 
+                            group by from_id) as filtered_messages on filtered_messages.from_id = students.id
+                where students.school_id = ?
+        ", [$teacher->id, $teacher->id, $school->id]);
     }
 }

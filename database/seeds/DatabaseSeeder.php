@@ -54,14 +54,23 @@ class DatabaseSeeder extends Seeder
                 'school_id' => $school->id,
                 'principal_id' => $school->principal_id
             ]);
+            $i = 0;
             factory(\App\Invitation::class, 10)->create([
                 'if_register' => true,
                 'school_id' => $school->id,
                 'principal_id' => $school->principal_id
-            ])->each(function($invitation) use ($school) {
-                factory(\App\Teacher::class)->states(\App\Teacher::Normal)->create([
-                     'school_id' =>  $school->id,
-                ]);
+            ])->each(function($invitation) use ($school, &$i) {
+                if ($i == 0) {
+                    factory(\App\Teacher::class)->states(\App\Teacher::Normal)->create([
+                        'school_id' =>  $school->id,
+                        'email' => 'normal@teacher.com'
+                    ]);
+                } else {
+                    factory(\App\Teacher::class)->states(\App\Teacher::Normal)->create([
+                        'school_id' =>  $school->id,
+                    ]);
+                }
+                $i++;
             });
             factory(\App\Student::class, 10)->create([
                 'school_id' => $school->id,
@@ -69,10 +78,10 @@ class DatabaseSeeder extends Seeder
         });
 
         $school = \App\School::approve()->first();
-        factory(\App\Student::class)->create([
-            'email' => 'student@student.com',
-            'school_id' => $school->id,
-        ]);
+        $student = \App\Student::first();
+        $student->email = 'student@student.com';
+        $student->school_id = $school->id;
+        $student->save();
 
         factory(\App\Invitation::class)->create([
             'slug' => 'c5c796e6-00ac-3d80-8d37-9188e62dd275',
@@ -82,5 +91,44 @@ class DatabaseSeeder extends Seeder
 
         Artisan::call('admin:install');
         Artisan::call('admin:generate-menu');
+        for ($i = 0; $i < 5; $i++) {
+            factory(\App\Message::class)->create([
+                'from_type' => 'teacher',
+                'from_id' => 1,
+                'to_type' => 'student',
+                'to_id' => 1,
+                'seen' => true
+            ]);
+
+            factory(\App\Message::class)->create([
+                'from_type' => 'teacher',
+                'from_id' => 1,
+                'to_type' => 'student',
+                'to_id' => 1,
+                'seen' => false,
+            ]);
+            factory(\App\Message::class)->create([
+                'to_type' => 'teacher',
+                'to_id' => 1,
+                'from_type' => 'student',
+                'from_id' => 1,
+                'seen' => true
+            ]);
+
+            factory(\App\Message::class)->create([
+                'to_type' => 'teacher',
+                'to_id' => 1,
+                'from_type' => 'student',
+                'from_id' => 1,
+                'seen' => false
+            ]);
+        }
+
+        $teacher_ids = \App\Teacher::where('school_id', $school->id)->limit(5)->pluck('id');
+        $student->followedTeachers()->attach($teacher_ids);
+
+        $teacher = \App\Teacher::first();
+        $students_id = \App\Student::where('school_id', $teacher->id)->limit(5)->pluck('id');
+        $teacher->studentsFollowMe()->attach($students_id);
     }
 }

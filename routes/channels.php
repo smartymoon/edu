@@ -11,6 +11,11 @@
 |
 */
 
-Broadcast::channel('App.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
+Broadcast::channel('chat.{mark}', function ($user, $mark) {
+    if($user instanceof \App\Teacher) {
+        $identity = 'teacher';
+    } else {
+        $identity = 'student';
+    }
+    return $identity.$user->id === $mark;
 });
