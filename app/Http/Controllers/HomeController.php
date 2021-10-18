@@ -9,5 +9,6 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
+        return 'I am api';
     }
 }

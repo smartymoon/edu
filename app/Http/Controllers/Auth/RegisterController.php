@@ -69,9 +69,15 @@ class RegisterController extends Controller
 
         event(new Registered($teacher = $this->create($request->all())));
 
+        $auth = $teacher->createToken('After register', [Teacher::Principal]);
+
         return $this->success(
             'Congratulation, register successful',
-            $teacher->createToken('After register', [Teacher::Principal])
+            [
+                'user' => $teacher,
+                'role' => 'principal',
+                'auth' =>  $auth
+            ]
         );
     }
 

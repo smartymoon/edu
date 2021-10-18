@@ -56,7 +56,7 @@ class StudentController extends Controller
             select teachers.id, follows.id as follow_id, teachers.name, teachers.email, unread from teachers
                 left join follows on teachers.id = follows.teacher_id and follows.student_id = ?
                 left join (select count(messages.id) as unread, from_id from messages 
-                            where seen = 0 and to_id = ? and to_type = 'student' and from_type = 'teacher' 
+                            where seen IS FALSE and to_id = ? and to_type = 'student' and from_type = 'teacher' 
                             group by from_id) as filtered_messages on filtered_messages.from_id = teachers.id
                 where teachers.school_id = ? or teachers.id = ?
         ", [$student->id, $student->id, $student->school_id, $student->school->principal_id]);
