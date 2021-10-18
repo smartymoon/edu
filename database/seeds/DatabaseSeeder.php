@@ -11,10 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \DB::insert("INSERT INTO edu.oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (1, null, 'Edu Personal Access Client', '2Y2M6djcjBDCKvYAY6WcqQj37ZiRGWBktaEsffIk', 'http://localhost', 1, 0, 0, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");
-        \DB::insert("INSERT INTO edu.oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (2, null, 'Edu Password Grant Client', 'IU5Khqs3yTrCzDrhzNz3KzlE4CjkATBZyNEmgcto', 'http://localhost', 0, 1, 0, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");
-        \DB::insert("INSERT INTO edu.oauth_personal_access_clients (id, client_id, created_at, updated_at) VALUES (1, 1, '2021-10-10 05:27:31', '2021-10-10 05:27:31');");
-        \DB::insert("INSERT INTO edu.line_users (id, official_id, name, created_at, updated_at) VALUES (1, 'U585911a40a7dc7ccbd4791ba90a03218', 'PeterSun', '2021-10-12 10:53:51', '2021-10-12 10:53:54');");
+        \DB::insert("INSERT INTO oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (1, null, 'Edu Personal Access Client', '2Y2M6djcjBDCKvYAY6WcqQj37ZiRGWBktaEsffIk', 'http://localhost', 1, 0, 0, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");
+        \DB::insert("INSERT INTO oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (2, null, 'Edu Password Grant Client', 'IU5Khqs3yTrCzDrhzNz3KzlE4CjkATBZyNEmgcto', 'http://localhost', 0, 1, 0, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");
+        \DB::insert("INSERT INTO oauth_personal_access_clients (id, client_id, created_at, updated_at) VALUES (1, 1, '2021-10-10 05:27:31', '2021-10-10 05:27:31');");
+        \DB::insert("INSERT INTO line_users (id, official_id, name, created_at, updated_at) VALUES (1, 'U585911a40a7dc7ccbd4791ba90a03218', 'PeterSun', '2021-10-12 10:53:51', '2021-10-12 10:53:54');");
 
         factory(\App\Teacher::class)->states(\App\Teacher::Principal)->create([
             'email' => 'susan@edu.com'
