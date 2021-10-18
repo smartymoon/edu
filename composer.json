@@ -17,11 +17,11 @@
         "pusher/pusher-php-server": "~3.0",
         "royalmar/laravel-line-notify": "^1.0",
         "socialiteproviders/line": "^2",
-        "webpatser/laravel-uuid": "^4.0"
+        "webpatser/laravel-uuid": "^4.0",
+        "fzaninotto/faker": "~1.4"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
-        "fzaninotto/faker": "~1.4",
         "mockery/mockery": "~1.0",
         "phpunit/phpunit": "~6.0",
         "symfony/thanks": "^1.0"
