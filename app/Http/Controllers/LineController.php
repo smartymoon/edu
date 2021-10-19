@@ -143,7 +143,6 @@ class LineController extends Controller
     public function messageCallback(Request $request)
     {
 
-        \Log::info('A');
         $signature = $request->header(HTTPHeader::LINE_SIGNATURE);
         if (empty($signature)) {
             return $this->fail('500', 'no signature');
@@ -151,36 +150,30 @@ class LineController extends Controller
 
         // Check request with signature and parse request
         try {
-            \Log::info('D');
             // \Log::info('body', $request->json());
             $events = LINEBot::parseEventRequest($request->getContent(), $signature);
         } catch (InvalidSignatureException $e) {
-            \Log::info('B');
             return $this->fail('Invalid signature: ' . $e->getMessage());
         } catch (InvalidEventRequestException $e) {
-            \Log::info('C');
             return $this->fail('Invalid event request');
         }
 
         foreach ($events as $event) {
-            \Log::info('E');
             if (!($event instanceof MessageEvent)) {
                 \Log::info('Non message event has come');
                 continue;
             }
 
-            \Log::info('F');
             if (!($event instanceof TextMessage)) {
                 \Log::info('Non text message has come');
                 continue;
             }
 
-            \Log::info('G');
             $replyText = $event->getText();
             \Log::info('Reply text: ' . $replyText);
             $resp = LINEBot::replyText($event->getReplyToken(), $replyText);
             \Log::info($resp->getHTTPStatus() . ': ' . $resp->getRawBody());
         }
-        return '';
+        return 'ok';
     }
 }

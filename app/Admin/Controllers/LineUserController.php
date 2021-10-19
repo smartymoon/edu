@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\LineUser;
+use Encore\Admin\Admin;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -45,6 +46,8 @@ class LineUserController extends AdminController
         });
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
+
+        Admin::script("$('.modal-backdrop').remove();");
 
         return $grid;
     }
