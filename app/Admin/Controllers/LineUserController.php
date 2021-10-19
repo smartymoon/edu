@@ -7,6 +7,7 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Encore\Admin\Widgets\Form as ModalForm;
 
 class LineUserController extends AdminController
 {
@@ -34,7 +35,14 @@ class LineUserController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('official_id', __('Official id'));
-        $grid->column('name', __('Name'));
+        $grid->column('name', __('Name'))->modal('send line message', function($model) {
+            $form = new ModalForm();
+            $form->hidden('user_id')->default($model->official_id);
+            $form->textarea('message');
+            $form->action('/admin/line_send');
+            $form->method('POST');
+            return $form->render();
+        });
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 

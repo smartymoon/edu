@@ -27,4 +27,13 @@ class MessageController extends AdminController
 
         return redirect()->back();
     }
+
+    public function lineSend(Request $request)
+    {
+        if ($request->input('message')) {
+            lineMessage($request->input('user_id'), $request->input('message'));
+        }
+
+        return redirect()->back();
+    }
 }

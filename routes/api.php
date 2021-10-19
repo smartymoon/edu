@@ -24,8 +24,8 @@ Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
 Route::get('/line/callback', 'LineController@callback');
 Route::get('/line/{official_id}/users', 'LineController@getBindUsers');
 Route::post('/line/{official_id}/users', 'LineController@bindUser');
-
 Route::post('/line/login', 'LineController@loginUsingId');
+Route::post('/line_message/callback', 'LineController@messageCallback');
 
 
 // for teacher
