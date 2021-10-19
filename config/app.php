@@ -54,6 +54,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'vite_url' => env('VITE_URL', 'http://locahost:3000'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

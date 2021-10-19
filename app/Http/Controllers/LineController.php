@@ -30,7 +30,7 @@ class LineController extends Controller
             return 'error happened';
         }
         LineUser::firstOrCreate([ 'official_id' => $user->id], ['name' => $user->name]);
-        return redirect(config('app.url') . '/#/line/login?official_id=' . $user->id);
+        return redirect(config('app.vite_url') . '/#/line/login?official_id=' . $user->id);
     }
 
     public function getBindUsers($official_id)

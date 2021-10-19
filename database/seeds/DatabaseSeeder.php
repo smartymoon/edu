@@ -37,6 +37,29 @@ class DatabaseSeeder extends Seeder
             $this->call(LineUsersTableSeeder::class);
             $this->call(MessagesTableSeeder::class);
             $this->call(AdminMessagesTableSeeder::class);
+            // Get all the tables from your database
+            $tables = \DB::select('SELECT table_name FROM information_schema.tables WHERE table_schema = \'public\' ORDER BY table_name;');
+
+            // Set the tables in the database you would like to ignore
+
+            $ignores = [
+                'admin_role_menu', 'admin_role_permissions', 'admin_role_users', 'admin_user_permissions',
+                'oauth_access_tokens', 'oauth_auth_codes', 'oauth_refresh_tokens', 'password_resets'
+            ];
+
+            //loop through the tables
+            foreach ($tables as $table) {
+
+                // if the table is not to be ignored then:
+                if (!in_array($table->table_name, $ignores)) {
+
+                    //Get the max id from that table and add 1 to it
+                    $seq = \DB::table($table->table_name)->max('id') + 1;
+
+                    // alter the sequence to now RESTART WITH the new sequence index from above
+                    \DB::select('ALTER SEQUENCE ' . $table->table_name . '_id_seq RESTART WITH ' . $seq);
+                }
+            }
             return;
         };
         \DB::insert("INSERT INTO oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (1, null, 'Edu Personal Access Client', '2Y2M6djcjBDCKvYAY6WcqQj37ZiRGWBktaEsffIk', 'http://localhost', true, false, false, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");

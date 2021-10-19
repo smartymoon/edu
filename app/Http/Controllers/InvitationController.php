@@ -32,7 +32,7 @@ class InvitationController extends Controller
         ]);
 
         // send email
-        $url = config('app.url') . '/#/invitation?slug=' .  $invitation->slug;
+        $url = config('app.vite_url') . '/#/invitation?slug=' .  $invitation->slug;
         Mail::to('smartymoon@foxmail.com')->send(new InvitationMail($invitation, $url));
 
 
