@@ -17,7 +17,7 @@ use Faker\Generator as Faker;
 $factory->define(App\Teacher::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'email' => $faker->unique()->numberBetween(100, 10000) . '@teacher.com',
+        'email' => $faker->numberBetween(100, 90000) . '@teacher.com',
         'password' => \Illuminate\Support\Facades\Hash::make('123456'),
         'role' => \App\Teacher::Principal
     ];
