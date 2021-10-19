@@ -99,7 +99,7 @@ class MessageController extends Controller
 
     public function setSeen(Message $message, Request $request)
     {
-        if ($message->toId !== $request->user()->id) {
+        if ($message->to_id !== $request->user()->id) {
             return $this->fail('message not belong to you');
         }
         $message->seen = true;
