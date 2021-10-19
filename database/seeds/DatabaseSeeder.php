@@ -141,5 +141,9 @@ class DatabaseSeeder extends Seeder
                 'messageable_id' => $i
             ]);
         }
+
+        Artisan::call('admin:install');
+        Artisan::call('admin:generate-menu');
     }
+
 }
