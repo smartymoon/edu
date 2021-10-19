@@ -11,6 +11,34 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        if (app()->environment('production')) {
+            $this->call(MigrationsTableSeeder::class);
+            $this->call(UsersTableSeeder::class);
+            $this->call(PasswordResetsTableSeeder::class);
+            $this->call(AdminRolesTableSeeder::class);
+            $this->call(AdminMenuTableSeeder::class);
+            $this->call(AdminRoleUsersTableSeeder::class);
+            $this->call(AdminRolePermissionsTableSeeder::class);
+            $this->call(AdminUsersTableSeeder::class);
+            $this->call(AdminPermissionsTableSeeder::class);
+            $this->call(AdminUserPermissionsTableSeeder::class);
+            $this->call(AdminRoleMenuTableSeeder::class);
+            $this->call(AdminOperationLogTableSeeder::class);
+            $this->call(OauthAuthCodesTableSeeder::class);
+            $this->call(OauthAccessTokensTableSeeder::class);
+            $this->call(OauthRefreshTokensTableSeeder::class);
+            $this->call(OauthClientsTableSeeder::class);
+            $this->call(OauthPersonalAccessClientsTableSeeder::class);
+            $this->call(TeachersTableSeeder::class);
+            $this->call(SchoolsTableSeeder::class);
+            $this->call(InvitationsTableSeeder::class);
+            $this->call(StudentsTableSeeder::class);
+            $this->call(FollowsTableSeeder::class);
+            $this->call(LineUsersTableSeeder::class);
+            $this->call(MessagesTableSeeder::class);
+            $this->call(AdminMessagesTableSeeder::class);
+            return;
+        };
         \DB::insert("INSERT INTO oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (1, null, 'Edu Personal Access Client', '2Y2M6djcjBDCKvYAY6WcqQj37ZiRGWBktaEsffIk', 'http://localhost', true, false, false, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");
         \DB::insert("INSERT INTO oauth_clients (id, user_id, name, secret, redirect, personal_access_client, password_client, revoked, created_at, updated_at) VALUES (2, null, 'Edu Password Grant Client', 'IU5Khqs3yTrCzDrhzNz3KzlE4CjkATBZyNEmgcto', 'http://localhost', false, true, false, '2021-10-09 15:56:56', '2021-10-09 15:56:56')");
         \DB::insert("INSERT INTO oauth_personal_access_clients (id, client_id, created_at, updated_at) VALUES (1, 1, '2021-10-10 05:27:31', '2021-10-10 05:27:31');");
@@ -25,7 +53,7 @@ class DatabaseSeeder extends Seeder
             $teacher->manageSchools()->saveMany(
                 factory(\App\School::class, 3)->states('not')->make()
             );
-        });
+    });
 
         factory(\App\Teacher::class, 5)->states(\App\Teacher::Principal)
             ->create()

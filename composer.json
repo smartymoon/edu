@@ -16,6 +16,7 @@
         "laravel/tinker": "~1.0",
         "lcobucci/jwt": "3.3.3",
         "linecorp/line-bot-sdk": "^7.1",
+        "orangehill/iseed": "^2.0",
         "pusher/pusher-php-server": "~3.0",
         "royalmar/laravel-line-notify": "^1.0",
         "socialiteproviders/line": "^2",
