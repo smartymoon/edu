@@ -117,8 +117,10 @@ class LineController extends Controller
         if ($validated['type'] === Student::Student)
         {
             $user =  Student::findOrFail($validated['user_id']);
+            $scope = Student::Student;
         } else if ($validated['type'] === 'teacher') {
             $user =  Teacher::findOrFail($validated['user_id']);
+            $scope = $user->role;
         } else {
             return $this->fail('login fail');
         }
@@ -127,9 +129,10 @@ class LineController extends Controller
             return $this->fail('login fail');
         }
 
+
         // issue token
         return $this->success('login successful', [
-            'role' => $validated['type'],
+            'role' => $scope,
             'auth' => $user->createToken('login by line', [$validated['type']]),
             'user' => [
                 'id' => $user->id,
