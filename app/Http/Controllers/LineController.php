@@ -133,7 +133,7 @@ class LineController extends Controller
         // issue token
         return $this->success('login successful', [
             'role' => $scope,
-            'auth' => $user->createToken('login by line', [$validated['type']]),
+            'auth' => $user->createToken('login by line', [$scope]),
             'user' => [
                 'id' => $user->id,
                 'email' => $user->email,
