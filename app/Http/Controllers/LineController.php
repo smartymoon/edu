@@ -117,7 +117,7 @@ class LineController extends Controller
         if ($validated['type'] === Student::Student)
         {
             $user =  Student::findOrFail($validated['user_id']);
-        } else if ($validated['type'] === Teacher::Principal || $validated['type'] === Teacher::Normal) {
+        } else if ($validated['type'] === 'teacher') {
             $user =  Teacher::findOrFail($validated['user_id']);
         } else {
             return $this->fail('login fail');
