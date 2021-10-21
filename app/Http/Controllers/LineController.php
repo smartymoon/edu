@@ -123,7 +123,7 @@ class LineController extends Controller
             return $this->fail('login fail');
         }
 
-        if ($user->line->official_id != $validated['official_id']) {
+        if (!$user->line || $user->line->official_id != $validated['official_id']) {
             return $this->fail('login fail');
         }
 
