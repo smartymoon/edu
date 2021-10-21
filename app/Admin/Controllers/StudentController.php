@@ -28,6 +28,8 @@ class StudentController extends AdminController
     {
         $grid = new Grid(new Student());
 
+        $grid->model()->latest();
+
         $grid->disableCreateButton();
         $grid->actions(function($actions) {
             $actions->disableEdit();

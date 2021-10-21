@@ -28,6 +28,8 @@ class LineUserController extends AdminController
     {
         $grid = new Grid(new LineUser());
 
+
+        $grid->model()->latest();
         $grid->disableCreateButton();
         $grid->actions(function($actions) {
             $actions->disableEdit();

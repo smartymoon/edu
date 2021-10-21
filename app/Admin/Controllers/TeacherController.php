@@ -27,6 +27,7 @@ class TeacherController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new Teacher());
+        $grid->model()->latest();
 
         $grid->disableCreateButton();
         $grid->actions(function($actions) {
