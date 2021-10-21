@@ -182,7 +182,7 @@ class DatabaseSeeder extends Seeder
         $students_id = \App\Student::where('school_id', $teacher->id)->limit(5)->pluck('id');
         $teacher->studentsFollowMe()->attach($students_id);
 
-        for ($i = 0; $i <= 10; $i++) {
+        for ($i = 1; $i <= 10; $i++) {
             factory(\App\AdminMessage::class, 10)->create([
                 'messageable_type' => 'App\Teacher',
                 'messageable_id' => $i

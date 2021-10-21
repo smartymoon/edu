@@ -34,7 +34,7 @@ class AdminMessageController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('messageable_type', __('Type'));
-        $grid->column('messageable.name', __('User id'));
+        $grid->column('messageable.name', __('User Name'));
         $grid->column('message', __('Message'));
         $grid->column('seen', __('Seen'))->bool();
         $grid->column('created_at', __('Created at'));

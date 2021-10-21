@@ -24,10 +24,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Rerum eligendi ut itaque a porro.',
+                'message' => 'Quibusdam ipsam occaecati velit.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             1 => 
             array (
@@ -36,10 +36,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Non vitae quasi deserunt labore ipsam sint.',
+                'message' => 'Cumque perspiciatis mollitia minima laudantium autem.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             2 => 
             array (
@@ -48,10 +48,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Voluptatum repellat dolore quis tempora velit a.',
+                'message' => 'Tempora et quaerat sint aliquid at accusantium doloribus.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             3 => 
             array (
@@ -60,10 +60,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Ut pariatur fuga est reiciendis.',
+                'message' => 'Recusandae harum velit voluptas.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             4 => 
             array (
@@ -72,10 +72,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Cumque facilis ea ut corrupti velit quibusdam.',
+                'message' => 'Non excepturi necessitatibus inventore id.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             5 => 
             array (
@@ -84,10 +84,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Exercitationem corporis non placeat ut soluta.',
+                'message' => 'Amet deserunt non maxime et architecto quibusdam ad.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             6 => 
             array (
@@ -96,10 +96,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Voluptatibus et in ducimus numquam aperiam sint repellat sit.',
+                'message' => 'Non voluptatem omnis autem dolore ipsa vitae.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             7 => 
             array (
@@ -108,10 +108,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Dolorem et dolor rerum facilis fugiat molestiae inventore.',
+                'message' => 'Ut dicta aut reiciendis earum.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             8 => 
             array (
@@ -120,10 +120,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Amet doloribus sit cupiditate hic voluptatem iure libero.',
+                'message' => 'Facere quo ea ea veritatis voluptate commodi beatae.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             9 => 
             array (
@@ -132,10 +132,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Eligendi et non voluptatem deserunt facere necessitatibus.',
+                'message' => 'Nisi ut molestiae saepe et hic illum ipsum.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             10 => 
             array (
@@ -144,10 +144,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Earum hic voluptatem repudiandae similique beatae.',
+                'message' => 'Voluptatum dolorum expedita qui.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             11 => 
             array (
@@ -156,10 +156,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Sequi nam minus non fuga temporibus commodi.',
+                'message' => 'Provident error deserunt neque natus suscipit est error aut.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             12 => 
             array (
@@ -168,10 +168,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Nam voluptas ut eveniet voluptatem dolorem quae unde.',
+                'message' => 'Quos labore consequatur voluptas sint.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             13 => 
             array (
@@ -180,10 +180,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Sit cum nostrum et deserunt aut quisquam.',
+                'message' => 'Et quia molestiae ullam totam voluptate itaque.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             14 => 
             array (
@@ -192,10 +192,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Vel perferendis mollitia quo commodi sit.',
+                'message' => 'Et nulla magnam qui eos laudantium unde adipisci.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             15 => 
             array (
@@ -204,10 +204,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Debitis rerum quas expedita magnam.',
+                'message' => 'Aut aliquid rerum et soluta et et.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             16 => 
             array (
@@ -216,10 +216,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Ipsam atque id voluptates veritatis quia.',
+                'message' => 'Beatae est sint perferendis rerum nostrum architecto quibusdam qui.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             17 => 
             array (
@@ -228,10 +228,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'teacher',
                 'to_id' => 1,
                 'to_type' => 'student',
-                'message' => 'Sit quia sit minima id qui quia.',
+                'message' => 'Cum qui ratione laborum cupiditate dolor.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             18 => 
             array (
@@ -240,10 +240,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Sequi id recusandae dolor sunt.',
+                'message' => 'Est quo fuga dolor vel ducimus voluptatem.',
                 'seen' => true,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
             19 => 
             array (
@@ -252,10 +252,10 @@ class MessagesTableSeeder extends Seeder
                 'from_type' => 'student',
                 'to_id' => 1,
                 'to_type' => 'teacher',
-                'message' => 'Est aut laborum ab dolorum quaerat.',
+                'message' => 'Tempore ullam molestiae recusandae laboriosam necessitatibus eaque.',
                 'seen' => false,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
         

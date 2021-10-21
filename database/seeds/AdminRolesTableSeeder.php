@@ -22,8 +22,8 @@ class AdminRolesTableSeeder extends Seeder
                 'id' => 1,
                 'name' => 'Administrator',
                 'slug' => 'administrator',
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
         

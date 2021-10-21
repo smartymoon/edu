@@ -21,12 +21,12 @@ class AdminUsersTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'username' => 'admin',
-                'password' => '$2y$10$xLsbyihmS4YddJXKgnwFBOw8UHh6SA343S21tureHVXbuqWVLfq8q',
+                'password' => '$2y$10$JtsrFRbsJi3/tqwoQth8Mev/O0LkkfI4k8gtySYJK5F6xGk6wrR.C',
                 'name' => 'Administrator',
                 'avatar' => NULL,
                 'remember_token' => NULL,
-                'created_at' => '2021-10-19 07:38:02',
-                'updated_at' => '2021-10-19 07:38:02',
+                'created_at' => '2021-10-21 08:32:40',
+                'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
         
