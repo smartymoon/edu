@@ -27,7 +27,6 @@ class TeacherController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new Teacher());
-        $grid->model()->latest();
 
         $grid->disableCreateButton();
         $grid->actions(function($actions) {
@@ -37,7 +36,7 @@ class TeacherController extends AdminController
 
         $grid->model()->load(['school:name', 'manageSchools' => function($query) {
             $query->select('id','name', 'principal_id');
-        }, 'line']);
+        }, 'line'])->latest();
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'))->modal('send message', function($model) {
