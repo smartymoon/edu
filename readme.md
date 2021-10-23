@@ -22,3 +22,11 @@ sadly laravel5.5 only support  passport ~4.0
 - api: https://boiling-reaches-89470.herokuapp.com/
 - admin: https://boiling-reaches-89470.herokuapp.com/admin
 - vite: https://poper-vite.herokuapp.com/
+
+
+make some change to check if redeploy keeping auth
+
+heroku ps:exec & php artisan passport:keys not work
+
+check
+check

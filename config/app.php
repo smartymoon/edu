@@ -56,6 +56,10 @@ return [
 
     'vite_url' => env('VITE_URL', 'http://locahost:3000'),
 
+    'passport_public_key' => env('PASSPORT_PUBLIC_KEY'),
+    'passport_private_key' => env('PASSPORT_PRIVATE_KEY'),
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
