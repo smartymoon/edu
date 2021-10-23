@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Follows;
+use App\Message;
 use App\School;
 use App\Student;
 use Illuminate\Http\Request;
@@ -40,13 +41,22 @@ class SchoolController extends Controller
             return $this->fail('sorry, you do not have permission to see students in other school');
         }
 
-        return \DB::select("
-            select students.id, follows.id as follow_id, students.name, students.email, unread from students
-                left join follows on students.id = follows.student_id and follows.teacher_id = ?
-                left join (select count(messages.id) as unread, from_id from messages 
-                            where seen IS FALSE and to_id = ? and to_type = 'teacher' and from_type = 'student' 
-                            group by from_id) as filtered_messages on filtered_messages.from_id = students.id
-                where students.school_id = ?
-        ", [$teacher->id, $teacher->id, $school->id]);
+
+        $students = Student::where('school_id', $school->id)
+            ->leftJoin('follows', function($join) use ($teacher) {
+                $join->on('follows.student_id', '=', 'students.id')
+                    ->where('follows.teacher_id', $teacher->id);
+            })->select(['students.id', 'follows.id as follow_id', 'name', 'email'])->get();
+
+        $messages = Message::select('from_id')
+            ->where('seen', false)
+            ->where('to_id', $teacher->id)
+            ->where('to_type', 'teacher')
+            ->where('from_type', 'student')->groupBy('from_id')->pluck('from_id');
+
+        return $students->map(function($student) use ($messages) {
+            $student->unread = $messages->contains($student->id);
+            return $student;
+        });
     }
 }
