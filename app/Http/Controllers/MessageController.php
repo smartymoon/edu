@@ -22,14 +22,10 @@ class MessageController extends Controller
 
         $student = Student::select('school_id')->findOrFail($validated['toId']);
 
-        if ($request->user()->role === Teacher::Principal) {
-            $school_check = School::where('principal_id', $request->user()->id)
-                ->where('id', $student->school_id)->value('id');
-            if (!$school_check) {
+        if ($student->school->principal_id != $request->user()->id) {
+            if ($student->school_id != $request->user()->school_id) {
                 return $this->fail('you are not allowed to sent message with this student');
             }
-        } else if ($student->school_id != $request->user()->school_id) {
-            return $this->fail('you are not allowed to sent message with this student');
         }
 
         try {

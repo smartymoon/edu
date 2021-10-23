@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Follows;
+use App\School;
 use App\Student;
 use App\Teacher;
 use Encore\Admin\Auth\Database\Role;
@@ -65,6 +66,13 @@ class StudentController extends Controller
     public function follow(Teacher $teacher, Request $request)
     {
         $student = $request->user();
+
+        if ($student->school->principal_id != $teacher->id) {
+            if ($teacher->school_id != $student->school_id) {
+                return $this->fail('you can not follow teacher of other school');
+            }
+        }
+
         if (Follows::where('teacher_id', $teacher->id)->where('student_id', $student->id)->value('id')) {
             return $this->fail('you have already followed '. $teacher->name);
         } else {
