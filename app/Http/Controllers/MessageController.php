@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Message;
+use App\School;
+use App\Student;
+use App\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -16,6 +19,18 @@ class MessageController extends Controller
             'toId' => 'required|int',
             'message' => 'required|string',
         ]);
+
+        $student = Student::select('school_id')->findOrFail($validated['toId']);
+
+        if ($request->user()->role === Teacher::Principal) {
+            $school_check = School::where('principal_id', $request->user()->id)
+                ->where('id', $student->school_id)->value('id');
+            if (!$school_check) {
+                return $this->fail('you are not allowed to sent message with this student');
+            }
+        } else if ($student->school_id != $request->user()->school_id) {
+            return $this->fail('you are not allowed to sent message with this student');
+        }
 
         try {
             $message->sendMessage(
@@ -61,6 +76,12 @@ class MessageController extends Controller
             'message' => 'required|string',
         ]);
 
+        if ($request->user()->school->principal_id != $validated['toId']) {
+            $teacher = Teacher::select(['school_id'])->findOrFail($validated['toId']);
+            if ($teacher->school_id != $request->user()->school_id) {
+               return $this->fail("you are not allowed to talk with this teacher");
+            }
+        }
 
         try {
             $message->sendMessage(
