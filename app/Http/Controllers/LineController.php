@@ -151,7 +151,6 @@ class LineController extends Controller
 
         // Check request with signature and parse request
         try {
-            // \Log::info('body', $request->json());
             $events = LINEBot::parseEventRequest($request->getContent(), $signature);
         } catch (InvalidSignatureException $e) {
             return $this->fail('Invalid signature: ' . $e->getMessage());

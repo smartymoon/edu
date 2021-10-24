@@ -14,4 +14,3 @@
 Route::get('/api/line/login', 'LineController@redirectToLine');
 Route::get('/', 'HomeController@index');
 
-// dd(\Illuminate\Support\Facades\Broadcast::getFacadeRoot()->channel());

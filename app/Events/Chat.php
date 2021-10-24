@@ -37,7 +37,6 @@ class Chat implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        // return new PrivateChannel('chat.' . $this->fromRole . $this->fromId . $this->toRole . $this->toId);
         $name = 'chat.'.$this->message['to_type'].$this->message['to_id'];
         \Log::info('name is' . $name);
         return new PrivateChannel($name);

@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class LineUser extends Model
 {
-    //
     protected $fillable = ['official_id', 'name'];
 
     public function relativeUsers()
