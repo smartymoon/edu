@@ -12,13 +12,11 @@ class InvitationsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('invitations')->delete();
         
-        \DB::table('invitations')->insert(array (
-            0 => 
-            array (
+        \DB::table('invitations')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'slug' => '154fb009-2860-351b-9328-d0c9dcf7ab55',
                 'principal_id' => 1,
@@ -28,8 +26,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
                 'slug' => '55b47533-17e8-351d-bc63-b5de8ed78c26',
                 'principal_id' => 1,
@@ -39,8 +37,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 3,
                 'slug' => '7ce22c08-147a-3944-868f-dfa32f85ebf4',
                 'principal_id' => 1,
@@ -50,8 +48,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 4,
                 'slug' => '4c9ed6f4-9120-3a8c-a380-3d012e5eab94',
                 'principal_id' => 1,
@@ -61,8 +59,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 5,
                 'slug' => 'dca96ac8-9f2b-3079-9289-d138152a6fa5',
                 'principal_id' => 1,
@@ -72,8 +70,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 6,
                 'slug' => 'dfb045d7-1aca-368b-9238-688e004e990d',
                 'principal_id' => 1,
@@ -83,8 +81,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 7,
                 'slug' => '71a35ce6-baf4-3b51-abe8-f1c81d3d5523',
                 'principal_id' => 1,
@@ -94,8 +92,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 8,
                 'slug' => '0ffdc69d-186b-3740-acf0-55926937156d',
                 'principal_id' => 1,
@@ -105,8 +103,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 9,
                 'slug' => '6c430bd0-094c-3567-b500-cc503823aeb6',
                 'principal_id' => 1,
@@ -116,8 +114,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 10,
                 'slug' => '2a93af3e-6566-31bf-9b88-1fdcd7881560',
                 'principal_id' => 1,
@@ -127,8 +125,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 11,
                 'slug' => 'f6cb0457-4cfe-32b9-a977-a5c0eeedf52d',
                 'principal_id' => 1,
@@ -138,8 +136,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 12,
                 'slug' => 'e8a1df5a-4b9a-3ccf-953e-d6daeceee8b9',
                 'principal_id' => 1,
@@ -149,8 +147,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 13,
                 'slug' => '9e6817c7-4fee-3409-b10a-449dafc8cf30',
                 'principal_id' => 1,
@@ -160,8 +158,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 14,
                 'slug' => '090da6ec-e42c-3141-a4f6-0b9a16489baa',
                 'principal_id' => 1,
@@ -171,8 +169,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 15,
                 'slug' => '514a2761-7e09-3f2b-ae72-2cb24bedfb72',
                 'principal_id' => 1,
@@ -182,8 +180,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:12',
                 'updated_at' => '2021-10-21 08:32:12',
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 16,
                 'slug' => '5efbf358-a5e9-3ba0-9ef5-1db70692698e',
                 'principal_id' => 1,
@@ -193,8 +191,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 17,
                 'slug' => '28e066b6-3989-3c23-889b-edd3e5fe55cc',
                 'principal_id' => 1,
@@ -204,8 +202,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 18,
                 'slug' => '60a9d07d-f07c-3e3e-80f5-d6d3e5c180b7',
                 'principal_id' => 1,
@@ -215,8 +213,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 19,
                 'slug' => '8bdaf143-ad4b-3bf0-8844-3bb0a0751495',
                 'principal_id' => 1,
@@ -226,8 +224,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 20,
                 'slug' => '8d217311-7f04-36fe-8a4e-cc4a1d9d75cb',
                 'principal_id' => 1,
@@ -237,8 +235,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => 21,
                 'slug' => '8c0cbe88-a2e7-311b-891d-ee18759f839b',
                 'principal_id' => 1,
@@ -248,8 +246,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => 22,
                 'slug' => '6867fa08-440c-3328-8c1f-1d8466e24448',
                 'principal_id' => 1,
@@ -259,8 +257,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => 23,
                 'slug' => '7c0f9536-bee6-39dc-bd6b-b92e2796848f',
                 'principal_id' => 1,
@@ -270,8 +268,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => 24,
                 'slug' => '0b5e8d41-6c3f-3e8c-9f03-ddc9e314a8c4',
                 'principal_id' => 1,
@@ -281,8 +279,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            24 => 
-            array (
+            24 =>
+            array(
                 'id' => 25,
                 'slug' => '8f72ad9e-d911-32d2-a22b-4128a4148aec',
                 'principal_id' => 1,
@@ -292,8 +290,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            25 => 
-            array (
+            25 =>
+            array(
                 'id' => 26,
                 'slug' => 'cc32031a-1bda-3ca8-be2a-be6d30df7bdc',
                 'principal_id' => 1,
@@ -303,8 +301,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            26 => 
-            array (
+            26 =>
+            array(
                 'id' => 27,
                 'slug' => '3082cca1-7d8e-3d9b-88e4-4ac8e58c770b',
                 'principal_id' => 1,
@@ -314,8 +312,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            27 => 
-            array (
+            27 =>
+            array(
                 'id' => 28,
                 'slug' => '5381b9cb-fc3b-3f1a-aa57-001fc5731fab',
                 'principal_id' => 1,
@@ -325,8 +323,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            28 => 
-            array (
+            28 =>
+            array(
                 'id' => 29,
                 'slug' => '5ea1b338-96f6-3912-a444-a4f6844c9848',
                 'principal_id' => 1,
@@ -336,8 +334,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            29 => 
-            array (
+            29 =>
+            array(
                 'id' => 30,
                 'slug' => '3d339aac-4868-3cbc-b949-6d0569f531d5',
                 'principal_id' => 1,
@@ -347,8 +345,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            30 => 
-            array (
+            30 =>
+            array(
                 'id' => 31,
                 'slug' => '54dafbf1-888d-3717-9f79-e5e721f08587',
                 'principal_id' => 1,
@@ -358,8 +356,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            31 => 
-            array (
+            31 =>
+            array(
                 'id' => 32,
                 'slug' => 'b24058ab-62d1-3d2e-9bc4-055121eae8fe',
                 'principal_id' => 1,
@@ -369,8 +367,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            32 => 
-            array (
+            32 =>
+            array(
                 'id' => 33,
                 'slug' => '85579120-fa52-3efc-af50-d8adf0e3a1e5',
                 'principal_id' => 1,
@@ -380,8 +378,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            33 => 
-            array (
+            33 =>
+            array(
                 'id' => 34,
                 'slug' => 'f4a78f33-ba5b-3cb6-b052-dddd51e13485',
                 'principal_id' => 1,
@@ -391,8 +389,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            34 => 
-            array (
+            34 =>
+            array(
                 'id' => 35,
                 'slug' => '31b3f00d-d80a-390f-bd75-55c7e866b3b4',
                 'principal_id' => 1,
@@ -402,8 +400,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            35 => 
-            array (
+            35 =>
+            array(
                 'id' => 36,
                 'slug' => '4e00ff5e-8114-3578-995d-8d738f8d374f',
                 'principal_id' => 1,
@@ -413,8 +411,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            36 => 
-            array (
+            36 =>
+            array(
                 'id' => 37,
                 'slug' => 'eda32f52-e68c-3d27-822a-aa355b5943f8',
                 'principal_id' => 1,
@@ -424,8 +422,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            37 => 
-            array (
+            37 =>
+            array(
                 'id' => 38,
                 'slug' => '29b36857-46ca-3c6f-95ee-3710ac31f77b',
                 'principal_id' => 1,
@@ -435,8 +433,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            38 => 
-            array (
+            38 =>
+            array(
                 'id' => 39,
                 'slug' => '60334a19-c666-3fbf-b1f4-3db86095ecec',
                 'principal_id' => 1,
@@ -446,8 +444,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            39 => 
-            array (
+            39 =>
+            array(
                 'id' => 40,
                 'slug' => '4bda031e-02f8-32d9-a6ce-8b8e0e7f84c0',
                 'principal_id' => 1,
@@ -457,8 +455,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            40 => 
-            array (
+            40 =>
+            array(
                 'id' => 41,
                 'slug' => '540c65da-ac45-397c-8a34-0ccbd51f3146',
                 'principal_id' => 1,
@@ -468,8 +466,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            41 => 
-            array (
+            41 =>
+            array(
                 'id' => 42,
                 'slug' => '79b07bdf-d715-3276-ab2a-7924319cf7c3',
                 'principal_id' => 1,
@@ -479,8 +477,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            42 => 
-            array (
+            42 =>
+            array(
                 'id' => 43,
                 'slug' => '126a5952-44e9-3ba6-b15c-e5815bac2fae',
                 'principal_id' => 1,
@@ -490,8 +488,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            43 => 
-            array (
+            43 =>
+            array(
                 'id' => 44,
                 'slug' => '8e11b1f9-96d3-33eb-a1fe-4e53b72992ca',
                 'principal_id' => 1,
@@ -501,8 +499,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            44 => 
-            array (
+            44 =>
+            array(
                 'id' => 45,
                 'slug' => 'fc9fa455-33d0-3eba-9066-255cfe33fb18',
                 'principal_id' => 1,
@@ -512,8 +510,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            45 => 
-            array (
+            45 =>
+            array(
                 'id' => 46,
                 'slug' => 'd3a7ab51-d1f3-3eb9-b266-f40dbc1df468',
                 'principal_id' => 2,
@@ -523,8 +521,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            46 => 
-            array (
+            46 =>
+            array(
                 'id' => 47,
                 'slug' => 'b6fc7e74-aa06-35d1-a3c2-baee356243d5',
                 'principal_id' => 2,
@@ -534,8 +532,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            47 => 
-            array (
+            47 =>
+            array(
                 'id' => 48,
                 'slug' => '635a5c95-cbf9-3d99-ac37-3aff6b77d367',
                 'principal_id' => 2,
@@ -545,8 +543,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            48 => 
-            array (
+            48 =>
+            array(
                 'id' => 49,
                 'slug' => 'd84adf31-346e-3ba6-a3eb-5dc92cf444ec',
                 'principal_id' => 2,
@@ -556,8 +554,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            49 => 
-            array (
+            49 =>
+            array(
                 'id' => 50,
                 'slug' => 'a063870f-91e4-341b-a559-ab3ad224e01d',
                 'principal_id' => 2,
@@ -567,8 +565,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            50 => 
-            array (
+            50 =>
+            array(
                 'id' => 51,
                 'slug' => '0cdebb46-07b9-31a6-9088-69a08ed30b3e',
                 'principal_id' => 2,
@@ -578,8 +576,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            51 => 
-            array (
+            51 =>
+            array(
                 'id' => 52,
                 'slug' => '216ab0fe-6c75-3265-8aeb-beaed5edc768',
                 'principal_id' => 2,
@@ -589,8 +587,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            52 => 
-            array (
+            52 =>
+            array(
                 'id' => 53,
                 'slug' => '0fc219d5-8f1a-3fc7-a365-f8652b608206',
                 'principal_id' => 2,
@@ -600,8 +598,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            53 => 
-            array (
+            53 =>
+            array(
                 'id' => 54,
                 'slug' => 'bddaaa67-90f0-3456-bc36-548cbe96bc6c',
                 'principal_id' => 2,
@@ -611,8 +609,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            54 => 
-            array (
+            54 =>
+            array(
                 'id' => 55,
                 'slug' => 'f25b9259-d0c1-34bc-8761-c0195cfe30c2',
                 'principal_id' => 2,
@@ -622,8 +620,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            55 => 
-            array (
+            55 =>
+            array(
                 'id' => 56,
                 'slug' => '767e7ea8-a511-32f9-b909-a491df0a4718',
                 'principal_id' => 2,
@@ -633,8 +631,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            56 => 
-            array (
+            56 =>
+            array(
                 'id' => 57,
                 'slug' => 'd19e6a8d-4b0a-348f-86ee-08e28342389e',
                 'principal_id' => 2,
@@ -644,8 +642,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            57 => 
-            array (
+            57 =>
+            array(
                 'id' => 58,
                 'slug' => '6c2b97e3-1225-35a9-8b81-77d8bc91639b',
                 'principal_id' => 2,
@@ -655,8 +653,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            58 => 
-            array (
+            58 =>
+            array(
                 'id' => 59,
                 'slug' => 'a9e6321b-c6c2-3dbe-9608-780c6bba6e7f',
                 'principal_id' => 2,
@@ -666,8 +664,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            59 => 
-            array (
+            59 =>
+            array(
                 'id' => 60,
                 'slug' => 'cd79a4fc-e73b-3c65-aa5d-119398ab592b',
                 'principal_id' => 2,
@@ -677,8 +675,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            60 => 
-            array (
+            60 =>
+            array(
                 'id' => 61,
                 'slug' => '29c1c2d8-9db6-3ac5-860a-a48695958a62',
                 'principal_id' => 2,
@@ -688,8 +686,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            61 => 
-            array (
+            61 =>
+            array(
                 'id' => 62,
                 'slug' => '2657d654-8c7f-3f11-bf06-4426ca575395',
                 'principal_id' => 2,
@@ -699,8 +697,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            62 => 
-            array (
+            62 =>
+            array(
                 'id' => 63,
                 'slug' => '4434870b-e626-3439-bab9-0eaa47cde95d',
                 'principal_id' => 2,
@@ -710,8 +708,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            63 => 
-            array (
+            63 =>
+            array(
                 'id' => 64,
                 'slug' => '6e839c16-2aa2-3eb2-bc21-900433c8eb4b',
                 'principal_id' => 2,
@@ -721,8 +719,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            64 => 
-            array (
+            64 =>
+            array(
                 'id' => 65,
                 'slug' => 'b3442a49-766b-378a-819a-e931402c1fee',
                 'principal_id' => 2,
@@ -732,8 +730,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            65 => 
-            array (
+            65 =>
+            array(
                 'id' => 66,
                 'slug' => 'fa6b3e5c-1b34-3530-922b-59aedabbdf7e',
                 'principal_id' => 2,
@@ -743,8 +741,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            66 => 
-            array (
+            66 =>
+            array(
                 'id' => 67,
                 'slug' => 'ae2026e1-074f-34eb-b9c0-d03738535dd1',
                 'principal_id' => 2,
@@ -754,8 +752,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            67 => 
-            array (
+            67 =>
+            array(
                 'id' => 68,
                 'slug' => 'a9ac5f89-8425-37c0-b09a-29c972a4984e',
                 'principal_id' => 2,
@@ -765,8 +763,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            68 => 
-            array (
+            68 =>
+            array(
                 'id' => 69,
                 'slug' => '8257ab77-f678-3f30-bfed-0b0a187620ea',
                 'principal_id' => 2,
@@ -776,8 +774,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            69 => 
-            array (
+            69 =>
+            array(
                 'id' => 70,
                 'slug' => '8283c315-3b2e-39de-86de-6e12f2911710',
                 'principal_id' => 2,
@@ -787,8 +785,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            70 => 
-            array (
+            70 =>
+            array(
                 'id' => 71,
                 'slug' => 'f769bc97-3b4f-3168-9a9a-d356f214c64c',
                 'principal_id' => 2,
@@ -798,8 +796,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            71 => 
-            array (
+            71 =>
+            array(
                 'id' => 72,
                 'slug' => 'd5cdeab7-8c89-3a51-85f1-d733a35cf3a5',
                 'principal_id' => 2,
@@ -809,8 +807,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            72 => 
-            array (
+            72 =>
+            array(
                 'id' => 73,
                 'slug' => 'ac91181d-abb0-3977-8a28-33cda3be1d9b',
                 'principal_id' => 2,
@@ -820,8 +818,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            73 => 
-            array (
+            73 =>
+            array(
                 'id' => 74,
                 'slug' => '5e1d631a-259f-3d4a-aba8-051d404e08a3',
                 'principal_id' => 2,
@@ -831,8 +829,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            74 => 
-            array (
+            74 =>
+            array(
                 'id' => 75,
                 'slug' => '1de9f5cf-9cca-3d02-ad07-7f90f2e9a735',
                 'principal_id' => 2,
@@ -842,8 +840,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            75 => 
-            array (
+            75 =>
+            array(
                 'id' => 76,
                 'slug' => '032b26c3-2fc4-36cc-b71f-e8dbfee7f61f',
                 'principal_id' => 3,
@@ -853,8 +851,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            76 => 
-            array (
+            76 =>
+            array(
                 'id' => 77,
                 'slug' => 'c23a9618-2dd7-3b28-b8ae-1473307d142f',
                 'principal_id' => 3,
@@ -864,8 +862,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            77 => 
-            array (
+            77 =>
+            array(
                 'id' => 78,
                 'slug' => '70ab02de-f408-345d-8d5f-9b0b1d5fa817',
                 'principal_id' => 3,
@@ -875,8 +873,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            78 => 
-            array (
+            78 =>
+            array(
                 'id' => 79,
                 'slug' => '81bbe955-861b-3dbc-b912-1209f091d0b4',
                 'principal_id' => 3,
@@ -886,8 +884,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            79 => 
-            array (
+            79 =>
+            array(
                 'id' => 80,
                 'slug' => 'f55eb188-98cd-3ed8-8bc5-b6225e3ff233',
                 'principal_id' => 3,
@@ -897,8 +895,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            80 => 
-            array (
+            80 =>
+            array(
                 'id' => 81,
                 'slug' => '9ef77622-aa80-3c76-8ef1-4be7766f60db',
                 'principal_id' => 3,
@@ -908,8 +906,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            81 => 
-            array (
+            81 =>
+            array(
                 'id' => 82,
                 'slug' => '39846944-cdc8-3a6b-a5f0-5594fd19b29a',
                 'principal_id' => 3,
@@ -919,8 +917,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            82 => 
-            array (
+            82 =>
+            array(
                 'id' => 83,
                 'slug' => 'fa5b1579-298b-3191-b531-e8c464f849b7',
                 'principal_id' => 3,
@@ -930,8 +928,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            83 => 
-            array (
+            83 =>
+            array(
                 'id' => 84,
                 'slug' => '2fe903fe-939b-32f0-aa56-3c1207859c92',
                 'principal_id' => 3,
@@ -941,8 +939,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            84 => 
-            array (
+            84 =>
+            array(
                 'id' => 85,
                 'slug' => 'cb2ed88e-a5bb-3f4e-a047-c0c28f007830',
                 'principal_id' => 3,
@@ -952,8 +950,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            85 => 
-            array (
+            85 =>
+            array(
                 'id' => 86,
                 'slug' => '570c0762-321e-3d24-9131-19b1852aef80',
                 'principal_id' => 3,
@@ -963,8 +961,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            86 => 
-            array (
+            86 =>
+            array(
                 'id' => 87,
                 'slug' => 'a2863672-1062-3c5c-a822-281f20c7ac74',
                 'principal_id' => 3,
@@ -974,8 +972,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            87 => 
-            array (
+            87 =>
+            array(
                 'id' => 88,
                 'slug' => 'c1a47276-1565-33dc-a716-8ccaedd9b4cc',
                 'principal_id' => 3,
@@ -985,8 +983,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            88 => 
-            array (
+            88 =>
+            array(
                 'id' => 89,
                 'slug' => 'd687be32-267a-3b3e-86d3-abb9a0a9de33',
                 'principal_id' => 3,
@@ -996,8 +994,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            89 => 
-            array (
+            89 =>
+            array(
                 'id' => 90,
                 'slug' => '17b0a9c8-2a1d-312c-80f1-43d296532bba',
                 'principal_id' => 3,
@@ -1007,8 +1005,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            90 => 
-            array (
+            90 =>
+            array(
                 'id' => 91,
                 'slug' => 'fc0f2d1e-966f-39fa-abc4-e06cf5a60f4a',
                 'principal_id' => 3,
@@ -1018,8 +1016,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            91 => 
-            array (
+            91 =>
+            array(
                 'id' => 92,
                 'slug' => '942292a9-1c79-3479-90e7-7668f1212ba5',
                 'principal_id' => 3,
@@ -1029,8 +1027,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            92 => 
-            array (
+            92 =>
+            array(
                 'id' => 93,
                 'slug' => '7c465d25-558e-3ed5-9423-99e4f3011f37',
                 'principal_id' => 3,
@@ -1040,8 +1038,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            93 => 
-            array (
+            93 =>
+            array(
                 'id' => 94,
                 'slug' => '394a07ec-ac3b-3857-9807-c35fe92a33df',
                 'principal_id' => 3,
@@ -1051,8 +1049,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            94 => 
-            array (
+            94 =>
+            array(
                 'id' => 95,
                 'slug' => '40c52966-4b91-370f-84c3-9937f20dfb27',
                 'principal_id' => 3,
@@ -1062,8 +1060,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            95 => 
-            array (
+            95 =>
+            array(
                 'id' => 96,
                 'slug' => '159d4fb6-c33c-3470-b312-0024b806aa4b',
                 'principal_id' => 3,
@@ -1073,8 +1071,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            96 => 
-            array (
+            96 =>
+            array(
                 'id' => 97,
                 'slug' => 'c9601573-6ec4-3f03-8235-41c9a5f0dd59',
                 'principal_id' => 3,
@@ -1084,8 +1082,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            97 => 
-            array (
+            97 =>
+            array(
                 'id' => 98,
                 'slug' => 'c87cd069-e685-39d1-bb5c-6bb9cf09a820',
                 'principal_id' => 3,
@@ -1095,8 +1093,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            98 => 
-            array (
+            98 =>
+            array(
                 'id' => 99,
                 'slug' => '0fcdf7eb-3b95-3f73-916a-6d04e1d6ad11',
                 'principal_id' => 3,
@@ -1106,8 +1104,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            99 => 
-            array (
+            99 =>
+            array(
                 'id' => 100,
                 'slug' => '36407011-a151-3820-bc5b-dc2d64b04fd5',
                 'principal_id' => 3,
@@ -1117,8 +1115,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            100 => 
-            array (
+            100 =>
+            array(
                 'id' => 101,
                 'slug' => '7089fe8d-f065-347c-8f10-1bfb69f06532',
                 'principal_id' => 3,
@@ -1128,8 +1126,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            101 => 
-            array (
+            101 =>
+            array(
                 'id' => 102,
                 'slug' => 'c602d6c1-bc51-399c-8ce7-8a8ae49d3c8f',
                 'principal_id' => 3,
@@ -1139,8 +1137,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            102 => 
-            array (
+            102 =>
+            array(
                 'id' => 103,
                 'slug' => '04fb49a0-5594-3ac4-8c85-316fba67b18f',
                 'principal_id' => 3,
@@ -1150,8 +1148,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            103 => 
-            array (
+            103 =>
+            array(
                 'id' => 104,
                 'slug' => 'ad0d9e78-2f88-30be-a3c9-502edf413f42',
                 'principal_id' => 3,
@@ -1161,8 +1159,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            104 => 
-            array (
+            104 =>
+            array(
                 'id' => 105,
                 'slug' => 'c87fa92b-23bb-3ce0-ad33-5ff9fb1fb03a',
                 'principal_id' => 3,
@@ -1172,8 +1170,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            105 => 
-            array (
+            105 =>
+            array(
                 'id' => 106,
                 'slug' => 'af750a97-395d-35dd-bd65-7410d339a82a',
                 'principal_id' => 4,
@@ -1183,8 +1181,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            106 => 
-            array (
+            106 =>
+            array(
                 'id' => 107,
                 'slug' => 'efa22f09-20fa-3f13-8450-293e7a8798d0',
                 'principal_id' => 4,
@@ -1194,8 +1192,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            107 => 
-            array (
+            107 =>
+            array(
                 'id' => 108,
                 'slug' => 'bb01afc2-0689-3c98-a23d-ffc0d0c98d3f',
                 'principal_id' => 4,
@@ -1205,8 +1203,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            108 => 
-            array (
+            108 =>
+            array(
                 'id' => 109,
                 'slug' => '2fe0f4dc-f46f-3e72-b037-a7112ebe2bdc',
                 'principal_id' => 4,
@@ -1216,8 +1214,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            109 => 
-            array (
+            109 =>
+            array(
                 'id' => 110,
                 'slug' => '16d36893-f70b-3677-8e50-792d8f877ba6',
                 'principal_id' => 4,
@@ -1227,8 +1225,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            110 => 
-            array (
+            110 =>
+            array(
                 'id' => 111,
                 'slug' => 'df449524-8dc3-3bc1-89f0-ee8fe4038d37',
                 'principal_id' => 4,
@@ -1238,8 +1236,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            111 => 
-            array (
+            111 =>
+            array(
                 'id' => 112,
                 'slug' => '7bffe912-8070-3e50-9ccf-20057721b48a',
                 'principal_id' => 4,
@@ -1249,8 +1247,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            112 => 
-            array (
+            112 =>
+            array(
                 'id' => 113,
                 'slug' => '6bf49663-8533-3364-938a-6bd3f90aa56f',
                 'principal_id' => 4,
@@ -1260,8 +1258,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            113 => 
-            array (
+            113 =>
+            array(
                 'id' => 114,
                 'slug' => '75fd0fbd-dd33-3f40-a301-0ab994d763b8',
                 'principal_id' => 4,
@@ -1271,8 +1269,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            114 => 
-            array (
+            114 =>
+            array(
                 'id' => 115,
                 'slug' => 'c7c3798f-c0ca-3ec3-b389-adfcd481b724',
                 'principal_id' => 4,
@@ -1282,8 +1280,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            115 => 
-            array (
+            115 =>
+            array(
                 'id' => 116,
                 'slug' => 'e0854ded-f3c0-34b1-b962-e98d3c9d922e',
                 'principal_id' => 4,
@@ -1293,8 +1291,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            116 => 
-            array (
+            116 =>
+            array(
                 'id' => 117,
                 'slug' => '6358f896-834b-362a-afb4-998259d06fb8',
                 'principal_id' => 4,
@@ -1304,8 +1302,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            117 => 
-            array (
+            117 =>
+            array(
                 'id' => 118,
                 'slug' => '53f04bbd-5fa2-3464-8519-9d225b99d1e0',
                 'principal_id' => 4,
@@ -1315,8 +1313,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            118 => 
-            array (
+            118 =>
+            array(
                 'id' => 119,
                 'slug' => '7702025a-b43a-3f2d-95dd-f034052fc070',
                 'principal_id' => 4,
@@ -1326,8 +1324,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            119 => 
-            array (
+            119 =>
+            array(
                 'id' => 120,
                 'slug' => 'd08aef30-fe7c-3f42-b341-c1879d0bc92c',
                 'principal_id' => 4,
@@ -1337,8 +1335,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            120 => 
-            array (
+            120 =>
+            array(
                 'id' => 121,
                 'slug' => 'c115a26d-f870-3b5c-a3d5-8510ca2ccecb',
                 'principal_id' => 4,
@@ -1348,8 +1346,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            121 => 
-            array (
+            121 =>
+            array(
                 'id' => 122,
                 'slug' => 'b3371f44-3ebc-3f6e-8cc4-eb075a5f7910',
                 'principal_id' => 4,
@@ -1359,8 +1357,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            122 => 
-            array (
+            122 =>
+            array(
                 'id' => 123,
                 'slug' => 'c406b7ec-772d-3bab-94f0-0efcde8a43cf',
                 'principal_id' => 4,
@@ -1370,8 +1368,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            123 => 
-            array (
+            123 =>
+            array(
                 'id' => 124,
                 'slug' => '928ab620-e1c6-3cab-942a-5e56119c9b18',
                 'principal_id' => 4,
@@ -1381,8 +1379,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            124 => 
-            array (
+            124 =>
+            array(
                 'id' => 125,
                 'slug' => '5f5c319d-312e-3f2f-a0c1-a6458e9290ac',
                 'principal_id' => 4,
@@ -1392,8 +1390,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            125 => 
-            array (
+            125 =>
+            array(
                 'id' => 126,
                 'slug' => 'af7380df-98c6-3906-9818-18114076e267',
                 'principal_id' => 4,
@@ -1403,8 +1401,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            126 => 
-            array (
+            126 =>
+            array(
                 'id' => 127,
                 'slug' => '0f20f22e-440b-3604-89ad-438ff5c88ba9',
                 'principal_id' => 4,
@@ -1414,8 +1412,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            127 => 
-            array (
+            127 =>
+            array(
                 'id' => 128,
                 'slug' => '64ca8c94-824c-319d-a775-1c638206af15',
                 'principal_id' => 4,
@@ -1425,8 +1423,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            128 => 
-            array (
+            128 =>
+            array(
                 'id' => 129,
                 'slug' => 'ca5a7e33-b416-3b1c-a9e0-45e2553d4b12',
                 'principal_id' => 4,
@@ -1436,8 +1434,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            129 => 
-            array (
+            129 =>
+            array(
                 'id' => 130,
                 'slug' => '1ba60a7e-baca-31d6-b908-85776a5528cb',
                 'principal_id' => 4,
@@ -1447,8 +1445,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            130 => 
-            array (
+            130 =>
+            array(
                 'id' => 131,
                 'slug' => '87275d9c-573b-3257-afba-588602907e90',
                 'principal_id' => 4,
@@ -1458,8 +1456,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            131 => 
-            array (
+            131 =>
+            array(
                 'id' => 132,
                 'slug' => '7c29fb0f-368d-3330-9ae5-ec522fa635fc',
                 'principal_id' => 4,
@@ -1469,8 +1467,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            132 => 
-            array (
+            132 =>
+            array(
                 'id' => 133,
                 'slug' => '9949f9ee-ff1d-353d-8ebd-57cf589523da',
                 'principal_id' => 4,
@@ -1480,8 +1478,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            133 => 
-            array (
+            133 =>
+            array(
                 'id' => 134,
                 'slug' => '5a5986df-c869-3c71-8fcd-716301f6af8a',
                 'principal_id' => 4,
@@ -1491,8 +1489,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            134 => 
-            array (
+            134 =>
+            array(
                 'id' => 135,
                 'slug' => '9eda8c18-8a5f-3f6c-af16-afcb10289d43',
                 'principal_id' => 4,
@@ -1502,8 +1500,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            135 => 
-            array (
+            135 =>
+            array(
                 'id' => 136,
                 'slug' => 'e12e0285-c5a4-32a8-9b49-e553687e3f9b',
                 'principal_id' => 5,
@@ -1513,8 +1511,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            136 => 
-            array (
+            136 =>
+            array(
                 'id' => 137,
                 'slug' => '056a323b-01a5-31e9-849c-bec797b5b858',
                 'principal_id' => 5,
@@ -1524,8 +1522,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            137 => 
-            array (
+            137 =>
+            array(
                 'id' => 138,
                 'slug' => 'b6d5e13d-6824-3446-827d-83d8d9f5423b',
                 'principal_id' => 5,
@@ -1535,8 +1533,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            138 => 
-            array (
+            138 =>
+            array(
                 'id' => 139,
                 'slug' => '14eb2a97-65a1-3853-8d1d-cbfb8eb3d087',
                 'principal_id' => 5,
@@ -1546,8 +1544,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            139 => 
-            array (
+            139 =>
+            array(
                 'id' => 140,
                 'slug' => 'eaa00aaa-ea60-38b9-a3bf-b7cda403b25b',
                 'principal_id' => 5,
@@ -1557,8 +1555,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            140 => 
-            array (
+            140 =>
+            array(
                 'id' => 141,
                 'slug' => 'dacc7225-f989-3d1c-a8d7-28befc7e838f',
                 'principal_id' => 5,
@@ -1568,8 +1566,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            141 => 
-            array (
+            141 =>
+            array(
                 'id' => 142,
                 'slug' => '73c0d8ed-b0ce-3276-8ad8-d0e72115eea5',
                 'principal_id' => 5,
@@ -1579,8 +1577,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            142 => 
-            array (
+            142 =>
+            array(
                 'id' => 143,
                 'slug' => '8ced89a0-4d7f-31f1-a7ae-b865e47f2359',
                 'principal_id' => 5,
@@ -1590,8 +1588,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            143 => 
-            array (
+            143 =>
+            array(
                 'id' => 144,
                 'slug' => 'efdac8c9-ac1b-3742-9cb7-99ba58b7c648',
                 'principal_id' => 5,
@@ -1601,8 +1599,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            144 => 
-            array (
+            144 =>
+            array(
                 'id' => 145,
                 'slug' => 'ad0fae9a-164e-3940-89c2-791d7228bf26',
                 'principal_id' => 5,
@@ -1612,8 +1610,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            145 => 
-            array (
+            145 =>
+            array(
                 'id' => 146,
                 'slug' => 'c6125284-d6ef-3690-9d36-373a7a742136',
                 'principal_id' => 5,
@@ -1623,8 +1621,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            146 => 
-            array (
+            146 =>
+            array(
                 'id' => 147,
                 'slug' => '2682fe56-7ea2-3660-b29e-27608e61b9fa',
                 'principal_id' => 5,
@@ -1634,8 +1632,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            147 => 
-            array (
+            147 =>
+            array(
                 'id' => 148,
                 'slug' => 'b52fa709-5850-3c58-8cf2-80639539ae22',
                 'principal_id' => 5,
@@ -1645,8 +1643,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            148 => 
-            array (
+            148 =>
+            array(
                 'id' => 149,
                 'slug' => 'f59b207a-ec3d-3f35-b95e-307ebbbbfd74',
                 'principal_id' => 5,
@@ -1656,8 +1654,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            149 => 
-            array (
+            149 =>
+            array(
                 'id' => 150,
                 'slug' => '30f24d20-9c0d-3394-8245-4240a0ffada3',
                 'principal_id' => 5,
@@ -1667,8 +1665,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            150 => 
-            array (
+            150 =>
+            array(
                 'id' => 151,
                 'slug' => 'b20c8253-aa46-3734-93a6-b0eef0a3921f',
                 'principal_id' => 5,
@@ -1678,8 +1676,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            151 => 
-            array (
+            151 =>
+            array(
                 'id' => 152,
                 'slug' => 'b255da5e-9f37-3109-bca0-4c3bdbbefc2d',
                 'principal_id' => 5,
@@ -1689,8 +1687,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            152 => 
-            array (
+            152 =>
+            array(
                 'id' => 153,
                 'slug' => '75ac4e77-6d38-32a2-b8d7-9eb8176a4f20',
                 'principal_id' => 5,
@@ -1700,8 +1698,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            153 => 
-            array (
+            153 =>
+            array(
                 'id' => 154,
                 'slug' => '03ac540a-10fd-31a3-aafc-140919b002f9',
                 'principal_id' => 5,
@@ -1711,8 +1709,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            154 => 
-            array (
+            154 =>
+            array(
                 'id' => 155,
                 'slug' => '0271d2e9-a00c-3916-9981-f51008564598',
                 'principal_id' => 5,
@@ -1722,8 +1720,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            155 => 
-            array (
+            155 =>
+            array(
                 'id' => 156,
                 'slug' => 'bb0de233-7b60-3879-93e7-819679c9ea2f',
                 'principal_id' => 5,
@@ -1733,8 +1731,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            156 => 
-            array (
+            156 =>
+            array(
                 'id' => 157,
                 'slug' => '9249b77c-436d-3976-b387-c49ad46d7099',
                 'principal_id' => 5,
@@ -1744,8 +1742,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            157 => 
-            array (
+            157 =>
+            array(
                 'id' => 158,
                 'slug' => 'ce9f7b60-2fa0-3689-8eb1-2cb39a0e026f',
                 'principal_id' => 5,
@@ -1755,8 +1753,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            158 => 
-            array (
+            158 =>
+            array(
                 'id' => 159,
                 'slug' => '91d57ed5-7186-35af-8c5a-274760570574',
                 'principal_id' => 5,
@@ -1766,8 +1764,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            159 => 
-            array (
+            159 =>
+            array(
                 'id' => 160,
                 'slug' => '73813b0f-8131-3891-9a83-7df17009bc3b',
                 'principal_id' => 5,
@@ -1777,8 +1775,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            160 => 
-            array (
+            160 =>
+            array(
                 'id' => 161,
                 'slug' => 'b950e19e-c67c-31bd-8119-6096763d8a3a',
                 'principal_id' => 5,
@@ -1788,8 +1786,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            161 => 
-            array (
+            161 =>
+            array(
                 'id' => 162,
                 'slug' => '95cc1b2d-0541-33c1-a8b1-da7fdb3c864d',
                 'principal_id' => 5,
@@ -1799,8 +1797,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            162 => 
-            array (
+            162 =>
+            array(
                 'id' => 163,
                 'slug' => '7b653953-0b73-3d79-b02d-1144cace2489',
                 'principal_id' => 5,
@@ -1810,8 +1808,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            163 => 
-            array (
+            163 =>
+            array(
                 'id' => 164,
                 'slug' => 'bc30b6a3-4e40-3381-a2a4-42acd50fd171',
                 'principal_id' => 5,
@@ -1821,8 +1819,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            164 => 
-            array (
+            164 =>
+            array(
                 'id' => 165,
                 'slug' => '6f82be1f-0f8b-3f01-8f62-00f0e2b9d3e7',
                 'principal_id' => 5,
@@ -1832,8 +1830,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            165 => 
-            array (
+            165 =>
+            array(
                 'id' => 166,
                 'slug' => '1878d245-0f7c-3b3c-8a4b-dfb56e8dd6c9',
                 'principal_id' => 6,
@@ -1843,8 +1841,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            166 => 
-            array (
+            166 =>
+            array(
                 'id' => 167,
                 'slug' => '8e521608-dfa5-3875-85fc-7cd6a4ca0ff7',
                 'principal_id' => 6,
@@ -1854,8 +1852,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            167 => 
-            array (
+            167 =>
+            array(
                 'id' => 168,
                 'slug' => '81ec617f-9ef5-33f6-814d-504dbcd57ca1',
                 'principal_id' => 6,
@@ -1865,8 +1863,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            168 => 
-            array (
+            168 =>
+            array(
                 'id' => 169,
                 'slug' => '609e06a2-e536-37bc-9e61-a3ffd6dc34d3',
                 'principal_id' => 6,
@@ -1876,8 +1874,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            169 => 
-            array (
+            169 =>
+            array(
                 'id' => 170,
                 'slug' => 'b393eb28-bb1c-3435-8e10-9363343d2a49',
                 'principal_id' => 6,
@@ -1887,8 +1885,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            170 => 
-            array (
+            170 =>
+            array(
                 'id' => 171,
                 'slug' => '382a7c4e-2260-3558-adbd-3235ebd299d8',
                 'principal_id' => 6,
@@ -1898,8 +1896,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            171 => 
-            array (
+            171 =>
+            array(
                 'id' => 172,
                 'slug' => 'ccc1322d-d1f4-352d-b3c8-d96dc5ba9a8c',
                 'principal_id' => 6,
@@ -1909,8 +1907,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            172 => 
-            array (
+            172 =>
+            array(
                 'id' => 173,
                 'slug' => '321dded5-54cd-32e3-9ba0-d19f8d9e8575',
                 'principal_id' => 6,
@@ -1920,8 +1918,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            173 => 
-            array (
+            173 =>
+            array(
                 'id' => 174,
                 'slug' => 'e0b73ca2-a5c8-37f0-bd11-e586c288f17b',
                 'principal_id' => 6,
@@ -1931,8 +1929,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            174 => 
-            array (
+            174 =>
+            array(
                 'id' => 175,
                 'slug' => '2386fb90-6033-3a09-b14f-e6ff230422c0',
                 'principal_id' => 6,
@@ -1942,8 +1940,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            175 => 
-            array (
+            175 =>
+            array(
                 'id' => 176,
                 'slug' => '6585b076-3e16-3590-85fa-13583a95f9b3',
                 'principal_id' => 6,
@@ -1953,8 +1951,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            176 => 
-            array (
+            176 =>
+            array(
                 'id' => 177,
                 'slug' => '8ac3df97-0ca1-31bc-97a5-955a9e2e4558',
                 'principal_id' => 6,
@@ -1964,8 +1962,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            177 => 
-            array (
+            177 =>
+            array(
                 'id' => 178,
                 'slug' => '0ed5f2cd-4a4e-30d5-90c6-5b83a7176025',
                 'principal_id' => 6,
@@ -1975,8 +1973,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            178 => 
-            array (
+            178 =>
+            array(
                 'id' => 179,
                 'slug' => '34b4bb54-fc3a-39d1-af99-e707ad0c1941',
                 'principal_id' => 6,
@@ -1986,8 +1984,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            179 => 
-            array (
+            179 =>
+            array(
                 'id' => 180,
                 'slug' => '51139d28-c7d9-3991-989c-67866f21898b',
                 'principal_id' => 6,
@@ -1997,8 +1995,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            180 => 
-            array (
+            180 =>
+            array(
                 'id' => 181,
                 'slug' => 'fcb12901-61ab-3407-8ceb-5a1622146bfc',
                 'principal_id' => 6,
@@ -2008,8 +2006,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            181 => 
-            array (
+            181 =>
+            array(
                 'id' => 182,
                 'slug' => '53872358-4fd0-3c63-ab85-b7919218d253',
                 'principal_id' => 6,
@@ -2019,8 +2017,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            182 => 
-            array (
+            182 =>
+            array(
                 'id' => 183,
                 'slug' => 'af6bfdae-7c18-3554-86e8-376b9c651c72',
                 'principal_id' => 6,
@@ -2030,8 +2028,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            183 => 
-            array (
+            183 =>
+            array(
                 'id' => 184,
                 'slug' => 'bd765e4c-6f1b-3ae3-a5c5-726f1eea608c',
                 'principal_id' => 6,
@@ -2041,8 +2039,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            184 => 
-            array (
+            184 =>
+            array(
                 'id' => 185,
                 'slug' => '92d81b28-cd65-3f03-ad27-77015b415876',
                 'principal_id' => 6,
@@ -2052,8 +2050,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            185 => 
-            array (
+            185 =>
+            array(
                 'id' => 186,
                 'slug' => 'ec6b77d9-6c48-38ed-8a5e-6ee88e897dc5',
                 'principal_id' => 6,
@@ -2063,8 +2061,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            186 => 
-            array (
+            186 =>
+            array(
                 'id' => 187,
                 'slug' => 'd5c3aec5-9e58-3ff4-ad64-c936bf44b7c8',
                 'principal_id' => 6,
@@ -2074,8 +2072,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            187 => 
-            array (
+            187 =>
+            array(
                 'id' => 188,
                 'slug' => 'e8a6f73f-1930-3fdd-8601-640e1675746f',
                 'principal_id' => 6,
@@ -2085,8 +2083,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            188 => 
-            array (
+            188 =>
+            array(
                 'id' => 189,
                 'slug' => 'f5408ed5-1b70-3ad5-861f-ebe8ddc3a055',
                 'principal_id' => 6,
@@ -2096,8 +2094,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            189 => 
-            array (
+            189 =>
+            array(
                 'id' => 190,
                 'slug' => 'ad8be1ae-6e81-364d-abcd-3d1d8791ea10',
                 'principal_id' => 6,
@@ -2107,8 +2105,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            190 => 
-            array (
+            190 =>
+            array(
                 'id' => 191,
                 'slug' => '658dc6c1-8f3f-3094-a61a-e914fdd37001',
                 'principal_id' => 6,
@@ -2118,8 +2116,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            191 => 
-            array (
+            191 =>
+            array(
                 'id' => 192,
                 'slug' => '715ebb64-c4ae-3699-92e6-561ac5b32908',
                 'principal_id' => 6,
@@ -2129,8 +2127,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            192 => 
-            array (
+            192 =>
+            array(
                 'id' => 193,
                 'slug' => '590f1c2d-cd2b-36f8-bd50-c7028d60ea00',
                 'principal_id' => 6,
@@ -2140,8 +2138,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            193 => 
-            array (
+            193 =>
+            array(
                 'id' => 194,
                 'slug' => 'f6a29ffe-7e4d-3e80-8bbc-db53ca115924',
                 'principal_id' => 6,
@@ -2151,8 +2149,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            194 => 
-            array (
+            194 =>
+            array(
                 'id' => 195,
                 'slug' => '76c56379-895d-3065-9256-cf1a5247cd28',
                 'principal_id' => 6,
@@ -2162,8 +2160,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            195 => 
-            array (
+            195 =>
+            array(
                 'id' => 196,
                 'slug' => '9199b02e-2122-3803-a8af-05807c60510e',
                 'principal_id' => 7,
@@ -2173,8 +2171,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            196 => 
-            array (
+            196 =>
+            array(
                 'id' => 197,
                 'slug' => 'ba58e26e-1ad9-390e-8845-cf72c66212d5',
                 'principal_id' => 7,
@@ -2184,8 +2182,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            197 => 
-            array (
+            197 =>
+            array(
                 'id' => 198,
                 'slug' => 'dbea975a-fb43-39c6-929e-b87345e8e498',
                 'principal_id' => 7,
@@ -2195,8 +2193,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            198 => 
-            array (
+            198 =>
+            array(
                 'id' => 199,
                 'slug' => 'c79b3202-b0d9-3445-8b30-3356e1d6285a',
                 'principal_id' => 7,
@@ -2206,8 +2204,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            199 => 
-            array (
+            199 =>
+            array(
                 'id' => 200,
                 'slug' => 'a04f2379-23f6-3f9a-add4-0e3679bd4537',
                 'principal_id' => 7,
@@ -2217,8 +2215,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            200 => 
-            array (
+            200 =>
+            array(
                 'id' => 201,
                 'slug' => '1cd7e412-be55-3fe2-918a-7a9571870fde',
                 'principal_id' => 7,
@@ -2228,8 +2226,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            201 => 
-            array (
+            201 =>
+            array(
                 'id' => 202,
                 'slug' => '576cecd3-4f46-3c5e-a1a8-cafd0b1fbc4f',
                 'principal_id' => 7,
@@ -2239,8 +2237,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            202 => 
-            array (
+            202 =>
+            array(
                 'id' => 203,
                 'slug' => 'a0682f3f-4f5e-35bd-9d2a-25b20005be4e',
                 'principal_id' => 7,
@@ -2250,8 +2248,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            203 => 
-            array (
+            203 =>
+            array(
                 'id' => 204,
                 'slug' => 'a18e43e8-8c87-331c-a50b-d61745edec46',
                 'principal_id' => 7,
@@ -2261,8 +2259,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            204 => 
-            array (
+            204 =>
+            array(
                 'id' => 205,
                 'slug' => 'caf4f49a-2a89-3403-b950-8019fd902aea',
                 'principal_id' => 7,
@@ -2272,8 +2270,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            205 => 
-            array (
+            205 =>
+            array(
                 'id' => 206,
                 'slug' => '6a2f65b3-9bde-3f49-b3ef-bdbe2f6606bd',
                 'principal_id' => 7,
@@ -2283,8 +2281,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            206 => 
-            array (
+            206 =>
+            array(
                 'id' => 207,
                 'slug' => '4ebbf834-9ae2-3ca4-8ac5-35ebee0a1b27',
                 'principal_id' => 7,
@@ -2294,8 +2292,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            207 => 
-            array (
+            207 =>
+            array(
                 'id' => 208,
                 'slug' => '06b7e61b-fd9c-3306-b59a-2fb45d2a263f',
                 'principal_id' => 7,
@@ -2305,8 +2303,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            208 => 
-            array (
+            208 =>
+            array(
                 'id' => 209,
                 'slug' => '1ff89278-a3d6-3e56-9902-995a4b82ce3c',
                 'principal_id' => 7,
@@ -2316,8 +2314,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            209 => 
-            array (
+            209 =>
+            array(
                 'id' => 210,
                 'slug' => '0fc680ee-430e-392a-aef8-b6295afe971d',
                 'principal_id' => 7,
@@ -2327,8 +2325,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            210 => 
-            array (
+            210 =>
+            array(
                 'id' => 211,
                 'slug' => '3d3b8794-162b-39b2-bbcf-c0ef30d7fae1',
                 'principal_id' => 7,
@@ -2338,8 +2336,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            211 => 
-            array (
+            211 =>
+            array(
                 'id' => 212,
                 'slug' => '0e659da1-3ab2-3319-9fb7-7d19be9f196e',
                 'principal_id' => 7,
@@ -2349,8 +2347,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            212 => 
-            array (
+            212 =>
+            array(
                 'id' => 213,
                 'slug' => '3e933752-c36f-383f-b3c3-b5ec27c76aaa',
                 'principal_id' => 7,
@@ -2360,8 +2358,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            213 => 
-            array (
+            213 =>
+            array(
                 'id' => 214,
                 'slug' => '92795757-4710-35e9-a891-71dd5c75b2fa',
                 'principal_id' => 7,
@@ -2371,8 +2369,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            214 => 
-            array (
+            214 =>
+            array(
                 'id' => 215,
                 'slug' => '065a18d7-e5d8-319f-a176-9313dba480ed',
                 'principal_id' => 7,
@@ -2382,8 +2380,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            215 => 
-            array (
+            215 =>
+            array(
                 'id' => 216,
                 'slug' => '98123d7a-0f77-3926-a495-e00e3ebe2774',
                 'principal_id' => 7,
@@ -2393,8 +2391,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            216 => 
-            array (
+            216 =>
+            array(
                 'id' => 217,
                 'slug' => 'bd582df7-7471-3729-aa95-21fa17701eb1',
                 'principal_id' => 7,
@@ -2404,8 +2402,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            217 => 
-            array (
+            217 =>
+            array(
                 'id' => 218,
                 'slug' => '5c51819b-2802-351a-9890-980cc096abeb',
                 'principal_id' => 7,
@@ -2415,8 +2413,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            218 => 
-            array (
+            218 =>
+            array(
                 'id' => 219,
                 'slug' => 'f230c198-b00d-382a-8e5e-8aad4bba5dba',
                 'principal_id' => 7,
@@ -2426,8 +2424,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            219 => 
-            array (
+            219 =>
+            array(
                 'id' => 220,
                 'slug' => '055528fe-2c5d-3828-827e-b249b027a323',
                 'principal_id' => 7,
@@ -2437,8 +2435,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            220 => 
-            array (
+            220 =>
+            array(
                 'id' => 221,
                 'slug' => 'd8d65f55-80de-3b70-a91b-1be392ab4a15',
                 'principal_id' => 7,
@@ -2448,8 +2446,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            221 => 
-            array (
+            221 =>
+            array(
                 'id' => 222,
                 'slug' => '2fb1de3f-2d4a-36f1-9703-3b002e989f96',
                 'principal_id' => 7,
@@ -2459,8 +2457,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            222 => 
-            array (
+            222 =>
+            array(
                 'id' => 223,
                 'slug' => '41485d7b-0cb2-367e-bdd7-c6311e93a09e',
                 'principal_id' => 7,
@@ -2470,8 +2468,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            223 => 
-            array (
+            223 =>
+            array(
                 'id' => 224,
                 'slug' => 'b7f89963-4bda-3a31-a5b7-7f81559d25ba',
                 'principal_id' => 7,
@@ -2481,8 +2479,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            224 => 
-            array (
+            224 =>
+            array(
                 'id' => 225,
                 'slug' => '44024cbb-8877-320b-a306-9d4c6449cc04',
                 'principal_id' => 7,
@@ -2492,8 +2490,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            225 => 
-            array (
+            225 =>
+            array(
                 'id' => 226,
                 'slug' => '267cb9af-7fdd-3d50-a347-0090a9cc086e',
                 'principal_id' => 7,
@@ -2503,8 +2501,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            226 => 
-            array (
+            226 =>
+            array(
                 'id' => 227,
                 'slug' => 'fa6285fc-ddcb-342a-97dc-e8a45ea463b4',
                 'principal_id' => 7,
@@ -2514,8 +2512,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            227 => 
-            array (
+            227 =>
+            array(
                 'id' => 228,
                 'slug' => '6a0e8a0e-ce54-3cbb-88c0-bffa7d02c9e9',
                 'principal_id' => 7,
@@ -2525,8 +2523,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            228 => 
-            array (
+            228 =>
+            array(
                 'id' => 229,
                 'slug' => '0e2dfb99-b240-3de9-88b1-e5250750c980',
                 'principal_id' => 7,
@@ -2536,8 +2534,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            229 => 
-            array (
+            229 =>
+            array(
                 'id' => 230,
                 'slug' => '0809df88-83cf-314f-bde1-83bdd59bc49f',
                 'principal_id' => 7,
@@ -2547,8 +2545,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            230 => 
-            array (
+            230 =>
+            array(
                 'id' => 231,
                 'slug' => '66e11a94-a40a-374a-83d3-f7804e4000c9',
                 'principal_id' => 7,
@@ -2558,8 +2556,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            231 => 
-            array (
+            231 =>
+            array(
                 'id' => 232,
                 'slug' => 'dc186d75-1d7d-373c-b178-5956859051aa',
                 'principal_id' => 7,
@@ -2569,8 +2567,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            232 => 
-            array (
+            232 =>
+            array(
                 'id' => 233,
                 'slug' => '7ee18630-0677-3781-8c9e-de0ec71bbd4f',
                 'principal_id' => 7,
@@ -2580,8 +2578,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            233 => 
-            array (
+            233 =>
+            array(
                 'id' => 234,
                 'slug' => 'a547d4e8-4a85-3af8-a0d7-fc434d28afa1',
                 'principal_id' => 7,
@@ -2591,8 +2589,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            234 => 
-            array (
+            234 =>
+            array(
                 'id' => 235,
                 'slug' => '98336ebc-7386-3615-b5a6-cade5ae01b94',
                 'principal_id' => 7,
@@ -2602,8 +2600,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            235 => 
-            array (
+            235 =>
+            array(
                 'id' => 236,
                 'slug' => '2e03ab45-0599-31f0-9356-db4bd7644165',
                 'principal_id' => 7,
@@ -2613,8 +2611,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            236 => 
-            array (
+            236 =>
+            array(
                 'id' => 237,
                 'slug' => '547b6536-461e-39ac-8b21-e497325eec01',
                 'principal_id' => 7,
@@ -2624,8 +2622,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            237 => 
-            array (
+            237 =>
+            array(
                 'id' => 238,
                 'slug' => '68cb4efa-f502-3d5c-9836-d70f5f90c284',
                 'principal_id' => 7,
@@ -2635,8 +2633,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            238 => 
-            array (
+            238 =>
+            array(
                 'id' => 239,
                 'slug' => '2652757f-0948-38ee-885b-77fdab81a3b7',
                 'principal_id' => 7,
@@ -2646,8 +2644,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            239 => 
-            array (
+            239 =>
+            array(
                 'id' => 240,
                 'slug' => 'cee94768-4c1e-373f-9cd1-9068411749b2',
                 'principal_id' => 7,
@@ -2657,8 +2655,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            240 => 
-            array (
+            240 =>
+            array(
                 'id' => 241,
                 'slug' => '66ebb961-4631-35b5-8115-faa3975b74c0',
                 'principal_id' => 8,
@@ -2668,8 +2666,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            241 => 
-            array (
+            241 =>
+            array(
                 'id' => 242,
                 'slug' => '457d6ae7-0234-3ddf-a17b-0fa5e9d62a96',
                 'principal_id' => 8,
@@ -2679,8 +2677,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            242 => 
-            array (
+            242 =>
+            array(
                 'id' => 243,
                 'slug' => '98e3d3fd-0c1c-30ba-ad43-317cdcf76e2e',
                 'principal_id' => 8,
@@ -2690,8 +2688,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            243 => 
-            array (
+            243 =>
+            array(
                 'id' => 244,
                 'slug' => '3a679d09-4d99-3b92-964e-4c7c201b0ddd',
                 'principal_id' => 8,
@@ -2701,8 +2699,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            244 => 
-            array (
+            244 =>
+            array(
                 'id' => 245,
                 'slug' => 'c692525a-3e80-3f91-9a87-fec9a0e65d22',
                 'principal_id' => 8,
@@ -2712,8 +2710,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            245 => 
-            array (
+            245 =>
+            array(
                 'id' => 246,
                 'slug' => '8b7e9bbe-ea20-30ed-8be5-7e69ce0d6ad1',
                 'principal_id' => 8,
@@ -2723,8 +2721,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            246 => 
-            array (
+            246 =>
+            array(
                 'id' => 247,
                 'slug' => '7a9bf27e-8197-338a-997f-2b9503ca6740',
                 'principal_id' => 8,
@@ -2734,8 +2732,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            247 => 
-            array (
+            247 =>
+            array(
                 'id' => 248,
                 'slug' => '99b7be4b-6485-3aa3-a991-01f17628f802',
                 'principal_id' => 8,
@@ -2745,8 +2743,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            248 => 
-            array (
+            248 =>
+            array(
                 'id' => 249,
                 'slug' => '4a8bce90-ccb3-38a9-bdf4-e6a7f9a3f5f9',
                 'principal_id' => 8,
@@ -2756,8 +2754,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            249 => 
-            array (
+            249 =>
+            array(
                 'id' => 250,
                 'slug' => 'ea173711-6f2b-3bc0-8021-4100adad498e',
                 'principal_id' => 8,
@@ -2767,8 +2765,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            250 => 
-            array (
+            250 =>
+            array(
                 'id' => 251,
                 'slug' => '7e4a7a2a-cd24-33a1-b10f-8d9afa6fddf7',
                 'principal_id' => 8,
@@ -2778,8 +2776,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            251 => 
-            array (
+            251 =>
+            array(
                 'id' => 252,
                 'slug' => '61c6e155-ee93-3ae6-ae13-2c3bd1a914b7',
                 'principal_id' => 8,
@@ -2789,8 +2787,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            252 => 
-            array (
+            252 =>
+            array(
                 'id' => 253,
                 'slug' => 'bb3f448c-c5ce-3612-8ef9-bd339be332f1',
                 'principal_id' => 8,
@@ -2800,8 +2798,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            253 => 
-            array (
+            253 =>
+            array(
                 'id' => 254,
                 'slug' => '17c334bb-f138-3a16-a488-ea9ba71ed2db',
                 'principal_id' => 8,
@@ -2811,8 +2809,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            254 => 
-            array (
+            254 =>
+            array(
                 'id' => 255,
                 'slug' => '01dcb647-812d-3d3e-9b32-9b520fe3e6be',
                 'principal_id' => 8,
@@ -2822,8 +2820,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            255 => 
-            array (
+            255 =>
+            array(
                 'id' => 256,
                 'slug' => 'e2771acf-ef90-3146-bb4a-2d3a5ad680ef',
                 'principal_id' => 8,
@@ -2833,8 +2831,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            256 => 
-            array (
+            256 =>
+            array(
                 'id' => 257,
                 'slug' => 'ecbb5fe7-d357-364b-b415-d95b70c21c61',
                 'principal_id' => 8,
@@ -2844,8 +2842,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            257 => 
-            array (
+            257 =>
+            array(
                 'id' => 258,
                 'slug' => 'da1ec015-ef8b-3076-8c50-2e58af22d0a1',
                 'principal_id' => 8,
@@ -2855,8 +2853,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            258 => 
-            array (
+            258 =>
+            array(
                 'id' => 259,
                 'slug' => '4e8639f9-f728-3b64-a838-7e4a541a2565',
                 'principal_id' => 8,
@@ -2866,8 +2864,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            259 => 
-            array (
+            259 =>
+            array(
                 'id' => 260,
                 'slug' => '7a2100da-654b-3650-b7ab-4662e57e72cf',
                 'principal_id' => 8,
@@ -2877,8 +2875,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            260 => 
-            array (
+            260 =>
+            array(
                 'id' => 261,
                 'slug' => 'e6955a4c-027f-333b-ab9d-c40feeaf9484',
                 'principal_id' => 8,
@@ -2888,8 +2886,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            261 => 
-            array (
+            261 =>
+            array(
                 'id' => 262,
                 'slug' => 'ec76c28b-9f05-3823-bc4c-0b2368677200',
                 'principal_id' => 8,
@@ -2899,8 +2897,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            262 => 
-            array (
+            262 =>
+            array(
                 'id' => 263,
                 'slug' => '22f09d13-1348-35ae-bec4-fed26089f087',
                 'principal_id' => 8,
@@ -2910,8 +2908,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            263 => 
-            array (
+            263 =>
+            array(
                 'id' => 264,
                 'slug' => '59bd8786-e72a-355e-af3b-2a97c0c8b610',
                 'principal_id' => 8,
@@ -2921,8 +2919,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            264 => 
-            array (
+            264 =>
+            array(
                 'id' => 265,
                 'slug' => '39514a81-5ff4-3579-94f4-145a8c89cc79',
                 'principal_id' => 8,
@@ -2932,8 +2930,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            265 => 
-            array (
+            265 =>
+            array(
                 'id' => 266,
                 'slug' => '6d3bd752-2859-3133-b361-b3fd44cb5bab',
                 'principal_id' => 8,
@@ -2943,8 +2941,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            266 => 
-            array (
+            266 =>
+            array(
                 'id' => 267,
                 'slug' => '0f5327c1-b5b1-3182-bf7d-e483449deccc',
                 'principal_id' => 8,
@@ -2954,8 +2952,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            267 => 
-            array (
+            267 =>
+            array(
                 'id' => 268,
                 'slug' => 'a70ffeda-d1e6-3277-a71c-2a6c5ee629a6',
                 'principal_id' => 8,
@@ -2965,8 +2963,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            268 => 
-            array (
+            268 =>
+            array(
                 'id' => 269,
                 'slug' => '3a97b45c-c239-35e8-ba9a-2b59b0a64e7a',
                 'principal_id' => 8,
@@ -2976,8 +2974,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            269 => 
-            array (
+            269 =>
+            array(
                 'id' => 270,
                 'slug' => '27c46a90-e65c-307e-a128-2a3a8257b167',
                 'principal_id' => 8,
@@ -2987,8 +2985,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            270 => 
-            array (
+            270 =>
+            array(
                 'id' => 271,
                 'slug' => '6f3a7bd2-f4bb-3258-8acd-d27fb81cdaea',
                 'principal_id' => 8,
@@ -2998,8 +2996,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            271 => 
-            array (
+            271 =>
+            array(
                 'id' => 272,
                 'slug' => '75f2ef23-2136-3ce8-b22a-53c582914a75',
                 'principal_id' => 8,
@@ -3009,8 +3007,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            272 => 
-            array (
+            272 =>
+            array(
                 'id' => 273,
                 'slug' => '1ac62ec9-135e-3437-8de6-f60a21407430',
                 'principal_id' => 8,
@@ -3020,8 +3018,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            273 => 
-            array (
+            273 =>
+            array(
                 'id' => 274,
                 'slug' => '82a78eb5-0d16-3706-9b7a-ec169f87f8d4',
                 'principal_id' => 8,
@@ -3031,8 +3029,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            274 => 
-            array (
+            274 =>
+            array(
                 'id' => 275,
                 'slug' => 'e5b647c7-94db-3dd0-b6c0-46a0478884b7',
                 'principal_id' => 8,
@@ -3042,8 +3040,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            275 => 
-            array (
+            275 =>
+            array(
                 'id' => 276,
                 'slug' => 'fb7ab7ae-fe7a-3c36-abeb-9ad885ef608f',
                 'principal_id' => 8,
@@ -3053,8 +3051,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            276 => 
-            array (
+            276 =>
+            array(
                 'id' => 277,
                 'slug' => 'dbf34774-0327-33ba-ab03-e278e22d4bfd',
                 'principal_id' => 8,
@@ -3064,8 +3062,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            277 => 
-            array (
+            277 =>
+            array(
                 'id' => 278,
                 'slug' => 'e7b74061-44a8-3ca1-89c2-a52dd073418e',
                 'principal_id' => 8,
@@ -3075,8 +3073,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            278 => 
-            array (
+            278 =>
+            array(
                 'id' => 279,
                 'slug' => '717980a8-3fd0-3ce6-857b-3d7f17145ef5',
                 'principal_id' => 8,
@@ -3086,8 +3084,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            279 => 
-            array (
+            279 =>
+            array(
                 'id' => 280,
                 'slug' => 'fb076214-83dc-315b-80a1-cad3ea47a919',
                 'principal_id' => 8,
@@ -3097,8 +3095,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            280 => 
-            array (
+            280 =>
+            array(
                 'id' => 281,
                 'slug' => 'a9122806-d3a9-3fb3-bd57-fa754118ec6b',
                 'principal_id' => 8,
@@ -3108,8 +3106,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            281 => 
-            array (
+            281 =>
+            array(
                 'id' => 282,
                 'slug' => '8b83625d-0df8-3d26-909d-733140999f3b',
                 'principal_id' => 8,
@@ -3119,8 +3117,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            282 => 
-            array (
+            282 =>
+            array(
                 'id' => 283,
                 'slug' => '7f016b0f-8ed6-33a1-b727-b0064d498b1b',
                 'principal_id' => 8,
@@ -3130,8 +3128,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            283 => 
-            array (
+            283 =>
+            array(
                 'id' => 284,
                 'slug' => '8cb0e779-594e-3c98-b52f-e915f413fbfb',
                 'principal_id' => 8,
@@ -3141,8 +3139,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            284 => 
-            array (
+            284 =>
+            array(
                 'id' => 285,
                 'slug' => '617ebaa1-0815-3be8-a784-476e0361b3fd',
                 'principal_id' => 8,
@@ -3152,8 +3150,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            285 => 
-            array (
+            285 =>
+            array(
                 'id' => 286,
                 'slug' => '2db86499-ad46-38ca-87d6-b5ebf2286e38',
                 'principal_id' => 9,
@@ -3163,8 +3161,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            286 => 
-            array (
+            286 =>
+            array(
                 'id' => 287,
                 'slug' => '8285df13-43ea-3346-b1e4-917d93d3eeae',
                 'principal_id' => 9,
@@ -3174,8 +3172,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            287 => 
-            array (
+            287 =>
+            array(
                 'id' => 288,
                 'slug' => 'c7827c05-109a-3b8d-82fa-2ce4549738f2',
                 'principal_id' => 9,
@@ -3185,8 +3183,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            288 => 
-            array (
+            288 =>
+            array(
                 'id' => 289,
                 'slug' => 'bd67f5e4-c9ec-307d-8499-a1cb7c2a156c',
                 'principal_id' => 9,
@@ -3196,8 +3194,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            289 => 
-            array (
+            289 =>
+            array(
                 'id' => 290,
                 'slug' => 'e6217901-e1cb-3c2f-8ac0-67c0e09cf220',
                 'principal_id' => 9,
@@ -3207,8 +3205,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            290 => 
-            array (
+            290 =>
+            array(
                 'id' => 291,
                 'slug' => '6c95a396-15af-3aa7-a370-b5915f9608f6',
                 'principal_id' => 9,
@@ -3218,8 +3216,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            291 => 
-            array (
+            291 =>
+            array(
                 'id' => 292,
                 'slug' => 'f6dd3dec-c9df-3f7b-b5e5-0489e9719fe5',
                 'principal_id' => 9,
@@ -3229,8 +3227,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            292 => 
-            array (
+            292 =>
+            array(
                 'id' => 293,
                 'slug' => '44ebeebc-2820-3dce-8c37-6c9e10c3e5f4',
                 'principal_id' => 9,
@@ -3240,8 +3238,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            293 => 
-            array (
+            293 =>
+            array(
                 'id' => 294,
                 'slug' => 'f029f1e3-9296-3359-886c-2fd1a2aeb102',
                 'principal_id' => 9,
@@ -3251,8 +3249,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            294 => 
-            array (
+            294 =>
+            array(
                 'id' => 295,
                 'slug' => '9d1f6b30-29cd-37bc-b79a-9306b85c1da8',
                 'principal_id' => 9,
@@ -3262,8 +3260,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            295 => 
-            array (
+            295 =>
+            array(
                 'id' => 296,
                 'slug' => '725df49c-7991-3431-a71e-e11e6bb35dcd',
                 'principal_id' => 9,
@@ -3273,8 +3271,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            296 => 
-            array (
+            296 =>
+            array(
                 'id' => 297,
                 'slug' => 'e16332b5-2da8-3343-8f11-16554705bd2c',
                 'principal_id' => 9,
@@ -3284,8 +3282,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            297 => 
-            array (
+            297 =>
+            array(
                 'id' => 298,
                 'slug' => '6cb728ca-f0aa-3293-a82c-b4477a58d338',
                 'principal_id' => 9,
@@ -3295,8 +3293,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            298 => 
-            array (
+            298 =>
+            array(
                 'id' => 299,
                 'slug' => 'd962aefb-c1e6-38a4-a01d-9efe2157ed26',
                 'principal_id' => 9,
@@ -3306,8 +3304,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            299 => 
-            array (
+            299 =>
+            array(
                 'id' => 300,
                 'slug' => '5331d7f8-d720-3d9e-84e4-e6edf0544cba',
                 'principal_id' => 9,
@@ -3317,8 +3315,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            300 => 
-            array (
+            300 =>
+            array(
                 'id' => 301,
                 'slug' => '455bb73a-666a-3b2b-9483-af9bb4b70fad',
                 'principal_id' => 9,
@@ -3328,8 +3326,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            301 => 
-            array (
+            301 =>
+            array(
                 'id' => 302,
                 'slug' => '00e36659-c51a-3aef-93d3-aaa53cbe3d8f',
                 'principal_id' => 9,
@@ -3339,8 +3337,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            302 => 
-            array (
+            302 =>
+            array(
                 'id' => 303,
                 'slug' => 'dc5ff1ac-80ec-3285-b258-e4e0732cf30b',
                 'principal_id' => 9,
@@ -3350,8 +3348,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            303 => 
-            array (
+            303 =>
+            array(
                 'id' => 304,
                 'slug' => '20357bf6-537f-31b9-9a40-00b6650563a0',
                 'principal_id' => 9,
@@ -3361,8 +3359,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            304 => 
-            array (
+            304 =>
+            array(
                 'id' => 305,
                 'slug' => 'b9d85583-a5bb-38f8-8f4f-c42b44b9c3d6',
                 'principal_id' => 9,
@@ -3372,8 +3370,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            305 => 
-            array (
+            305 =>
+            array(
                 'id' => 306,
                 'slug' => '92bc9304-50e1-3658-9b26-2110a0e61024',
                 'principal_id' => 9,
@@ -3383,8 +3381,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            306 => 
-            array (
+            306 =>
+            array(
                 'id' => 307,
                 'slug' => 'a60a628a-c506-3b3b-9a9a-121172eb5c24',
                 'principal_id' => 9,
@@ -3394,8 +3392,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            307 => 
-            array (
+            307 =>
+            array(
                 'id' => 308,
                 'slug' => '4f933ade-3a63-34d4-ba7d-db52d48022a0',
                 'principal_id' => 9,
@@ -3405,8 +3403,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            308 => 
-            array (
+            308 =>
+            array(
                 'id' => 309,
                 'slug' => '097a79b6-79de-3d01-957a-a5233e8a28a7',
                 'principal_id' => 9,
@@ -3416,8 +3414,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            309 => 
-            array (
+            309 =>
+            array(
                 'id' => 310,
                 'slug' => 'b7aedfee-8ce8-36a0-8e91-f743be92a1b6',
                 'principal_id' => 9,
@@ -3427,8 +3425,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            310 => 
-            array (
+            310 =>
+            array(
                 'id' => 311,
                 'slug' => '509d3c01-5524-3546-a6eb-89067643ff11',
                 'principal_id' => 9,
@@ -3438,8 +3436,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            311 => 
-            array (
+            311 =>
+            array(
                 'id' => 312,
                 'slug' => '976fd70d-af2b-3f86-b39b-e9be7c16456a',
                 'principal_id' => 9,
@@ -3449,8 +3447,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            312 => 
-            array (
+            312 =>
+            array(
                 'id' => 313,
                 'slug' => '23307aeb-20f3-308e-94b7-eb85ed9dbca7',
                 'principal_id' => 9,
@@ -3460,8 +3458,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            313 => 
-            array (
+            313 =>
+            array(
                 'id' => 314,
                 'slug' => '10523070-8d8c-30a7-a8e2-ec4c585e7638',
                 'principal_id' => 9,
@@ -3471,8 +3469,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            314 => 
-            array (
+            314 =>
+            array(
                 'id' => 315,
                 'slug' => 'fa668a2c-5dc0-3925-80ef-195f243777f5',
                 'principal_id' => 9,
@@ -3482,8 +3480,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            315 => 
-            array (
+            315 =>
+            array(
                 'id' => 316,
                 'slug' => '93ccd43a-8457-3706-83fe-f4582faf927e',
                 'principal_id' => 9,
@@ -3493,8 +3491,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            316 => 
-            array (
+            316 =>
+            array(
                 'id' => 317,
                 'slug' => 'b66c5ba2-95a9-3f1e-959c-e20c09cbe41d',
                 'principal_id' => 9,
@@ -3504,8 +3502,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            317 => 
-            array (
+            317 =>
+            array(
                 'id' => 318,
                 'slug' => '01cff393-473c-3fed-9a51-5ee6f7870ab6',
                 'principal_id' => 9,
@@ -3515,8 +3513,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            318 => 
-            array (
+            318 =>
+            array(
                 'id' => 319,
                 'slug' => '50d0ed41-11aa-364f-95ec-791a50f1c5ed',
                 'principal_id' => 9,
@@ -3526,8 +3524,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            319 => 
-            array (
+            319 =>
+            array(
                 'id' => 320,
                 'slug' => '1f0c8a97-747e-3b4f-b8ae-bae86c459385',
                 'principal_id' => 9,
@@ -3537,8 +3535,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            320 => 
-            array (
+            320 =>
+            array(
                 'id' => 321,
                 'slug' => 'c7d652ab-fbbe-3bea-a6f8-1ea28771a6e9',
                 'principal_id' => 9,
@@ -3548,8 +3546,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            321 => 
-            array (
+            321 =>
+            array(
                 'id' => 322,
                 'slug' => '1a9e92bd-4a59-39ff-bf32-dfa682a97466',
                 'principal_id' => 9,
@@ -3559,8 +3557,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            322 => 
-            array (
+            322 =>
+            array(
                 'id' => 323,
                 'slug' => 'c33fe2df-e819-3728-b46f-3cc713a13de3',
                 'principal_id' => 9,
@@ -3570,8 +3568,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            323 => 
-            array (
+            323 =>
+            array(
                 'id' => 324,
                 'slug' => 'aa242c2b-c939-3678-b6a6-a511e749687a',
                 'principal_id' => 9,
@@ -3581,8 +3579,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            324 => 
-            array (
+            324 =>
+            array(
                 'id' => 325,
                 'slug' => 'da0b8475-6793-3a95-ad78-95f9d0448cc8',
                 'principal_id' => 9,
@@ -3592,8 +3590,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            325 => 
-            array (
+            325 =>
+            array(
                 'id' => 326,
                 'slug' => 'a4b97e64-5d35-3698-83c3-a55108e9da64',
                 'principal_id' => 9,
@@ -3603,8 +3601,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            326 => 
-            array (
+            326 =>
+            array(
                 'id' => 327,
                 'slug' => '37365a87-5f25-349b-ab52-d16e9821bae2',
                 'principal_id' => 9,
@@ -3614,8 +3612,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            327 => 
-            array (
+            327 =>
+            array(
                 'id' => 328,
                 'slug' => '8bddc33c-9d5f-3bb7-a7bc-58a5b03142bc',
                 'principal_id' => 9,
@@ -3625,8 +3623,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            328 => 
-            array (
+            328 =>
+            array(
                 'id' => 329,
                 'slug' => '832a296f-5844-34e3-944d-992da3edf575',
                 'principal_id' => 9,
@@ -3636,8 +3634,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            329 => 
-            array (
+            329 =>
+            array(
                 'id' => 330,
                 'slug' => '95a7516c-2637-3f2a-a7da-80a2528790c4',
                 'principal_id' => 9,
@@ -3647,8 +3645,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            330 => 
-            array (
+            330 =>
+            array(
                 'id' => 331,
                 'slug' => '5ad61ce5-aac8-318c-b034-c3a4323e6086',
                 'principal_id' => 10,
@@ -3658,8 +3656,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            331 => 
-            array (
+            331 =>
+            array(
                 'id' => 332,
                 'slug' => 'bff6fa88-43b4-326b-829f-3830cf062d02',
                 'principal_id' => 10,
@@ -3669,8 +3667,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            332 => 
-            array (
+            332 =>
+            array(
                 'id' => 333,
                 'slug' => '191fd55f-4916-3118-a17f-20409a190539',
                 'principal_id' => 10,
@@ -3680,8 +3678,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            333 => 
-            array (
+            333 =>
+            array(
                 'id' => 334,
                 'slug' => 'b2e2e4b7-612b-3d70-a4e8-4ffccbddacbc',
                 'principal_id' => 10,
@@ -3691,8 +3689,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            334 => 
-            array (
+            334 =>
+            array(
                 'id' => 335,
                 'slug' => '31af901d-4aa0-30b0-b058-f63fb68d2873',
                 'principal_id' => 10,
@@ -3702,8 +3700,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            335 => 
-            array (
+            335 =>
+            array(
                 'id' => 336,
                 'slug' => '468f7f60-5bc4-3267-823e-e55e14248ab5',
                 'principal_id' => 10,
@@ -3713,8 +3711,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            336 => 
-            array (
+            336 =>
+            array(
                 'id' => 337,
                 'slug' => '3c4701f1-9463-347a-8613-07bb6e874a3e',
                 'principal_id' => 10,
@@ -3724,8 +3722,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            337 => 
-            array (
+            337 =>
+            array(
                 'id' => 338,
                 'slug' => 'd8bc6c73-7757-362c-b854-77e49849dfa5',
                 'principal_id' => 10,
@@ -3735,8 +3733,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            338 => 
-            array (
+            338 =>
+            array(
                 'id' => 339,
                 'slug' => 'f001ea76-3b98-3c41-aada-ad51e6ccd9b9',
                 'principal_id' => 10,
@@ -3746,8 +3744,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            339 => 
-            array (
+            339 =>
+            array(
                 'id' => 340,
                 'slug' => '70b2f376-05c0-3866-8c45-7cd2e8760a38',
                 'principal_id' => 10,
@@ -3757,8 +3755,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            340 => 
-            array (
+            340 =>
+            array(
                 'id' => 341,
                 'slug' => 'ab8ac6fa-8aaf-34d0-9423-1bb5c8912972',
                 'principal_id' => 10,
@@ -3768,8 +3766,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            341 => 
-            array (
+            341 =>
+            array(
                 'id' => 342,
                 'slug' => '8244a064-6e34-34ed-9d3d-7e8739392986',
                 'principal_id' => 10,
@@ -3779,8 +3777,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            342 => 
-            array (
+            342 =>
+            array(
                 'id' => 343,
                 'slug' => 'f59334c8-c4fe-3977-b53f-99f67d4177b5',
                 'principal_id' => 10,
@@ -3790,8 +3788,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            343 => 
-            array (
+            343 =>
+            array(
                 'id' => 344,
                 'slug' => '792541ff-617e-39b2-b9aa-c790b44424dd',
                 'principal_id' => 10,
@@ -3801,8 +3799,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            344 => 
-            array (
+            344 =>
+            array(
                 'id' => 345,
                 'slug' => '524fe6fd-96c2-3a7f-8df6-f4a1df89237d',
                 'principal_id' => 10,
@@ -3812,8 +3810,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            345 => 
-            array (
+            345 =>
+            array(
                 'id' => 346,
                 'slug' => '30d04ced-bc5a-3de9-8653-813c5cac7fd3',
                 'principal_id' => 10,
@@ -3823,8 +3821,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            346 => 
-            array (
+            346 =>
+            array(
                 'id' => 347,
                 'slug' => '444afae3-a947-3f59-9558-f5bc54407319',
                 'principal_id' => 10,
@@ -3834,8 +3832,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            347 => 
-            array (
+            347 =>
+            array(
                 'id' => 348,
                 'slug' => '9d53c2ee-0965-34e6-9375-22ce8e1beb12',
                 'principal_id' => 10,
@@ -3845,8 +3843,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            348 => 
-            array (
+            348 =>
+            array(
                 'id' => 349,
                 'slug' => '0a0e7023-fb39-3111-bfec-c04933fd0e5d',
                 'principal_id' => 10,
@@ -3856,8 +3854,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            349 => 
-            array (
+            349 =>
+            array(
                 'id' => 350,
                 'slug' => 'feb77307-849f-38dc-822b-a264561fbf07',
                 'principal_id' => 10,
@@ -3867,8 +3865,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            350 => 
-            array (
+            350 =>
+            array(
                 'id' => 351,
                 'slug' => 'eeaea98e-57a8-3716-aa3c-4a071741ecaf',
                 'principal_id' => 10,
@@ -3878,8 +3876,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            351 => 
-            array (
+            351 =>
+            array(
                 'id' => 352,
                 'slug' => 'cf9b277c-446e-32d8-a545-aded258ec5e4',
                 'principal_id' => 10,
@@ -3889,8 +3887,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            352 => 
-            array (
+            352 =>
+            array(
                 'id' => 353,
                 'slug' => '105358e9-92c6-3cf0-9d57-1a3c590231c3',
                 'principal_id' => 10,
@@ -3900,8 +3898,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            353 => 
-            array (
+            353 =>
+            array(
                 'id' => 354,
                 'slug' => '4d24dd0f-970b-3610-bb4b-3cf38b3f09d6',
                 'principal_id' => 10,
@@ -3911,8 +3909,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            354 => 
-            array (
+            354 =>
+            array(
                 'id' => 355,
                 'slug' => '4740bac4-4d0a-333d-949a-5a24cd022d0f',
                 'principal_id' => 10,
@@ -3922,8 +3920,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            355 => 
-            array (
+            355 =>
+            array(
                 'id' => 356,
                 'slug' => 'f28e5d8f-55a8-35fc-bed0-4735cec49760',
                 'principal_id' => 10,
@@ -3933,8 +3931,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            356 => 
-            array (
+            356 =>
+            array(
                 'id' => 357,
                 'slug' => '9ce4f86f-1877-3ca9-9852-36ab10dbaa62',
                 'principal_id' => 10,
@@ -3944,8 +3942,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            357 => 
-            array (
+            357 =>
+            array(
                 'id' => 358,
                 'slug' => '535e15b7-0ac2-3535-ad51-fe8952af8de1',
                 'principal_id' => 10,
@@ -3955,8 +3953,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            358 => 
-            array (
+            358 =>
+            array(
                 'id' => 359,
                 'slug' => '2baa1f3a-70f9-3c13-b44b-ea1e03ea02bf',
                 'principal_id' => 10,
@@ -3966,8 +3964,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            359 => 
-            array (
+            359 =>
+            array(
                 'id' => 360,
                 'slug' => '5ff2f9d7-173b-37b2-8718-e460ad82c4b3',
                 'principal_id' => 10,
@@ -3977,8 +3975,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            360 => 
-            array (
+            360 =>
+            array(
                 'id' => 361,
                 'slug' => 'afe38874-fcc9-3bf4-9803-548371962e4c',
                 'principal_id' => 10,
@@ -3988,8 +3986,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            361 => 
-            array (
+            361 =>
+            array(
                 'id' => 362,
                 'slug' => '8770b17e-3e2c-35f2-b81f-1f0bc42a7e78',
                 'principal_id' => 10,
@@ -3999,8 +3997,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            362 => 
-            array (
+            362 =>
+            array(
                 'id' => 363,
                 'slug' => '51f4f099-1ab1-3212-a787-f1a53583ede6',
                 'principal_id' => 10,
@@ -4010,8 +4008,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            363 => 
-            array (
+            363 =>
+            array(
                 'id' => 364,
                 'slug' => '75c2a62c-a944-3840-b241-3378e6f4c794',
                 'principal_id' => 10,
@@ -4021,8 +4019,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            364 => 
-            array (
+            364 =>
+            array(
                 'id' => 365,
                 'slug' => '204821fe-34bd-38e2-ba77-9cbfb7602a19',
                 'principal_id' => 10,
@@ -4032,8 +4030,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            365 => 
-            array (
+            365 =>
+            array(
                 'id' => 366,
                 'slug' => 'b16e904c-64a2-3ddc-aaf9-2aef6df46a87',
                 'principal_id' => 10,
@@ -4043,8 +4041,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            366 => 
-            array (
+            366 =>
+            array(
                 'id' => 367,
                 'slug' => '07aec7ac-40ed-3bb2-8e61-f1b465e179a6',
                 'principal_id' => 10,
@@ -4054,8 +4052,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            367 => 
-            array (
+            367 =>
+            array(
                 'id' => 368,
                 'slug' => '3bc3ce99-c048-3513-b2dc-60110fe96980',
                 'principal_id' => 10,
@@ -4065,8 +4063,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            368 => 
-            array (
+            368 =>
+            array(
                 'id' => 369,
                 'slug' => 'd9eea3b7-c750-3cfb-9799-2b738635ed3d',
                 'principal_id' => 10,
@@ -4076,8 +4074,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            369 => 
-            array (
+            369 =>
+            array(
                 'id' => 370,
                 'slug' => 'd17a43fe-9ba6-37fc-81cb-cfa7be383050',
                 'principal_id' => 10,
@@ -4087,8 +4085,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            370 => 
-            array (
+            370 =>
+            array(
                 'id' => 371,
                 'slug' => 'dfd8f8c1-e289-3e2d-a0ce-641d014cbd44',
                 'principal_id' => 10,
@@ -4098,8 +4096,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            371 => 
-            array (
+            371 =>
+            array(
                 'id' => 372,
                 'slug' => '86e6bf23-a6cf-303d-bfe4-b25183addf64',
                 'principal_id' => 10,
@@ -4109,8 +4107,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            372 => 
-            array (
+            372 =>
+            array(
                 'id' => 373,
                 'slug' => 'ec4231ee-6aca-3cf8-b27d-437ee36a1048',
                 'principal_id' => 10,
@@ -4120,8 +4118,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            373 => 
-            array (
+            373 =>
+            array(
                 'id' => 374,
                 'slug' => '855f0684-ff49-39e8-b431-18072991c63f',
                 'principal_id' => 10,
@@ -4131,8 +4129,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            374 => 
-            array (
+            374 =>
+            array(
                 'id' => 375,
                 'slug' => 'cade78ad-1141-3804-aa74-3e2ee7b096ef',
                 'principal_id' => 10,
@@ -4142,8 +4140,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            375 => 
-            array (
+            375 =>
+            array(
                 'id' => 376,
                 'slug' => '9ced2992-0af7-359f-8048-7aae6b633578',
                 'principal_id' => 11,
@@ -4153,8 +4151,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            376 => 
-            array (
+            376 =>
+            array(
                 'id' => 377,
                 'slug' => 'ab6e93e8-c049-3455-82f4-59069185e46c',
                 'principal_id' => 11,
@@ -4164,8 +4162,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            377 => 
-            array (
+            377 =>
+            array(
                 'id' => 378,
                 'slug' => '69589865-4fcb-38f1-a33e-f396e5b4f97b',
                 'principal_id' => 11,
@@ -4175,8 +4173,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            378 => 
-            array (
+            378 =>
+            array(
                 'id' => 379,
                 'slug' => '69c57d46-76ee-39d8-98a4-0b8256c28f8d',
                 'principal_id' => 11,
@@ -4186,8 +4184,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            379 => 
-            array (
+            379 =>
+            array(
                 'id' => 380,
                 'slug' => 'c6296775-4b0c-3b05-bf13-10d8f4d4a05f',
                 'principal_id' => 11,
@@ -4197,8 +4195,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            380 => 
-            array (
+            380 =>
+            array(
                 'id' => 381,
                 'slug' => '835deef0-681c-37fc-9f3d-160b0e745eee',
                 'principal_id' => 11,
@@ -4208,8 +4206,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            381 => 
-            array (
+            381 =>
+            array(
                 'id' => 382,
                 'slug' => 'b80ceee8-630b-3b90-ab89-2ea561c7af92',
                 'principal_id' => 11,
@@ -4219,8 +4217,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            382 => 
-            array (
+            382 =>
+            array(
                 'id' => 383,
                 'slug' => '98636701-17d6-3efb-b73c-b83fd9cbb91e',
                 'principal_id' => 11,
@@ -4230,8 +4228,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            383 => 
-            array (
+            383 =>
+            array(
                 'id' => 384,
                 'slug' => 'ae7e41be-60c1-3bce-8002-20d41492c1b0',
                 'principal_id' => 11,
@@ -4241,8 +4239,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            384 => 
-            array (
+            384 =>
+            array(
                 'id' => 385,
                 'slug' => '25d8d36c-a573-3993-a6a3-acc24d6032ff',
                 'principal_id' => 11,
@@ -4252,8 +4250,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            385 => 
-            array (
+            385 =>
+            array(
                 'id' => 386,
                 'slug' => '2b67152a-7628-3150-a9a2-ae452bcc8ac6',
                 'principal_id' => 11,
@@ -4263,8 +4261,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            386 => 
-            array (
+            386 =>
+            array(
                 'id' => 387,
                 'slug' => 'a974367c-259f-38f9-acdc-a4ee0558ad8d',
                 'principal_id' => 11,
@@ -4274,8 +4272,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            387 => 
-            array (
+            387 =>
+            array(
                 'id' => 388,
                 'slug' => 'a440112e-1632-3a0e-a107-29ac95b00030',
                 'principal_id' => 11,
@@ -4285,8 +4283,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            388 => 
-            array (
+            388 =>
+            array(
                 'id' => 389,
                 'slug' => 'eac1e025-dcbe-358b-a1fe-0c0e2a2f575f',
                 'principal_id' => 11,
@@ -4296,8 +4294,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            389 => 
-            array (
+            389 =>
+            array(
                 'id' => 390,
                 'slug' => '4574084b-a6dd-32c4-8899-d5eae8418ec5',
                 'principal_id' => 11,
@@ -4307,8 +4305,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            390 => 
-            array (
+            390 =>
+            array(
                 'id' => 391,
                 'slug' => '4dfb3f80-74b7-3e9c-aaa6-bb091310bb20',
                 'principal_id' => 11,
@@ -4318,8 +4316,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            391 => 
-            array (
+            391 =>
+            array(
                 'id' => 392,
                 'slug' => '6eb159a0-ac53-3503-b408-cfedf0ae826e',
                 'principal_id' => 11,
@@ -4329,8 +4327,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            392 => 
-            array (
+            392 =>
+            array(
                 'id' => 393,
                 'slug' => 'c93f5e96-b3a8-3a4d-99e6-010c50accae4',
                 'principal_id' => 11,
@@ -4340,8 +4338,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            393 => 
-            array (
+            393 =>
+            array(
                 'id' => 394,
                 'slug' => 'e21b3876-2414-32b3-8b93-3d1f9e4b5351',
                 'principal_id' => 11,
@@ -4351,8 +4349,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            394 => 
-            array (
+            394 =>
+            array(
                 'id' => 395,
                 'slug' => '9b918016-cc19-3887-a4c3-40411a3695fe',
                 'principal_id' => 11,
@@ -4362,8 +4360,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            395 => 
-            array (
+            395 =>
+            array(
                 'id' => 396,
                 'slug' => 'fc9d6266-836d-3dd8-a48a-b064c264b522',
                 'principal_id' => 11,
@@ -4373,8 +4371,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            396 => 
-            array (
+            396 =>
+            array(
                 'id' => 397,
                 'slug' => '0d2f2533-88aa-31a3-8b49-885e595da482',
                 'principal_id' => 11,
@@ -4384,8 +4382,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            397 => 
-            array (
+            397 =>
+            array(
                 'id' => 398,
                 'slug' => 'b856f80d-2fd8-34d7-bfdd-b5d4ea2176f2',
                 'principal_id' => 11,
@@ -4395,8 +4393,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            398 => 
-            array (
+            398 =>
+            array(
                 'id' => 399,
                 'slug' => '9443ea60-6f57-30b5-8a9f-5013935bcbac',
                 'principal_id' => 11,
@@ -4406,8 +4404,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            399 => 
-            array (
+            399 =>
+            array(
                 'id' => 400,
                 'slug' => '1a5681e3-e9a1-3f9b-a6a6-83429539179a',
                 'principal_id' => 11,
@@ -4417,8 +4415,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            400 => 
-            array (
+            400 =>
+            array(
                 'id' => 401,
                 'slug' => 'b2fbdce8-1937-3897-8afc-4ac9d8928a77',
                 'principal_id' => 11,
@@ -4428,8 +4426,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            401 => 
-            array (
+            401 =>
+            array(
                 'id' => 402,
                 'slug' => '1e651822-b448-3769-872c-1013d585c197',
                 'principal_id' => 11,
@@ -4439,8 +4437,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            402 => 
-            array (
+            402 =>
+            array(
                 'id' => 403,
                 'slug' => '3f283bcf-6c91-3619-8563-a9373ae52a68',
                 'principal_id' => 11,
@@ -4450,8 +4448,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            403 => 
-            array (
+            403 =>
+            array(
                 'id' => 404,
                 'slug' => 'fa1b2a66-41cd-3462-bf8a-637c2820eb1c',
                 'principal_id' => 11,
@@ -4461,8 +4459,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            404 => 
-            array (
+            404 =>
+            array(
                 'id' => 405,
                 'slug' => 'deead59a-ce13-3fe3-bc95-7dee8d05dcfb',
                 'principal_id' => 11,
@@ -4472,8 +4470,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            405 => 
-            array (
+            405 =>
+            array(
                 'id' => 406,
                 'slug' => '1bd91988-e15e-3a34-b249-63102abab12f',
                 'principal_id' => 11,
@@ -4483,8 +4481,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            406 => 
-            array (
+            406 =>
+            array(
                 'id' => 407,
                 'slug' => 'df361eeb-a7a4-3459-b2ec-8de7183c71d1',
                 'principal_id' => 11,
@@ -4494,8 +4492,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            407 => 
-            array (
+            407 =>
+            array(
                 'id' => 408,
                 'slug' => '67be3b44-0f3d-33a0-9dcf-19d3022df37a',
                 'principal_id' => 11,
@@ -4505,8 +4503,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            408 => 
-            array (
+            408 =>
+            array(
                 'id' => 409,
                 'slug' => '3f619ab3-f70b-356e-8672-1af7dd5b2570',
                 'principal_id' => 11,
@@ -4516,8 +4514,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            409 => 
-            array (
+            409 =>
+            array(
                 'id' => 410,
                 'slug' => '6cac0ea8-00d3-3cb6-831f-176a14759796',
                 'principal_id' => 11,
@@ -4527,8 +4525,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            410 => 
-            array (
+            410 =>
+            array(
                 'id' => 411,
                 'slug' => 'b617e877-7a90-3d55-af9a-ec64f0714e65',
                 'principal_id' => 11,
@@ -4538,8 +4536,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            411 => 
-            array (
+            411 =>
+            array(
                 'id' => 412,
                 'slug' => '380da8ba-15e8-302f-a9b7-e4bb364e844e',
                 'principal_id' => 11,
@@ -4549,8 +4547,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            412 => 
-            array (
+            412 =>
+            array(
                 'id' => 413,
                 'slug' => '760c4f65-e951-3181-9ce2-29ec155b73d8',
                 'principal_id' => 11,
@@ -4560,8 +4558,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            413 => 
-            array (
+            413 =>
+            array(
                 'id' => 414,
                 'slug' => 'ef3484a1-a726-3c82-a60e-c1247d9375e2',
                 'principal_id' => 11,
@@ -4571,8 +4569,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            414 => 
-            array (
+            414 =>
+            array(
                 'id' => 415,
                 'slug' => 'ec0e1ec0-7898-3e1a-8fda-12b634114410',
                 'principal_id' => 11,
@@ -4582,8 +4580,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            415 => 
-            array (
+            415 =>
+            array(
                 'id' => 416,
                 'slug' => '91b9d019-b49a-33b9-bb03-e1d72ebfae7d',
                 'principal_id' => 11,
@@ -4593,8 +4591,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            416 => 
-            array (
+            416 =>
+            array(
                 'id' => 417,
                 'slug' => '4f0a639a-39ff-3f8d-8ec3-d8f971bfef49',
                 'principal_id' => 11,
@@ -4604,8 +4602,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            417 => 
-            array (
+            417 =>
+            array(
                 'id' => 418,
                 'slug' => '4d61a88d-a0a7-3862-b6e0-3ecab6b35e8b',
                 'principal_id' => 11,
@@ -4615,8 +4613,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            418 => 
-            array (
+            418 =>
+            array(
                 'id' => 419,
                 'slug' => '876f6e9f-fe15-34e2-9318-0f6bc45d2345',
                 'principal_id' => 11,
@@ -4626,8 +4624,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            419 => 
-            array (
+            419 =>
+            array(
                 'id' => 420,
                 'slug' => '507b78fa-b505-3aa6-a114-2813bcad2316',
                 'principal_id' => 11,
@@ -4637,8 +4635,8 @@ class InvitationsTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            420 => 
-            array (
+            420 =>
+            array(
                 'id' => 421,
                 'slug' => 'c5c796e6-00ac-3d80-8d37-9188e62dd275',
                 'principal_id' => 1,
@@ -4649,7 +4647,5 @@ class InvitationsTableSeeder extends Seeder
                 'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
-        
-        
     }
 }

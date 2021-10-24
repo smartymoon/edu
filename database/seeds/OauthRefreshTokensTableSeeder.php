@@ -12,11 +12,6 @@ class OauthRefreshTokensTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('oauth_refresh_tokens')->delete();
-        
-        
-        
     }
 }

@@ -26,4 +26,3 @@ $factory->state(App\School::class, 'approve', [
 $factory->state(App\School::class, 'not', [
     'if_approve' => false
 ]);
-

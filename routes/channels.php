@@ -12,7 +12,7 @@
 */
 
 Broadcast::channel('chat.{mark}', function ($user, $mark) {
-    if($user instanceof \App\Teacher) {
+    if ($user instanceof \App\Teacher) {
         $identity = 'teacher';
     } else {
         $identity = 'student';

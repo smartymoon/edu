@@ -12,3093 +12,3089 @@ class StudentsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('students')->delete();
         
-        \DB::table('students')->insert(array (
-            0 => 
-            array (
+        \DB::table('students')->insert(array(
+            0 =>
+            array(
                 'id' => 2,
                 'name' => 'Kevin Gleichner',
                 'email' => '30326@student.com',
                 'password' => '$2y$10$DTpOBAbY8OJNJaRr.0Ygu.N0jU9hxLr2WKnOv3irdxmzg/7i7/OWu',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 3,
                 'name' => 'Lafayette King',
                 'email' => '7239@student.com',
                 'password' => '$2y$10$7zBcde5BFfPixCtMyRZ38.we25mdb9iwPeT46HhcSZzk.GrHNKevq',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 4,
                 'name' => 'Ubaldo Windler',
                 'email' => '36872@student.com',
                 'password' => '$2y$10$B.ZnbaWEPN3We9gckVrWUeDDVb0eA3rXD9CjE3LPVXmyUa8uuMs8m',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 5,
                 'name' => 'Jamey Skiles',
                 'email' => '38784@student.com',
                 'password' => '$2y$10$Z5Nh6lPKyDGvdKLDuAY11.5J.VU6O7yx2ziEgAZgW5MrwbbB9BkCC',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 6,
                 'name' => 'Dr. Branson Little',
                 'email' => '58578@student.com',
                 'password' => '$2y$10$pJ2Y6gSnufAu5cE623aWSeABVPGTx3I.q9AzYhzKuDxYMH4rja3km',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 7,
                 'name' => 'Brielle Rogahn',
                 'email' => '48715@student.com',
                 'password' => '$2y$10$7zvUutGE03mSpnY1esparuqDm5CJzW.bs9O40g52Undw.W.Vg9Jdy',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 8,
                 'name' => 'Manuel Funk',
                 'email' => '49431@student.com',
                 'password' => '$2y$10$AzocezFH5UMtNUg/X/HSkuTJig7V8F6AlLPfH3x87x8dRVmYdwA4u',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 9,
                 'name' => 'Dolores Heidenreich',
                 'email' => '83181@student.com',
                 'password' => '$2y$10$b1Yv0UggmvUQ9MoIN5d52OYdyHYZUk0N8zQw79r6aOdGQchkq9Qdm',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 10,
                 'name' => 'Dr. Raina Jenkins IV',
                 'email' => '9002@student.com',
                 'password' => '$2y$10$CdTN7rRiiFZyM0F/1L48GudTUPuhSqOWGJi0PCK2uHE7PA2yUI.WS',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:13',
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 11,
                 'name' => 'Miss Jana Toy V',
                 'email' => '7627@student.com',
                 'password' => '$2y$10$95GPUrPRvpvao1jWJE3czumR0U2/JMFpQ1BUCWAfBxEdlrB/iDyfC',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 12,
                 'name' => 'Miss Nyasia Carter',
                 'email' => '24091@student.com',
                 'password' => '$2y$10$G3t3bbRoLpFeXDUdatvIUukjDhEKMeRR3EjtLYNL81bGuzYynqd.O',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 13,
                 'name' => 'Mertie Gulgowski',
                 'email' => '79549@student.com',
                 'password' => '$2y$10$.laJa8QWPpRPSd/FDgPV6OfeZWX6jd98kO2FKJZDhZMlINTS4tx1e',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 14,
                 'name' => 'Harmon Erdman',
                 'email' => '39697@student.com',
                 'password' => '$2y$10$.ZlaSGU2W7mX8/HBmb9x/uY8GqHms21DwnflmM6Y9sSUgAyuHHs/m',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 15,
                 'name' => 'Ibrahim Buckridge Sr.',
                 'email' => '31926@student.com',
                 'password' => '$2y$10$cocmck2WYI52UW/2x/MqOeq8/U8beYf64iOcUyv97RuS5rZtZJyyi',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 16,
                 'name' => 'Ms. Emelie Mohr',
                 'email' => '51028@student.com',
                 'password' => '$2y$10$WW.jsyz5REpGmOxoufSHLuVGqtLAv0rQPSbINaPaf979NhU6khXPu',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 17,
                 'name' => 'Elijah Greenholt',
                 'email' => '21903@student.com',
                 'password' => '$2y$10$BGUDzxUBmENVH18u5dOuQOVACpWxoMYC/65IRL84PVh31mrfRNSpC',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 18,
                 'name' => 'Dr. Jayme Kuhic MD',
                 'email' => '38036@student.com',
                 'password' => '$2y$10$Ek.twJ1lXpP5pcFNo9sTxuh.zcdxw2NaJtUYgY4pdktzd8ABJBwjS',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 19,
                 'name' => 'Armani Wintheiser',
                 'email' => '904@student.com',
                 'password' => '$2y$10$VrdnhD.s3y50yg5kiupF2ureHFKZY2XY99NAaPH2PAI79KFDAEalq',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 20,
                 'name' => 'Mr. Ramiro McCullough DVM',
                 'email' => '28388@student.com',
                 'password' => '$2y$10$vWPZh7lrQUsTej5MGCJejezL49Lj3Cpt18eIF6tGxkPHmVjrAhw/m',
                 'school_id' => 2,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:14',
                 'updated_at' => '2021-10-21 08:32:14',
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 21,
                 'name' => 'Amalia Schultz',
                 'email' => '25672@student.com',
                 'password' => '$2y$10$riYuVaJOuRSV0WFuJZqcCeDbq.oXHb1sBjPZwI//4BiX0z4GkC85y',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => 22,
                 'name' => 'Jo Ernser',
                 'email' => '19284@student.com',
                 'password' => '$2y$10$WRVGpzQU.ykqo0szAkEcs.oQ.pv2S3l0efSNEIYvqoe5S6fQnP9tS',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => 23,
                 'name' => 'Mrs. Carolyne McKenzie III',
                 'email' => '87023@student.com',
                 'password' => '$2y$10$/HfQDWFZjZwxu7e3l0UkrOVw5I.vllXS4W3rVF4k3eKHzqWJiMjhq',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => 24,
                 'name' => 'Camila Kautzer',
                 'email' => '44067@student.com',
                 'password' => '$2y$10$UFhHQO66V0mfMoXit7R81.fFr8voAwOUD4BD0WN/xl2oxJVA7iEfq',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => 25,
                 'name' => 'Linda Wintheiser',
                 'email' => '53084@student.com',
                 'password' => '$2y$10$4izzGLH7lqS0V9U1Df9y5eFO4821bOY6LEju6TUY8q/JaRlPUIcjO',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            24 => 
-            array (
+            24 =>
+            array(
                 'id' => 26,
                 'name' => 'Cordie Corkery',
                 'email' => '16221@student.com',
                 'password' => '$2y$10$X4ADEPlbkdRxyFmDYVTrVud4lxC8cuOs6e8xHfMtxzoBj0/juYNDq',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            25 => 
-            array (
+            25 =>
+            array(
                 'id' => 27,
                 'name' => 'Mr. Christopher Nolan III',
                 'email' => '48228@student.com',
                 'password' => '$2y$10$OD1hYzOsIkrb368hOqub9.v9tS9HPN.cH03ndeIs9We/kOu0o0u7u',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            26 => 
-            array (
+            26 =>
+            array(
                 'id' => 28,
                 'name' => 'Maude Morissette Jr.',
                 'email' => '57901@student.com',
                 'password' => '$2y$10$qKZ3VrzJU9fQDftrycqavOdVDH6445bdMrw/C.hnUDA4fisXVHFES',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            27 => 
-            array (
+            27 =>
+            array(
                 'id' => 29,
                 'name' => 'Justyn Russel',
                 'email' => '31173@student.com',
                 'password' => '$2y$10$/lDCRpCxKtbcWIXz7O7jAeFijJoXiMTHq8RDB5Qt/1UjhwMgKu4ne',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            28 => 
-            array (
+            28 =>
+            array(
                 'id' => 30,
                 'name' => 'Dr. Misael Larson',
                 'email' => '58137@student.com',
                 'password' => '$2y$10$TeMyNBnwnmbMxfAEXJf6tOeAeooK4UfKRoKuNS7nBDgYWZAia/..e',
                 'school_id' => 3,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:15',
                 'updated_at' => '2021-10-21 08:32:15',
             ),
-            29 => 
-            array (
+            29 =>
+            array(
                 'id' => 31,
                 'name' => 'Margarita Boyer IV',
                 'email' => '58009@student.com',
                 'password' => '$2y$10$D9uoAxRXFZTYEqtzaShK0uzlSYQ3mUkmz1lVpH/BDGYStCaUhyAIO',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            30 => 
-            array (
+            30 =>
+            array(
                 'id' => 32,
                 'name' => 'Ladarius Bednar',
                 'email' => '76720@student.com',
                 'password' => '$2y$10$VhQPlUF7OeSYUDX9FWj3auUlM46YbAqFGlOsoMi8T276stgXEbrce',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            31 => 
-            array (
+            31 =>
+            array(
                 'id' => 33,
                 'name' => 'Prof. Wava Hudson III',
                 'email' => '74760@student.com',
                 'password' => '$2y$10$rZZMWHmpIc1ay41X9qUMWuMGVYCrOmB8vrA4RGU9Y3Im.C9Naijkq',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            32 => 
-            array (
+            32 =>
+            array(
                 'id' => 34,
                 'name' => 'Alexys Klein',
                 'email' => '4391@student.com',
                 'password' => '$2y$10$20byoF.JHQeDB0tHRu7ype.Er8Xyhu20iA2tY3r09Ys9z9vxDBqNq',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            33 => 
-            array (
+            33 =>
+            array(
                 'id' => 35,
                 'name' => 'Miss Lorna Huel Sr.',
                 'email' => '81033@student.com',
                 'password' => '$2y$10$BnNgLapZV/LjOUucbI5.oeaLLpXpRhJThC7uhJbp0Ldd0jZxD0kPm',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            34 => 
-            array (
+            34 =>
+            array(
                 'id' => 36,
                 'name' => 'Chaim Kshlerin',
                 'email' => '65374@student.com',
                 'password' => '$2y$10$Me2bLRY9VivtLdnFjJxLeuRdym1tEzV7SFSiTlVbU4wScLJsa7wCG',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            35 => 
-            array (
+            35 =>
+            array(
                 'id' => 37,
                 'name' => 'Abby Weimann',
                 'email' => '31698@student.com',
                 'password' => '$2y$10$y2vXCbB53qX2iXk0RHJWr.r7uvpo5sZ4OgkelKny/Gv4PNHMBLvi6',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            36 => 
-            array (
+            36 =>
+            array(
                 'id' => 38,
                 'name' => 'Ottilie Nienow',
                 'email' => '77636@student.com',
                 'password' => '$2y$10$arT5AuusJS12z0xNMG6SZepz1EpCVys7uxx6vZi4Fey/xCWyAgrFi',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            37 => 
-            array (
+            37 =>
+            array(
                 'id' => 39,
                 'name' => 'Miss Jannie Tremblay',
                 'email' => '46617@student.com',
                 'password' => '$2y$10$57pniOR8qev1Uy1GvjuuMe.ffmbKL.WkOtvkO8B6MEszdtrqLJIIq',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            38 => 
-            array (
+            38 =>
+            array(
                 'id' => 40,
                 'name' => 'Raquel Botsford',
                 'email' => '24307@student.com',
                 'password' => '$2y$10$0OOaAQPj/e7nB64uLbp0nePcHwxk4GiVmkrol0bQthXFTUFR2B7Fi',
                 'school_id' => 8,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:16',
                 'updated_at' => '2021-10-21 08:32:16',
             ),
-            39 => 
-            array (
+            39 =>
+            array(
                 'id' => 41,
                 'name' => 'Prof. Neal Bode',
                 'email' => '27867@student.com',
                 'password' => '$2y$10$1KFLztikfo/V3/Blx6jtlOk3xJ5bQzS71QBTObHu9fPL5RXt2W812',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            40 => 
-            array (
+            40 =>
+            array(
                 'id' => 42,
                 'name' => 'Laverna Osinski Jr.',
                 'email' => '66433@student.com',
                 'password' => '$2y$10$TQCHhQh9ByzYir9OgFwATeT/yYUpvvkJj0cLjRXj1vM76e4ZNay2y',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            41 => 
-            array (
+            41 =>
+            array(
                 'id' => 43,
                 'name' => 'Evelyn Collins',
                 'email' => '49961@student.com',
                 'password' => '$2y$10$MZUqDvRFU8I5KxfS3lWaP.kebI43K6FHblR.zrwnCOJiXbNRQ9g8a',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            42 => 
-            array (
+            42 =>
+            array(
                 'id' => 44,
                 'name' => 'Karina Turcotte',
                 'email' => '33681@student.com',
                 'password' => '$2y$10$XMVhdr5IdU1XewEcpUxz3.Phrm9wDy1FXXjdB/hI.VjQtAVuggKtO',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            43 => 
-            array (
+            43 =>
+            array(
                 'id' => 45,
                 'name' => 'Alison Klocko',
                 'email' => '17665@student.com',
                 'password' => '$2y$10$3vzT/KJUQ65fl.6AKdGMDu0U39TaUC5rCvf.k3l/8ky1yhnwZQ3Fa',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            44 => 
-            array (
+            44 =>
+            array(
                 'id' => 46,
                 'name' => 'Katrine Kutch',
                 'email' => '40616@student.com',
                 'password' => '$2y$10$1U/YZS4eswzjrp2nhC7ISOIIYUAW7H2w1IFBx6wCHuX1Y1tEl.84m',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            45 => 
-            array (
+            45 =>
+            array(
                 'id' => 47,
                 'name' => 'Dr. Darrion Christiansen Jr.',
                 'email' => '18672@student.com',
                 'password' => '$2y$10$4Bf0lEUFraF4elVyUFyEXexfx47nvbYD9WMi2otJdXHWojjtUgzpO',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            46 => 
-            array (
+            46 =>
+            array(
                 'id' => 48,
                 'name' => 'Orrin Stark',
                 'email' => '32482@student.com',
                 'password' => '$2y$10$8AgIgf8jb8/YXoRBtqW9sOgC3MODlYbGE6rxn2xTc5VMEPYtlLDRm',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            47 => 
-            array (
+            47 =>
+            array(
                 'id' => 49,
                 'name' => 'Savannah Klein',
                 'email' => '46920@student.com',
                 'password' => '$2y$10$JfiKrgmrqQB835E14JGHL.DB/9xq3Hn0zNHHONTQzdPtEvHnZ.ybu',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            48 => 
-            array (
+            48 =>
+            array(
                 'id' => 50,
                 'name' => 'Chaim Haley',
                 'email' => '79967@student.com',
                 'password' => '$2y$10$Q3hfWJzzYWXr0lntLXvzBebRS0Jeql0y5qxJiI.HcOIuD4xp443Lm',
                 'school_id' => 9,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:17',
                 'updated_at' => '2021-10-21 08:32:17',
             ),
-            49 => 
-            array (
+            49 =>
+            array(
                 'id' => 51,
                 'name' => 'Prof. Johnson Hayes DVM',
                 'email' => '42002@student.com',
                 'password' => '$2y$10$lEkBKLaF4iEcTAHxadwdK.ZbRcIYW9uNWCyh.L5Ury.hHDZuunewa',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            50 => 
-            array (
+            50 =>
+            array(
                 'id' => 52,
                 'name' => 'Meagan Waters',
                 'email' => '64229@student.com',
                 'password' => '$2y$10$L1fHz/tBvIRjKS6dUM842OaM/kF9decvPcXuATXqQ6huaBUdEWlhS',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            51 => 
-            array (
+            51 =>
+            array(
                 'id' => 53,
                 'name' => 'Dwight Baumbach',
                 'email' => '76289@student.com',
                 'password' => '$2y$10$B2AjMYzVbhee4bGpKxjOAOKf55Qg/3eQJK.ZgIwVPhclhPLTL368G',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            52 => 
-            array (
+            52 =>
+            array(
                 'id' => 54,
                 'name' => 'Bernardo Yundt Sr.',
                 'email' => '18171@student.com',
                 'password' => '$2y$10$fo0YCXkCZ0eqLJa3QdUM/uRcFQuv3vWZmWKskUVzYgZiqgww0vF4a',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            53 => 
-            array (
+            53 =>
+            array(
                 'id' => 55,
                 'name' => 'Abner O\'Kon',
                 'email' => '83432@student.com',
                 'password' => '$2y$10$pNDIgAUy2oYf4BVH.vs6GO.kxhhzForcffemFvrOU9zcvp2hT9Acq',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            54 => 
-            array (
+            54 =>
+            array(
                 'id' => 56,
                 'name' => 'Hailee Tromp',
                 'email' => '27224@student.com',
                 'password' => '$2y$10$tE1Mck8i4s.D5OxjszDI5uzwy250laQUMVekwzV0zOV5pKaxvDB9e',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            55 => 
-            array (
+            55 =>
+            array(
                 'id' => 57,
                 'name' => 'Mr. Garth Runolfsdottir',
                 'email' => '58738@student.com',
                 'password' => '$2y$10$pfCwuLuSY/Sy8GfyDXlwf.KuYQ/ureaqarHqOwMU0D1T7BS7c3012',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            56 => 
-            array (
+            56 =>
+            array(
                 'id' => 58,
                 'name' => 'Kameron Schuppe Sr.',
                 'email' => '48768@student.com',
                 'password' => '$2y$10$y34ylb.wT.r72X7sZ9WWPObMdcJbNqcXSelKC5B7clLXPfSZ55IL2',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            57 => 
-            array (
+            57 =>
+            array(
                 'id' => 59,
                 'name' => 'Dejuan Blanda',
                 'email' => '70388@student.com',
                 'password' => '$2y$10$HP/vCrF1Jotq97RkETnUfueUcVc6Ahg0U0BKM6vQ6WzTuOA2cPJXO',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            58 => 
-            array (
+            58 =>
+            array(
                 'id' => 60,
                 'name' => 'Joy Tromp',
                 'email' => '68302@student.com',
                 'password' => '$2y$10$IuBpvXvPJlp35UBwH73TGeT8tZkBv1RAdX7CVwmm1vg68qhO3xOpS',
                 'school_id' => 11,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:18',
                 'updated_at' => '2021-10-21 08:32:18',
             ),
-            59 => 
-            array (
+            59 =>
+            array(
                 'id' => 61,
                 'name' => 'Mrs. Leslie Flatley',
                 'email' => '51998@student.com',
                 'password' => '$2y$10$qDuHbwSNxnACYBMAN93XBOGZR4ezfJke4o9T5TFjtar.OnSher8a6',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            60 => 
-            array (
+            60 =>
+            array(
                 'id' => 62,
                 'name' => 'Miss Reta Murazik',
                 'email' => '31435@student.com',
                 'password' => '$2y$10$O06WwHGbvwiAq/eHwu5siuJOu2OPdr.ucGvEL9Po6GrD68/b4ejwK',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            61 => 
-            array (
+            61 =>
+            array(
                 'id' => 63,
                 'name' => 'Jamel Dietrich II',
                 'email' => '78544@student.com',
                 'password' => '$2y$10$rIQ2.tsCgLBjdg8ijSuL6.u/pdjM5PodRP0G32XFb5p0Iqd6Zqy16',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            62 => 
-            array (
+            62 =>
+            array(
                 'id' => 64,
                 'name' => 'Prof. Deondre Nitzsche',
                 'email' => '48178@student.com',
                 'password' => '$2y$10$LovR3pr8BEQECUPZDdkCa.8dESIbrLCTnDmyCOZNldup/LGOWoYkG',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            63 => 
-            array (
+            63 =>
+            array(
                 'id' => 65,
                 'name' => 'Miss Pascale Hudson V',
                 'email' => '90000@student.com',
                 'password' => '$2y$10$Ifsd1SUj5UKrRIiSdOWFT.KN5mZRzh7y3YDMLeXIW0YYu1n7/7wuO',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            64 => 
-            array (
+            64 =>
+            array(
                 'id' => 66,
                 'name' => 'Luella Larson',
                 'email' => '9287@student.com',
                 'password' => '$2y$10$b8xUZUQG8PqnnhgQdReYc.Sp4jUFnZKwHk1PVD2JMRdpvbkcriluO',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            65 => 
-            array (
+            65 =>
+            array(
                 'id' => 67,
                 'name' => 'Clovis Erdman',
                 'email' => '25779@student.com',
                 'password' => '$2y$10$RqlEbfE2kWYTSgTw5TAEf.Ni5QM5g9n8cpRk77Rd6z3fGxnT2Ez5.',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            66 => 
-            array (
+            66 =>
+            array(
                 'id' => 68,
                 'name' => 'Destin Graham',
                 'email' => '62885@student.com',
                 'password' => '$2y$10$pPO9swgEPLMyLgJDj8CLRurGuDnuyJE2ltjwrekNXeW0GcVx2liBu',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            67 => 
-            array (
+            67 =>
+            array(
                 'id' => 69,
                 'name' => 'Mr. Vincent Considine PhD',
                 'email' => '57827@student.com',
                 'password' => '$2y$10$a9S5.oIbxUDvuz9RgtILb.buNSfdC/yqCktddabhJDqWdqEgYuQ4.',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            68 => 
-            array (
+            68 =>
+            array(
                 'id' => 70,
                 'name' => 'Theresia Hand',
                 'email' => '30578@student.com',
                 'password' => '$2y$10$AgaDr0s6hRyQQ5jbKoDW2u.Ga4AfuRmjk4YNNdW0x7Lu1g2lUSunC',
                 'school_id' => 12,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:19',
                 'updated_at' => '2021-10-21 08:32:19',
             ),
-            69 => 
-            array (
+            69 =>
+            array(
                 'id' => 71,
                 'name' => 'Boris Sporer',
                 'email' => '19969@student.com',
                 'password' => '$2y$10$igFLUHx/xdVthcHhqC1kI.627qpkEAJonigpoJI9RFGjiyZbiLDbS',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            70 => 
-            array (
+            70 =>
+            array(
                 'id' => 72,
                 'name' => 'Prof. Harold Powlowski',
                 'email' => '66297@student.com',
                 'password' => '$2y$10$CiupcYkkHfE6CiIEVntw0.4vmGTxKeeB3rCpAFroh3DozidoY0ivy',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            71 => 
-            array (
+            71 =>
+            array(
                 'id' => 73,
                 'name' => 'Lawrence Roberts',
                 'email' => '39209@student.com',
                 'password' => '$2y$10$.O/eq/c9IUK9OZbLfdnmuuJnNvoeV9aqB2sjlN/R1TwpRoCqNqIwC',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            72 => 
-            array (
+            72 =>
+            array(
                 'id' => 74,
                 'name' => 'Mrs. Linda Schaden V',
                 'email' => '26655@student.com',
                 'password' => '$2y$10$b2LQyiD/FI5u3f5i02j1ReRqN3TMT45qB/kFVUktpu7Ury2Tzmt1.',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            73 => 
-            array (
+            73 =>
+            array(
                 'id' => 75,
                 'name' => 'Lafayette Shanahan',
                 'email' => '3457@student.com',
                 'password' => '$2y$10$UhNc1af1RlcDUWM4452df.qbNnWz0Np/VpxTFDyU58QubLZ1YSkc2',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            74 => 
-            array (
+            74 =>
+            array(
                 'id' => 76,
                 'name' => 'Millie Gerlach',
                 'email' => '41183@student.com',
                 'password' => '$2y$10$PVtyR0fEKMIh9JmKZz86d.J1ETNbpSjY.lbg66EpLF0i31kIULIGm',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            75 => 
-            array (
+            75 =>
+            array(
                 'id' => 77,
                 'name' => 'Johnson Langworth',
                 'email' => '58915@student.com',
                 'password' => '$2y$10$dd8opFfp0e6usNcQTlwxV.gUFcWpHFW3aMsFKbDVRZNzBh3Z/uURG',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            76 => 
-            array (
+            76 =>
+            array(
                 'id' => 78,
                 'name' => 'Estefania Mohr',
                 'email' => '16336@student.com',
                 'password' => '$2y$10$E7NFvEIlb2icD14SKs5LUOSTE17znx7rNqfQkpBm9fCzHOhMvGMxC',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            77 => 
-            array (
+            77 =>
+            array(
                 'id' => 79,
                 'name' => 'Felton Considine Jr.',
                 'email' => '20556@student.com',
                 'password' => '$2y$10$c5QZ3YdPRFgKGna2PUuxeuKL66SoHfVjCRTo.C3AVgwasQOlth0jq',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            78 => 
-            array (
+            78 =>
+            array(
                 'id' => 80,
                 'name' => 'Taurean Padberg',
                 'email' => '4736@student.com',
                 'password' => '$2y$10$QeIIRldq0.HZizGTQqsdk.Q65UJqyABYk6XODLpTKlXHWqUl1pA3C',
                 'school_id' => 14,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:20',
                 'updated_at' => '2021-10-21 08:32:20',
             ),
-            79 => 
-            array (
+            79 =>
+            array(
                 'id' => 81,
                 'name' => 'Dr. Summer Krajcik',
                 'email' => '42341@student.com',
                 'password' => '$2y$10$GycK/urQPiduo1.FIs2vie4zZAmzGexwSrOLNAeGNfWyx/vc4k5Ma',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            80 => 
-            array (
+            80 =>
+            array(
                 'id' => 82,
                 'name' => 'Waldo Herzog',
                 'email' => '8225@student.com',
                 'password' => '$2y$10$lzceyBOI1xkDHbIPN/sx9.9AujCZFJdGYs/NWsOm3M3sIhUZG2nFa',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            81 => 
-            array (
+            81 =>
+            array(
                 'id' => 83,
                 'name' => 'Alayna Hagenes',
                 'email' => '32898@student.com',
                 'password' => '$2y$10$V7y2q/hKHGTj4JckI4k.GOrBdogpFHgSC2jw/1q/vXr5jJH3u/Fsq',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            82 => 
-            array (
+            82 =>
+            array(
                 'id' => 84,
                 'name' => 'Jena Mraz',
                 'email' => '8884@student.com',
                 'password' => '$2y$10$YzMF/SfjbaZPwFNuL3jqsunzJOPK8loVyYthW6yLjB0Bi7SV8GYGS',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            83 => 
-            array (
+            83 =>
+            array(
                 'id' => 85,
                 'name' => 'Prof. Jensen Berge DVM',
                 'email' => '58876@student.com',
                 'password' => '$2y$10$G3tSkFEx/30.SJcrx0ewc.ByfMXFY/DjilHtAl6w83rgSCK0o9Bhu',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            84 => 
-            array (
+            84 =>
+            array(
                 'id' => 86,
                 'name' => 'Dr. Brock Ziemann DVM',
                 'email' => '70316@student.com',
                 'password' => '$2y$10$T1Hwfncd4AUOmw/gJTyWl.FPs17OicwwH9KrGFl8z3glS6DWWkNAu',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            85 => 
-            array (
+            85 =>
+            array(
                 'id' => 87,
                 'name' => 'Noah Schmeler',
                 'email' => '20435@student.com',
                 'password' => '$2y$10$A8SFdgnmldzNDC.D5BUyne6khyzv/nsUhCHwVS2cVcY8lxy5EBLyC',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            86 => 
-            array (
+            86 =>
+            array(
                 'id' => 88,
                 'name' => 'Destin Schmidt II',
                 'email' => '42387@student.com',
                 'password' => '$2y$10$5EbPG34V/n/7PePrq4aflOhQarLuT7/mA53MaNEQMRLWOLn6GD1TW',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            87 => 
-            array (
+            87 =>
+            array(
                 'id' => 89,
                 'name' => 'Dr. Tremaine Emard',
                 'email' => '49227@student.com',
                 'password' => '$2y$10$fdyRBwwKft3ibm7ePpcx/u5B1iILy3lB/.Q8O6BOZOMK5oY6mB6bq',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            88 => 
-            array (
+            88 =>
+            array(
                 'id' => 90,
                 'name' => 'Harley Sawayn',
                 'email' => '7352@student.com',
                 'password' => '$2y$10$1tXWGKqKbZsRFhNMwIBkGeLZbav.JWeL.KzNKvdMDzextVZ49stB2',
                 'school_id' => 15,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:21',
                 'updated_at' => '2021-10-21 08:32:21',
             ),
-            89 => 
-            array (
+            89 =>
+            array(
                 'id' => 91,
                 'name' => 'Arlo Price',
                 'email' => '735@student.com',
                 'password' => '$2y$10$CPKMUDTaeY50JjxK57CHEuW7ZhW4R22jXFCqA7Ou.3dcTn6VTmLOW',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            90 => 
-            array (
+            90 =>
+            array(
                 'id' => 92,
                 'name' => 'Miss Dariana Boyer',
                 'email' => '3011@student.com',
                 'password' => '$2y$10$6d5WRTSy2fzdUCTYxbBiGedP2pKZqrQAJMINfVGKbw69DFxyOcEAW',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            91 => 
-            array (
+            91 =>
+            array(
                 'id' => 93,
                 'name' => 'Crystal Kerluke',
                 'email' => '37901@student.com',
                 'password' => '$2y$10$6FkU3tki2v79tJknPPnZC.rkQgn0c.J73odUC8Ff0N4o3TGVXZnoe',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            92 => 
-            array (
+            92 =>
+            array(
                 'id' => 94,
                 'name' => 'Emmett Romaguera',
                 'email' => '14052@student.com',
                 'password' => '$2y$10$mawfR.aEbjYIvopvJa3tWuPcgnqaUnDGqsFl91Gndh2NEoeteHvs6',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            93 => 
-            array (
+            93 =>
+            array(
                 'id' => 95,
                 'name' => 'Carole Kunde',
                 'email' => '2905@student.com',
                 'password' => '$2y$10$Tni6H.Hr6eG5fLOp0Uv/1OcpOybdB072rEjHNfHU6I4h28ou39602',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            94 => 
-            array (
+            94 =>
+            array(
                 'id' => 96,
                 'name' => 'Wilber Erdman',
                 'email' => '81432@student.com',
                 'password' => '$2y$10$EKERXS.OxpTqeDtc/4ABiOwY5uOtjpY.IGwRsMTpCo3he2kwTK2Wq',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            95 => 
-            array (
+            95 =>
+            array(
                 'id' => 97,
                 'name' => 'Dr. Cordie Rice',
                 'email' => '39053@student.com',
                 'password' => '$2y$10$H7SJjEFkYXhEtSESGm85Levny1tzROM4jZ11lnc4h1ViRzjQkvTn.',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            96 => 
-            array (
+            96 =>
+            array(
                 'id' => 98,
                 'name' => 'Emerson Lubowitz',
                 'email' => '75127@student.com',
                 'password' => '$2y$10$elJ1xJQzq1V08ueuyLO4E.hEr3LCMN5noOnY7lKPle0Z4FmI0Y1AS',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            97 => 
-            array (
+            97 =>
+            array(
                 'id' => 99,
                 'name' => 'Jordyn Dicki',
                 'email' => '86608@student.com',
                 'password' => '$2y$10$.C.4F80UNvbZEqYt9K4JTux5Qcz1iik9jcNmQNzTPYw/AzwQJ/tpK',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            98 => 
-            array (
+            98 =>
+            array(
                 'id' => 100,
                 'name' => 'Ernie Steuber',
                 'email' => '40600@student.com',
                 'password' => '$2y$10$p9lc87Pw3iyW1GN82dr5j.8N7P8CvasSBnUP/H.rTlWMy1IkkSboC',
                 'school_id' => 17,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:22',
                 'updated_at' => '2021-10-21 08:32:22',
             ),
-            99 => 
-            array (
+            99 =>
+            array(
                 'id' => 101,
                 'name' => 'Prof. Santino Wiegand',
                 'email' => '74725@student.com',
                 'password' => '$2y$10$PUhUO0.slx4jr7.KE4LX7OFiEhaGdjueg9sPdtTW4vV/taemDi7Zm',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            100 => 
-            array (
+            100 =>
+            array(
                 'id' => 102,
                 'name' => 'Savanna Shanahan',
                 'email' => '59584@student.com',
                 'password' => '$2y$10$FI5IHqAqcoPSwlNViVfWBO1FER0Kx2zp4qbHKzdfUrvAfj65iEv.S',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            101 => 
-            array (
+            101 =>
+            array(
                 'id' => 103,
                 'name' => 'Dr. Kaleigh Schuster II',
                 'email' => '84679@student.com',
                 'password' => '$2y$10$7F3XIf0elBcsJW33yvXBAe62ta/g7WCrvs89Xm04iyOkjHEOBlkbG',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            102 => 
-            array (
+            102 =>
+            array(
                 'id' => 104,
                 'name' => 'Dr. Zora Strosin',
                 'email' => '53305@student.com',
                 'password' => '$2y$10$KOaSCaLDcFs1oYJkC2cxoebph25.N50gl5agP46cqNIf7.SIDE7fi',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            103 => 
-            array (
+            103 =>
+            array(
                 'id' => 105,
                 'name' => 'Joelle Hahn',
                 'email' => '16062@student.com',
                 'password' => '$2y$10$Q8h9DW92IFTiGEeoMFQ.hOHpj013UJ/kZLPxYziz5xSgG2CSxZGlu',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            104 => 
-            array (
+            104 =>
+            array(
                 'id' => 106,
                 'name' => 'Aylin Ebert',
                 'email' => '69767@student.com',
                 'password' => '$2y$10$bsqobEp3KYjQUj1wI4ncq.qmfaDC4QmI2cyYcJKIWz4TXlxVq8XtC',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            105 => 
-            array (
+            105 =>
+            array(
                 'id' => 107,
                 'name' => 'Ms. Vicenta DuBuque',
                 'email' => '60845@student.com',
                 'password' => '$2y$10$ekQL0lHYzUDPZXKMWLImu.psf35FcN7bNVfaQZ1sNSVH9CbW7/aP2',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            106 => 
-            array (
+            106 =>
+            array(
                 'id' => 108,
                 'name' => 'Jana Emard IV',
                 'email' => '46487@student.com',
                 'password' => '$2y$10$WvpmLlqMfSldYWLprKXzoOeHA200feqhQVRb3UWb0ibtj5.43aPa.',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            107 => 
-            array (
+            107 =>
+            array(
                 'id' => 109,
                 'name' => 'Efrain Bode',
                 'email' => '78926@student.com',
                 'password' => '$2y$10$v/LXQuYo/NmOhY8.1tO4lusqPkOl/udkcHPFnrsX2EQwstUh3S7vC',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            108 => 
-            array (
+            108 =>
+            array(
                 'id' => 110,
                 'name' => 'Cynthia McCullough',
                 'email' => '4492@student.com',
                 'password' => '$2y$10$dFkJ//PZl5B5IPpdj/TK1eDMI7q/z73mqN/Gt3SbsDMVTQW3kliCy',
                 'school_id' => 18,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:23',
                 'updated_at' => '2021-10-21 08:32:23',
             ),
-            109 => 
-            array (
+            109 =>
+            array(
                 'id' => 111,
                 'name' => 'Augustus Jaskolski',
                 'email' => '44484@student.com',
                 'password' => '$2y$10$qrkl1Pzy7kyLcVYRBfhJDOigwu6qLkmtw6oYUqEq4s7SPLzOnfYzC',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            110 => 
-            array (
+            110 =>
+            array(
                 'id' => 112,
                 'name' => 'Neoma Bergnaum',
                 'email' => '87840@student.com',
                 'password' => '$2y$10$c0UsJP9NFO7/3Jxv9d8IbOaqeqnIXrKNcforpYnIEDh/3jTNZlhGK',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            111 => 
-            array (
+            111 =>
+            array(
                 'id' => 113,
                 'name' => 'Dr. Antonetta Vandervort',
                 'email' => '81634@student.com',
                 'password' => '$2y$10$OPsmp2AN/JhdnOH/fQVaH.h9xs/EMaq84QUTJqvU94IUZv4mLtMo2',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            112 => 
-            array (
+            112 =>
+            array(
                 'id' => 114,
                 'name' => 'Mr. Donnie Cremin DVM',
                 'email' => '46790@student.com',
                 'password' => '$2y$10$BexAzbF3k7cGKPYtgIInWucCUs5BSLeGHt1ZmZoDiZYRLrBihJuVC',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            113 => 
-            array (
+            113 =>
+            array(
                 'id' => 115,
                 'name' => 'Cleve Wiza',
                 'email' => '86091@student.com',
                 'password' => '$2y$10$dKoF.4k3dDNIkU971SMsUe03ZW7UiCTipZbc.d4q4MVPZ.Xanht.K',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            114 => 
-            array (
+            114 =>
+            array(
                 'id' => 116,
                 'name' => 'Candelario Connelly',
                 'email' => '15841@student.com',
                 'password' => '$2y$10$.ZcwQm8XsBmCwWQemF5iQOqX4rM9mSOeESClB1BAPwjM1V7RRzmJa',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            115 => 
-            array (
+            115 =>
+            array(
                 'id' => 117,
                 'name' => 'Mr. Austyn Feest IV',
                 'email' => '74114@student.com',
                 'password' => '$2y$10$IFoxI61gDBr/mmTnOcFaru6BaxCAN.kgFX1E7Sgvm7gyV2hoIQ7tC',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            116 => 
-            array (
+            116 =>
+            array(
                 'id' => 118,
                 'name' => 'Ms. Jewel Kemmer IV',
                 'email' => '6865@student.com',
                 'password' => '$2y$10$clFVlTHASvrgdH29ea8/V.3/h4MZ0zwx/UQMlTImi/AZsP/8SX3ki',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            117 => 
-            array (
+            117 =>
+            array(
                 'id' => 119,
                 'name' => 'Dr. Skylar Bergnaum',
                 'email' => '82733@student.com',
                 'password' => '$2y$10$IppGYIz0PtVLoHUvUfl3..Z2uOkZJeJpSpUlP/pQLKRw.5MBLqSfG',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            118 => 
-            array (
+            118 =>
+            array(
                 'id' => 120,
                 'name' => 'Sherman Rau',
                 'email' => '76765@student.com',
                 'password' => '$2y$10$hOD7w464OWyVKEZj6vnNJOiRNAANCxa.OhKrYUjeTigOzFxK51wtS',
                 'school_id' => 20,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:24',
                 'updated_at' => '2021-10-21 08:32:24',
             ),
-            119 => 
-            array (
+            119 =>
+            array(
                 'id' => 121,
                 'name' => 'Maximo Homenick Sr.',
                 'email' => '40154@student.com',
                 'password' => '$2y$10$z2615kxjnjF4/./psDK0Beum6hF6G4gTKUJmvxXEmb8jRkpXta0kG',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            120 => 
-            array (
+            120 =>
+            array(
                 'id' => 122,
                 'name' => 'Mrs. Baby Streich',
                 'email' => '86650@student.com',
                 'password' => '$2y$10$4XwlipsOp0Dg/WOvXO5h7.n.lu4Y23iMaWt/u0wmv.CqJvzugxcIK',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            121 => 
-            array (
+            121 =>
+            array(
                 'id' => 123,
                 'name' => 'Rex Marquardt',
                 'email' => '69144@student.com',
                 'password' => '$2y$10$VC5tpvw/JQNiF5uQQ6j2NO11fa30CqUtdyBfUsgYHGAdk83jdRTKy',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            122 => 
-            array (
+            122 =>
+            array(
                 'id' => 124,
                 'name' => 'Gracie Predovic',
                 'email' => '50645@student.com',
                 'password' => '$2y$10$g5m2WrVfRak4uxJ7TiM.ZuSHpNNFsQkYQnrc1jnVz3HI2uB6dCOa2',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            123 => 
-            array (
+            123 =>
+            array(
                 'id' => 125,
                 'name' => 'Dr. Elouise Terry I',
                 'email' => '20898@student.com',
                 'password' => '$2y$10$lY356nmA0/aSdEJ2um0j0uBD49xwU10yC0ji.w9fiPARSvMB/u4py',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            124 => 
-            array (
+            124 =>
+            array(
                 'id' => 126,
                 'name' => 'Mr. London Langosh MD',
                 'email' => '74293@student.com',
                 'password' => '$2y$10$w8zjOVohmhAx8tPLpKflvOcCDXtEPO21OFUmnIRekJfpudMtpzeWq',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            125 => 
-            array (
+            125 =>
+            array(
                 'id' => 127,
                 'name' => 'Santina Kautzer',
                 'email' => '42956@student.com',
                 'password' => '$2y$10$zs6nsrEId1djY3tjv5YjMupf8IQGDJeVkRiOGL0vS6375xXMsC/rq',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            126 => 
-            array (
+            126 =>
+            array(
                 'id' => 128,
                 'name' => 'Lucas Hahn',
                 'email' => '70095@student.com',
                 'password' => '$2y$10$I6C7i7xfaUaQqacV8qIJ5uXKuy5BwoEhYzWNS3bX4cSn4F7gHeXCS',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            127 => 
-            array (
+            127 =>
+            array(
                 'id' => 129,
                 'name' => 'Gail Moore',
                 'email' => '57844@student.com',
                 'password' => '$2y$10$kSxDRe9PS9m5bMvs7JVvj.FPpLiGtlLGdla0L96UBVhx4L1ra6zPC',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            128 => 
-            array (
+            128 =>
+            array(
                 'id' => 130,
                 'name' => 'Dr. Wade Morissette',
                 'email' => '20542@student.com',
                 'password' => '$2y$10$p82Oj7nWkuOF5QWxCWJBUeFhTWuvhQIwHiFG.W8l2XhaHA5cnP4Za',
                 'school_id' => 21,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:25',
                 'updated_at' => '2021-10-21 08:32:25',
             ),
-            129 => 
-            array (
+            129 =>
+            array(
                 'id' => 131,
                 'name' => 'Adelia Bayer',
                 'email' => '45155@student.com',
                 'password' => '$2y$10$D7.DUEF2a3hoQuMkSbOWfeISF5fjpIIpKk1gJCrTZrJ1fp1Q/fgbC',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            130 => 
-            array (
+            130 =>
+            array(
                 'id' => 132,
                 'name' => 'Dr. Darien Konopelski',
                 'email' => '26322@student.com',
                 'password' => '$2y$10$toXwQYX8.PIOyhI9q.YPBeWx.0f8IFVZy8bxf5Nt4ROODzppqG2SK',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            131 => 
-            array (
+            131 =>
+            array(
                 'id' => 133,
                 'name' => 'Leo Dare',
                 'email' => '86158@student.com',
                 'password' => '$2y$10$wASctLp1EJqV6qKtKlTD2OWGsv1s2xGge0yC.dWf6r.6SSiLx9.mi',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            132 => 
-            array (
+            132 =>
+            array(
                 'id' => 134,
                 'name' => 'Mr. Tony Walter I',
                 'email' => '10516@student.com',
                 'password' => '$2y$10$Kptd5yhlo0dwpMnqn1M5qOHLPqpL5Bkrr/f..4MaswnRmAxlrGxCu',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            133 => 
-            array (
+            133 =>
+            array(
                 'id' => 135,
                 'name' => 'Roxane Feeney',
                 'email' => '33643@student.com',
                 'password' => '$2y$10$OGKzXdRDPvCRPBS55c1rP.muBhRRX50GwwOD4EUSDaP/4Ohu.PARS',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            134 => 
-            array (
+            134 =>
+            array(
                 'id' => 136,
                 'name' => 'Prof. Alia Reichert',
                 'email' => '81367@student.com',
                 'password' => '$2y$10$7yYc/hAriZoeNfdJyNGBFeElNG3E.wUaOV/z.wRgyyDJNIamHFhLe',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            135 => 
-            array (
+            135 =>
+            array(
                 'id' => 137,
                 'name' => 'Miss Kaela Feest',
                 'email' => '13167@student.com',
                 'password' => '$2y$10$u0aqrc7QJ4w7LH7/EZJtDOpGnHsWsVaOhxiIHoxI.48udZfZeOp9G',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            136 => 
-            array (
+            136 =>
+            array(
                 'id' => 138,
                 'name' => 'Prof. Ofelia O\'Reilly',
                 'email' => '36939@student.com',
                 'password' => '$2y$10$RaemBiqFXx50JAHtGsdX1.i1DKqGGuRELYY51D3okQ5GL65Rk7YCy',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            137 => 
-            array (
+            137 =>
+            array(
                 'id' => 139,
                 'name' => 'Loyal West',
                 'email' => '52500@student.com',
                 'password' => '$2y$10$IaY2BKFWusU1ZFj1C09VY.L5RtIRRrFeg6vLl.o9L/WsUUvRKNqAy',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            138 => 
-            array (
+            138 =>
+            array(
                 'id' => 140,
                 'name' => 'Phoebe Gulgowski',
                 'email' => '60306@student.com',
                 'password' => '$2y$10$YXjN.2Dxr7Kk4b3NABTjuOtLBtyFv2BlaDiVFy8CL1F7P3030RLmq',
                 'school_id' => 25,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:26',
                 'updated_at' => '2021-10-21 08:32:26',
             ),
-            139 => 
-            array (
+            139 =>
+            array(
                 'id' => 141,
                 'name' => 'Dr. Ryder Hirthe',
                 'email' => '9654@student.com',
                 'password' => '$2y$10$42PJJppZH3bVg5/J6HfBmOBdC7ui3x7aIRSa6.ArZwVRA.lyKOuFy',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            140 => 
-            array (
+            140 =>
+            array(
                 'id' => 142,
                 'name' => 'Lilliana Rath',
                 'email' => '339@student.com',
                 'password' => '$2y$10$EgenkR/d24hkLidlOqv80OGfTGx3PL6ISD8WhlB.z8brSmZ0r20EK',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            141 => 
-            array (
+            141 =>
+            array(
                 'id' => 143,
                 'name' => 'Angeline Breitenberg',
                 'email' => '16815@student.com',
                 'password' => '$2y$10$CLI24gigEHdlu.bmRxeB1eXmwZ6og6i5EYv4oKBHmMUz3p90M87l6',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            142 => 
-            array (
+            142 =>
+            array(
                 'id' => 144,
                 'name' => 'Justina Mosciski',
                 'email' => '494@student.com',
                 'password' => '$2y$10$xt7y1A.kdQZ5TYI0SjghoO/lYoxlaoz3jSZKttmScFD7R/lm05vB.',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            143 => 
-            array (
+            143 =>
+            array(
                 'id' => 145,
                 'name' => 'Thora Rutherford III',
                 'email' => '74023@student.com',
                 'password' => '$2y$10$cjFlvBO53O1xCJsvOVCMPeycxcxESo.P2n23wr1FD3U9HjowpXw5e',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            144 => 
-            array (
+            144 =>
+            array(
                 'id' => 146,
                 'name' => 'Mr. Bart Nienow',
                 'email' => '52114@student.com',
                 'password' => '$2y$10$CDHbvTOCvqR5DUD25tTe3eWSOTEyGZF8ffDwiLpjGzpmZR3raFnqC',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            145 => 
-            array (
+            145 =>
+            array(
                 'id' => 147,
                 'name' => 'Leta Zulauf',
                 'email' => '35652@student.com',
                 'password' => '$2y$10$5kqxkC6UMYQBSfcsItT3bOCv89WKpGaFXAxRADBZoEmB.FSL1HWyS',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            146 => 
-            array (
+            146 =>
+            array(
                 'id' => 148,
                 'name' => 'Ebba Friesen',
                 'email' => '37274@student.com',
                 'password' => '$2y$10$gNyOX6L143GUMyWgeNQxD.nQwxR5OVAxueHHmhLqn4m8ka7VH65lG',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            147 => 
-            array (
+            147 =>
+            array(
                 'id' => 149,
                 'name' => 'Lisette Hilpert',
                 'email' => '15604@student.com',
                 'password' => '$2y$10$z5Xc3AHl3eV3FIvDsedOaulgNfc9qdCb5Nxu83bCVpxVutjQQBPQy',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            148 => 
-            array (
+            148 =>
+            array(
                 'id' => 150,
                 'name' => 'Alexa Medhurst',
                 'email' => '68450@student.com',
                 'password' => '$2y$10$.e8nblR6sF0mUcheQth.EO34h63mznhGTj/.EEXu6LTlviMlNa3Tq',
                 'school_id' => 26,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:27',
                 'updated_at' => '2021-10-21 08:32:27',
             ),
-            149 => 
-            array (
+            149 =>
+            array(
                 'id' => 151,
                 'name' => 'Kurtis Schultz',
                 'email' => '32131@student.com',
                 'password' => '$2y$10$tKnQ4RR0Stk0Jgd4dv1dz.Uu1beKqioyje0LM7QQny/nXLpBZtXai',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            150 => 
-            array (
+            150 =>
+            array(
                 'id' => 152,
                 'name' => 'Prof. Fay Kuvalis Sr.',
                 'email' => '21277@student.com',
                 'password' => '$2y$10$0ElhixU53S.c2y41uvvWdeqg1qUU92Tmk.R71IrCrFUlVyz8UbhYG',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            151 => 
-            array (
+            151 =>
+            array(
                 'id' => 153,
                 'name' => 'Elwin Koelpin',
                 'email' => '87825@student.com',
                 'password' => '$2y$10$2NCnV/qpHpdgy4eXqbVqK.1c7VP/LsBd3R9j9IL4jMZersTaaPm3K',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            152 => 
-            array (
+            152 =>
+            array(
                 'id' => 154,
                 'name' => 'Miss Laney Brekke MD',
                 'email' => '62004@student.com',
                 'password' => '$2y$10$PTr.ceUXJrCmlSm9tpxcjOs.o8SBRq6BpKMKSZ47YzmFezyn9qBSC',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            153 => 
-            array (
+            153 =>
+            array(
                 'id' => 155,
                 'name' => 'Julie Schowalter',
                 'email' => '23861@student.com',
                 'password' => '$2y$10$RdremVnTBeg9sUMg0/3pAug9YpbkU9Bk8.39Zc8ybXNuCVbx3dUSG',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            154 => 
-            array (
+            154 =>
+            array(
                 'id' => 156,
                 'name' => 'Prof. Ladarius Balistreri Sr.',
                 'email' => '21724@student.com',
                 'password' => '$2y$10$QOVEV6r/1kbI8EaT0mim3.C7qZD0uoyinvT4ucPwTWEdL2JM1U9wa',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            155 => 
-            array (
+            155 =>
+            array(
                 'id' => 157,
                 'name' => 'Kenya Murray Jr.',
                 'email' => '71707@student.com',
                 'password' => '$2y$10$KKc88gaKc68xtLWbqpdySuJyWDEXN/J4vHAVSVdH/B.323jQk2ZUK',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            156 => 
-            array (
+            156 =>
+            array(
                 'id' => 158,
                 'name' => 'Mrs. Beaulah Dooley',
                 'email' => '86227@student.com',
                 'password' => '$2y$10$a.aKI7W6H.aoesqBrY.wBe9of66L2CajMXfiqUklJg1zkheCYO5Gi',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            157 => 
-            array (
+            157 =>
+            array(
                 'id' => 159,
                 'name' => 'Vicenta Kirlin',
                 'email' => '47181@student.com',
                 'password' => '$2y$10$m0XvIL/jqoMp7HA4y71.j.jCuJGiJaBuWHcC2hn8wuuAKmnAFoJse',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            158 => 
-            array (
+            158 =>
+            array(
                 'id' => 160,
                 'name' => 'Dahlia Kuhn IV',
                 'email' => '39141@student.com',
                 'password' => '$2y$10$z6xdNl6yVRKcx.YoKfSkj.W.G/b4rkmflOXFlQ/cEVmHrV7cprSPq',
                 'school_id' => 27,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:28',
                 'updated_at' => '2021-10-21 08:32:28',
             ),
-            159 => 
-            array (
+            159 =>
+            array(
                 'id' => 161,
                 'name' => 'Geoffrey Doyle',
                 'email' => '44150@student.com',
                 'password' => '$2y$10$RoX//rm6830T54G2Nj7fMebrSAlP4ulzdbrmytOVY203uopa.KriO',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            160 => 
-            array (
+            160 =>
+            array(
                 'id' => 162,
                 'name' => 'Kiana Johnson',
                 'email' => '19377@student.com',
                 'password' => '$2y$10$WsMH8xcLPr.WfEw0jhHYtePVDAIhvk8QRK92ADD.6rega3TyNGbcO',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            161 => 
-            array (
+            161 =>
+            array(
                 'id' => 163,
                 'name' => 'Emely Donnelly',
                 'email' => '64656@student.com',
                 'password' => '$2y$10$lAKALEeRg4OmC0.n8IB3a.dcVDZ1xO9VIHls4o348FjcDaJSe.Zsy',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            162 => 
-            array (
+            162 =>
+            array(
                 'id' => 164,
                 'name' => 'Prof. Marisol Koelpin DVM',
                 'email' => '87744@student.com',
                 'password' => '$2y$10$GKv5Dklmhc9iVxBUjoweA.1Nftu1U6iiAzaF0yZjekEE3r6cbmQnK',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            163 => 
-            array (
+            163 =>
+            array(
                 'id' => 165,
                 'name' => 'Germaine Dickens',
                 'email' => '73703@student.com',
                 'password' => '$2y$10$/NX/wRdpu1vjw0RFErQhr.izLuzsGultIBFwn.s1GhciZwpftZW8u',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            164 => 
-            array (
+            164 =>
+            array(
                 'id' => 166,
                 'name' => 'Leatha Hoeger II',
                 'email' => '47289@student.com',
                 'password' => '$2y$10$TiefUsvVYOF9cbMct6lxoeH01UtwS5bEBtDwsfDJBQhGlcPhoFUb2',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            165 => 
-            array (
+            165 =>
+            array(
                 'id' => 167,
                 'name' => 'Joey Romaguera',
                 'email' => '64243@student.com',
                 'password' => '$2y$10$vQsbYRXtYooovxB69YiwCObXCwZtG.VfRdJsCZwCXmyKcvWk0Ks4a',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            166 => 
-            array (
+            166 =>
+            array(
                 'id' => 168,
                 'name' => 'Osvaldo Gleichner',
                 'email' => '25665@student.com',
                 'password' => '$2y$10$LnfwTdO0fnA/mSJGnbQiHed/40.Libv5uut22XcYv84ul5xSxdfGi',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            167 => 
-            array (
+            167 =>
+            array(
                 'id' => 169,
                 'name' => 'Glen Friesen DVM',
                 'email' => '17492@student.com',
                 'password' => '$2y$10$tXm5lVTGpL/L3uFKUOwege5VTrf2qc4OWP7sVtB7VFZPWblUZmTdS',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            168 => 
-            array (
+            168 =>
+            array(
                 'id' => 170,
                 'name' => 'Raleigh Green',
                 'email' => '53062@student.com',
                 'password' => '$2y$10$VCUnMFR2u1EM02NMEQmu1O1FL37HOMJeRlS.BInWBC6aZUWRSsoCm',
                 'school_id' => 31,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:29',
                 'updated_at' => '2021-10-21 08:32:29',
             ),
-            169 => 
-            array (
+            169 =>
+            array(
                 'id' => 171,
                 'name' => 'Dr. Ed Murray V',
                 'email' => '42931@student.com',
                 'password' => '$2y$10$VHM4cj0N9wSjyAZ0sUtE9uXs6IUk6eMTZeT0aHjhKeffd20SV5SGa',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            170 => 
-            array (
+            170 =>
+            array(
                 'id' => 172,
                 'name' => 'Hilton Schoen',
                 'email' => '75740@student.com',
                 'password' => '$2y$10$56/E0.X8KcNtdTID3WQKROiC5NIDXCGJriZzowrNcAsXcGfjJ2o8i',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            171 => 
-            array (
+            171 =>
+            array(
                 'id' => 173,
                 'name' => 'Bethany Thompson',
                 'email' => '61492@student.com',
                 'password' => '$2y$10$yPT4Y.LMUUgO6gSP7m9nDOmu6CAzcrfg06loLseERQf81F7fA76tm',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            172 => 
-            array (
+            172 =>
+            array(
                 'id' => 174,
                 'name' => 'Leslie Kautzer IV',
                 'email' => '82552@student.com',
                 'password' => '$2y$10$bqm6jJLYRK7Y1WvJphAFSeCSd6aySHmRBBMLXK1v3nwKR3f5QOKkK',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            173 => 
-            array (
+            173 =>
+            array(
                 'id' => 175,
                 'name' => 'Muriel Waelchi',
                 'email' => '9872@student.com',
                 'password' => '$2y$10$Sj1pRayT2gGVKkjEnNbia.cjUnUqTQg7d0DN/ievFJ5x7Q45AW3rm',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            174 => 
-            array (
+            174 =>
+            array(
                 'id' => 176,
                 'name' => 'Dalton Klein PhD',
                 'email' => '3341@student.com',
                 'password' => '$2y$10$5A/zMtXJXTrfUrHEGfSMjOnK/2OwO6BjeVwnP5Gi0g0EPggGHdXGK',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            175 => 
-            array (
+            175 =>
+            array(
                 'id' => 177,
                 'name' => 'Myles Rippin IV',
                 'email' => '50405@student.com',
                 'password' => '$2y$10$2SMGqDc/5Rfk6Nm8KvrsJuTbLruYumjgBx7LfV6DfYw1JvDut7BI.',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            176 => 
-            array (
+            176 =>
+            array(
                 'id' => 178,
                 'name' => 'Mr. Buck Boehm',
                 'email' => '49636@student.com',
                 'password' => '$2y$10$wwQHkkFNbMNbrKnCG6TFg.0o3LF8pV80S.wpeAE8pqO1xHZzKHJT6',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            177 => 
-            array (
+            177 =>
+            array(
                 'id' => 179,
                 'name' => 'Rae Monahan II',
                 'email' => '12201@student.com',
                 'password' => '$2y$10$dEzXvKczeG8GEHkJiNLz5uQ16RlbX9IFMLRbMn9DEg8w5hRV8Mal6',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            178 => 
-            array (
+            178 =>
+            array(
                 'id' => 180,
                 'name' => 'Nora Weissnat',
                 'email' => '34360@student.com',
                 'password' => '$2y$10$7HzUPLvPIET3PTbJn3ufLOZtH16Z1E0y8lI.PEKyhNe/Bd7LxYMCC',
                 'school_id' => 32,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:30',
                 'updated_at' => '2021-10-21 08:32:30',
             ),
-            179 => 
-            array (
+            179 =>
+            array(
                 'id' => 181,
                 'name' => 'Stan Price',
                 'email' => '76339@student.com',
                 'password' => '$2y$10$E0T21P5aNB48bPnD9SyenehPxwncysgSe8/DdGj4uzILqvh7envxS',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            180 => 
-            array (
+            180 =>
+            array(
                 'id' => 182,
                 'name' => 'Alta Greenholt',
                 'email' => '79989@student.com',
                 'password' => '$2y$10$QcarhfkoKla2PbIf6yR8w.OXh9aH7Npjmd3EsmPswRsaQGDJ4aHk.',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            181 => 
-            array (
+            181 =>
+            array(
                 'id' => 183,
                 'name' => 'Miss Mozell Marks',
                 'email' => '66802@student.com',
                 'password' => '$2y$10$TguVk7/7uWU9eaECMuTEAecgG/Ix5W3zn6hk3WjNPLbny7U7xSM9.',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            182 => 
-            array (
+            182 =>
+            array(
                 'id' => 184,
                 'name' => 'Sally Botsford',
                 'email' => '23475@student.com',
                 'password' => '$2y$10$E8pXtdWyCV3Hzm/yfVSabeyepWH3zp7E0JqJGelxdmf0kco9Wrd8S',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            183 => 
-            array (
+            183 =>
+            array(
                 'id' => 185,
                 'name' => 'Payton Rath Sr.',
                 'email' => '39203@student.com',
                 'password' => '$2y$10$ueGFd0cp4QsWi5B8HcF9wuJAU3BhgzIo6cewyKY56H8ckoFOKJReu',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            184 => 
-            array (
+            184 =>
+            array(
                 'id' => 186,
                 'name' => 'Katelin Leuschke',
                 'email' => '75503@student.com',
                 'password' => '$2y$10$9sCBk1brfQ7Wyys.CbbmU.hFICnjsIW.rAa3fZ6jXp9G1ztnMFG2W',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            185 => 
-            array (
+            185 =>
+            array(
                 'id' => 187,
                 'name' => 'Prof. Elza Lindgren IV',
                 'email' => '52892@student.com',
                 'password' => '$2y$10$sOMgHgj3MpBqAYqIMv3AKuHR810qFxlM34VAz4mzPSLTx8gG2gY6K',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            186 => 
-            array (
+            186 =>
+            array(
                 'id' => 188,
                 'name' => 'Ophelia Zemlak',
                 'email' => '76633@student.com',
                 'password' => '$2y$10$pJcUNdmkqpJz4UHu.8a2Zee7aB/oYm1xCIgibbo0oeMQPxNeHNcGa',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            187 => 
-            array (
+            187 =>
+            array(
                 'id' => 189,
                 'name' => 'Donna Effertz MD',
                 'email' => '30730@student.com',
                 'password' => '$2y$10$NDZFcZtIyBky4RF4q7pXNuQYfkJ7QjuTbXQoJjjQsU8J9e2VSBE.2',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            188 => 
-            array (
+            188 =>
+            array(
                 'id' => 190,
                 'name' => 'Prof. Rogers Mann PhD',
                 'email' => '9260@student.com',
                 'password' => '$2y$10$7cI7KF1eglfVgBaCPXKmneNpu.3R/jIIjvJd/sry.uPtJpHfD1OzS',
                 'school_id' => 33,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:31',
                 'updated_at' => '2021-10-21 08:32:31',
             ),
-            189 => 
-            array (
+            189 =>
+            array(
                 'id' => 191,
                 'name' => 'Rosemarie Braun',
                 'email' => '86394@student.com',
                 'password' => '$2y$10$oFMG.2v4OUN7d5Zwwml3Au7wQwNjCJq/vwfwp6Exq2Vamb4j07WCK',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            190 => 
-            array (
+            190 =>
+            array(
                 'id' => 192,
                 'name' => 'Prof. Flavie McLaughlin',
                 'email' => '30777@student.com',
                 'password' => '$2y$10$F8z79fYCVEI99ewR2de5Y.98fp61MDNyjrbRF.38Te0hevpjOgVjq',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            191 => 
-            array (
+            191 =>
+            array(
                 'id' => 193,
                 'name' => 'Sarai Gerlach Jr.',
                 'email' => '51120@student.com',
                 'password' => '$2y$10$6thvEqmsMj8QT5h2YqbjIOKEMiUBDsWtzIxqZ69Y2NU5pbi4xahry',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            192 => 
-            array (
+            192 =>
+            array(
                 'id' => 194,
                 'name' => 'Mrs. Lessie Shields',
                 'email' => '43923@student.com',
                 'password' => '$2y$10$H0PX7jxj/Q.Oo4JjiD9E8.bLtTGHukZDMy0ipyYbR7aUxwkiYK1ci',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            193 => 
-            array (
+            193 =>
+            array(
                 'id' => 195,
                 'name' => 'Emely Quigley',
                 'email' => '85464@student.com',
                 'password' => '$2y$10$VkK.Y8.C8esF9pE/L2Pk6OVguun/LInR2JHUgth/uxUWFD2V49YV.',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            194 => 
-            array (
+            194 =>
+            array(
                 'id' => 196,
                 'name' => 'Yasmeen Labadie',
                 'email' => '2406@student.com',
                 'password' => '$2y$10$Pl/prrZx5riDSex8346BdOx6YQc/3bJQelzjQZ0xe/yjjyHTlq3tm',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            195 => 
-            array (
+            195 =>
+            array(
                 'id' => 197,
                 'name' => 'Antonetta Fritsch',
                 'email' => '10508@student.com',
                 'password' => '$2y$10$BTFGaT89Q6glNCKbevLsbO4bwcoD4Pd/SD4NSQmpttCtqXL8xOKnu',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            196 => 
-            array (
+            196 =>
+            array(
                 'id' => 198,
                 'name' => 'Pauline McGlynn',
                 'email' => '51960@student.com',
                 'password' => '$2y$10$NUkK8pHNlO/TRoOGEHGRgOaWbMLur7u4KlidGhjGFg/bTzMQjAc/e',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            197 => 
-            array (
+            197 =>
+            array(
                 'id' => 199,
                 'name' => 'Prof. Braxton Lind',
                 'email' => '27327@student.com',
                 'password' => '$2y$10$up3weIWzOkHokZSyZIoyxeKyJPSLQceSxgayd8L664xTbSzFaFFje',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            198 => 
-            array (
+            198 =>
+            array(
                 'id' => 200,
                 'name' => 'Mr. Isom Harvey',
                 'email' => '33917@student.com',
                 'password' => '$2y$10$THzvz5aL1O.LnNUCkjWqnehQ3IgxHeRbjpqy0d/0dHv8WejQv0qfK',
                 'school_id' => 37,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:32',
                 'updated_at' => '2021-10-21 08:32:32',
             ),
-            199 => 
-            array (
+            199 =>
+            array(
                 'id' => 201,
                 'name' => 'Dudley Jacobs',
                 'email' => '65934@student.com',
                 'password' => '$2y$10$ar7T83.3ZVCoQCmZUT9lS.ocGTkaGki62FkxWfmAHlKG71h8xQC.q',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            200 => 
-            array (
+            200 =>
+            array(
                 'id' => 202,
                 'name' => 'Ambrose Kutch',
                 'email' => '66654@student.com',
                 'password' => '$2y$10$KTacALFrq78/V4pfZ439MuO3lMCCQVd9M07Q3pir9h00kQ0EMlQji',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            201 => 
-            array (
+            201 =>
+            array(
                 'id' => 203,
                 'name' => 'Curtis Huel',
                 'email' => '60655@student.com',
                 'password' => '$2y$10$NqipzWWDMcfcX/37rxdtHOxktD7kOvyLa2o2N2BX7IQQjPgsNy.py',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            202 => 
-            array (
+            202 =>
+            array(
                 'id' => 204,
                 'name' => 'Era DuBuque',
                 'email' => '77541@student.com',
                 'password' => '$2y$10$Sbdq5skx9aDGABFDy.arpe69GqHjCVcV/7RVcFJgV/tAqOPB42gT.',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            203 => 
-            array (
+            203 =>
+            array(
                 'id' => 205,
                 'name' => 'Miss Aryanna Rolfson DDS',
                 'email' => '89918@student.com',
                 'password' => '$2y$10$hBC1jveAOe7Xp/rGZQp2V.miyHEc8VJp1LHtxZ4yyawqgR3rJotfu',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            204 => 
-            array (
+            204 =>
+            array(
                 'id' => 206,
                 'name' => 'Dawn Kautzer III',
                 'email' => '58637@student.com',
                 'password' => '$2y$10$NCto7yOUEd0EgdH3tGLXs.6f6VLeG1dPgn1OLKqxRrDxN/L7JFjWi',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            205 => 
-            array (
+            205 =>
+            array(
                 'id' => 207,
                 'name' => 'Domenica Abshire MD',
                 'email' => '15607@student.com',
                 'password' => '$2y$10$90UmxtHIb6WgTwxafm6jCu3JT474DFlGhFVTPjERfbozxXyCP9R4e',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            206 => 
-            array (
+            206 =>
+            array(
                 'id' => 208,
                 'name' => 'Dr. Sunny Hudson',
                 'email' => '48418@student.com',
                 'password' => '$2y$10$pwEtaWdhC2u5i3bUELp40.aYqWG0a5eWhCV2zQq0LZtywMXET3Fd.',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            207 => 
-            array (
+            207 =>
+            array(
                 'id' => 209,
                 'name' => 'Holly Kilback',
                 'email' => '716@student.com',
                 'password' => '$2y$10$yFtS3ho29O6GX0mjQnb/zuw0K3C4snOOqn5TW32477.lI3J6YlCMe',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            208 => 
-            array (
+            208 =>
+            array(
                 'id' => 210,
                 'name' => 'Ricardo Koch',
                 'email' => '53928@student.com',
                 'password' => '$2y$10$8J1im5DdX1p49Kvd6zSjjuBcpXebak7C.mwDHV.dj6IcnbC9mkdOS',
                 'school_id' => 38,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:33',
                 'updated_at' => '2021-10-21 08:32:33',
             ),
-            209 => 
-            array (
+            209 =>
+            array(
                 'id' => 211,
                 'name' => 'Prof. Ally Barrows IV',
                 'email' => '24095@student.com',
                 'password' => '$2y$10$BImgVtNhc5Br.B06Q334w.IqdNDxfhuI0UjRQoBMTEVqhgiLxDWxO',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            210 => 
-            array (
+            210 =>
+            array(
                 'id' => 212,
                 'name' => 'Miracle Robel Jr.',
                 'email' => '13038@student.com',
                 'password' => '$2y$10$B25bCDAQmPqtHKH38kM6DOI10LKnCuXTuFoE60AdyXqe6mRN9Blme',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            211 => 
-            array (
+            211 =>
+            array(
                 'id' => 213,
                 'name' => 'Prof. Edward Hayes V',
                 'email' => '64205@student.com',
                 'password' => '$2y$10$AwZGqbQCvP9NpRfx.xtM2OwqGMuTHz5hg8ahhASE6Pe4/F1kBZqmy',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            212 => 
-            array (
+            212 =>
+            array(
                 'id' => 214,
                 'name' => 'Prof. Dana Emard',
                 'email' => '83193@student.com',
                 'password' => '$2y$10$vfWWrZggmKT4GZ3zyx7P9e8JvAsNS8ruL6HzWl76YZ5.PrVlTFKly',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            213 => 
-            array (
+            213 =>
+            array(
                 'id' => 215,
                 'name' => 'Wilber Kerluke DDS',
                 'email' => '41318@student.com',
                 'password' => '$2y$10$o2lqicw0NIVKQO02bKncbuStTPI33OmIXF1Ypb0yjLKgQpIgrh4JW',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            214 => 
-            array (
+            214 =>
+            array(
                 'id' => 216,
                 'name' => 'Leopold Wiegand II',
                 'email' => '74197@student.com',
                 'password' => '$2y$10$xrsLtcZOQl32qHTpnt2FOOWyyhHok8NYuwRtsKAtzZgd0IYTNMcW6',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            215 => 
-            array (
+            215 =>
+            array(
                 'id' => 217,
                 'name' => 'Jevon Orn',
                 'email' => '56659@student.com',
                 'password' => '$2y$10$yWZCR920bRxV6/tR7A5Nju8JE5iNee5h/6IG9F4wzB/SGJdsHVYJC',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            216 => 
-            array (
+            216 =>
+            array(
                 'id' => 218,
                 'name' => 'Mr. Connor Hamill',
                 'email' => '70841@student.com',
                 'password' => '$2y$10$Bar/sUpwYvmpk1ooQsBR0.6jHWLeX8TSB6719faYl.NhVIt1ufbV6',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            217 => 
-            array (
+            217 =>
+            array(
                 'id' => 219,
                 'name' => 'Scot Halvorson V',
                 'email' => '77744@student.com',
                 'password' => '$2y$10$dSdyoBDJXv3rOWOrOhaWM.4GnCID.nTdxFgzpUnrMpBARjmADDCYq',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            218 => 
-            array (
+            218 =>
+            array(
                 'id' => 220,
                 'name' => 'Dr. Lia Hagenes III',
                 'email' => '81909@student.com',
                 'password' => '$2y$10$Th6Zs/K0NFtWgmGl3sYKT.xZ.EiDa47nQzBUOYiX4CooF5igpdnUS',
                 'school_id' => 39,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:34',
                 'updated_at' => '2021-10-21 08:32:34',
             ),
-            219 => 
-            array (
+            219 =>
+            array(
                 'id' => 221,
                 'name' => 'Rey White',
                 'email' => '52381@student.com',
                 'password' => '$2y$10$7n3B1P3EzdN0txy4Q8aSseP62amBx7UP2.syaQXZXxpVPhPL6oAF.',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            220 => 
-            array (
+            220 =>
+            array(
                 'id' => 222,
                 'name' => 'Mrs. Ila Baumbach',
                 'email' => '10619@student.com',
                 'password' => '$2y$10$rkQBWzZPisio2vJbC1K1XOlY/Ha7.hkT6PURSt8.kz/vsGTW.Pxzm',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            221 => 
-            array (
+            221 =>
+            array(
                 'id' => 223,
                 'name' => 'Hester Stiedemann',
                 'email' => '69182@student.com',
                 'password' => '$2y$10$fcGPz4Dz97wHLAgQxzduBOdFpnBgHp3bIinLJwTrcLl0WWTkM3UvO',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            222 => 
-            array (
+            222 =>
+            array(
                 'id' => 224,
                 'name' => 'Maurine Heaney Sr.',
                 'email' => '33153@student.com',
                 'password' => '$2y$10$ilLQdc1qgw8TvOpXEB7P8Ossc6/ZDKFIeCoZZRIW8zlQHtJ9MeNA2',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            223 => 
-            array (
+            223 =>
+            array(
                 'id' => 225,
                 'name' => 'Karley Doyle',
                 'email' => '73345@student.com',
                 'password' => '$2y$10$iza7spWjwlJxcs0CV1Jp0efHfnsv0/z/uBNSivcLg1bvRxX7FYDjC',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            224 => 
-            array (
+            224 =>
+            array(
                 'id' => 226,
                 'name' => 'Mr. Reggie Gutmann',
                 'email' => '28272@student.com',
                 'password' => '$2y$10$ocUHfnBqJNX.NnIDD.I8FOnI4YItGhg3IwfUORgo55zZ2D1z8zxPO',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            225 => 
-            array (
+            225 =>
+            array(
                 'id' => 227,
                 'name' => 'Rafaela Hansen',
                 'email' => '3556@student.com',
                 'password' => '$2y$10$0JQgduyPW7j8uyIP05l5g.UTFf8E6bdke1r4nB2KDVht37xht1oQq',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            226 => 
-            array (
+            226 =>
+            array(
                 'id' => 228,
                 'name' => 'Itzel King',
                 'email' => '49147@student.com',
                 'password' => '$2y$10$qp50YqUrtO7onJN.cs8Q2eo/AQqsL/5IkWSPJUlZTALuVr6t9IHfm',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            227 => 
-            array (
+            227 =>
+            array(
                 'id' => 229,
                 'name' => 'Oren Lubowitz',
                 'email' => '63812@student.com',
                 'password' => '$2y$10$NG0UNM.ztz6EKM5m4A35aOtcf28Jg0R41UmCS5F9RGFfZZqNq/jSm',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            228 => 
-            array (
+            228 =>
+            array(
                 'id' => 230,
                 'name' => 'Amanda Luettgen',
                 'email' => '32256@student.com',
                 'password' => '$2y$10$mMASnFWGvpJA8mABUn/tf.CoCE7Kuva7IlVtxsOQrKX8pLrT9NhDO',
                 'school_id' => 43,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:35',
                 'updated_at' => '2021-10-21 08:32:35',
             ),
-            229 => 
-            array (
+            229 =>
+            array(
                 'id' => 231,
                 'name' => 'Mr. Dale McLaughlin',
                 'email' => '64952@student.com',
                 'password' => '$2y$10$Hg5d6iwyxufxPDDlb2bBEevNr5rYhu4TvZVmFXabdOICpmz6NKOee',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            230 => 
-            array (
+            230 =>
+            array(
                 'id' => 232,
                 'name' => 'Prof. Madelynn Yost IV',
                 'email' => '80066@student.com',
                 'password' => '$2y$10$zZMnqt2Vm7TPnP8zTpiX2OJlcp4typvbg.RZFTs4JnlCFbq20DBJC',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            231 => 
-            array (
+            231 =>
+            array(
                 'id' => 233,
                 'name' => 'Dr. Missouri Raynor III',
                 'email' => '3077@student.com',
                 'password' => '$2y$10$lR5uXrUVbDQTh3ntyijyf.07xjuJfPGdGNUYcSkTIJdB5d7lBBuo.',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            232 => 
-            array (
+            232 =>
+            array(
                 'id' => 234,
                 'name' => 'Ms. Maryjane Fisher Jr.',
                 'email' => '66424@student.com',
                 'password' => '$2y$10$OUbDnTl1hRFZLNazmOz3FuIsgIdAV5.a6GHDXhKZ.rWz0IdWe1Y9O',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            233 => 
-            array (
+            233 =>
+            array(
                 'id' => 235,
                 'name' => 'Dr. Madisen Buckridge Jr.',
                 'email' => '55825@student.com',
                 'password' => '$2y$10$yE7kiUprxszNoqeenXitLOM05cN1SuTLOiIGryAdX4i2XwibKwT5y',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            234 => 
-            array (
+            234 =>
+            array(
                 'id' => 236,
                 'name' => 'Dr. Sarina Littel',
                 'email' => '71325@student.com',
                 'password' => '$2y$10$VP60RpKcjyvGcG3/iz9ilOby5szT/y7Radn.w5leR265yjMsB17V2',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            235 => 
-            array (
+            235 =>
+            array(
                 'id' => 237,
                 'name' => 'Andreanne Hand',
                 'email' => '40463@student.com',
                 'password' => '$2y$10$iqc26431bWsO5IsBQFZG8.SNPxY5h6taGPY214/qaixmGmiHsqr.W',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            236 => 
-            array (
+            236 =>
+            array(
                 'id' => 238,
                 'name' => 'Tyler Gorczany',
                 'email' => '62289@student.com',
                 'password' => '$2y$10$gW0E.9.QzAHJ8bBK8VMByOTd..aSBXzTxmnZxqBEZvSZ4Y/.XCIla',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            237 => 
-            array (
+            237 =>
+            array(
                 'id' => 239,
                 'name' => 'Mrs. Litzy Wiza',
                 'email' => '9756@student.com',
                 'password' => '$2y$10$C8mbCqGDDCVsJsQJBi33J.tCnwoD0hcSE50rGK..sa1Q/TybJmCbe',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            238 => 
-            array (
+            238 =>
+            array(
                 'id' => 240,
                 'name' => 'Antonio Maggio',
                 'email' => '82704@student.com',
                 'password' => '$2y$10$X5aaM4iw00Q1CVNbW74uPeWp2shVHdpfhtuWadlk8dp//dqvu98OG',
                 'school_id' => 44,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:36',
                 'updated_at' => '2021-10-21 08:32:36',
             ),
-            239 => 
-            array (
+            239 =>
+            array(
                 'id' => 241,
                 'name' => 'Deshaun Nolan MD',
                 'email' => '43236@student.com',
                 'password' => '$2y$10$U6leYwWwC91D5O6AHwfj7ewYWTkd2CdoK1N93qy6F/Qlyc6oRFmrS',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            240 => 
-            array (
+            240 =>
+            array(
                 'id' => 242,
                 'name' => 'Howard Rau',
                 'email' => '7616@student.com',
                 'password' => '$2y$10$A51Ef64SQ9pABX8wY4B67.7t/41khjrB/Vgb4fGwLwTBxlLnryHO2',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            241 => 
-            array (
+            241 =>
+            array(
                 'id' => 243,
                 'name' => 'Keenan Maggio',
                 'email' => '71166@student.com',
                 'password' => '$2y$10$OAXLdKZVOWxXU/Js6wJ2r.2XVw2SYny8zSXnfz.zycrarRQaj68bO',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            242 => 
-            array (
+            242 =>
+            array(
                 'id' => 244,
                 'name' => 'Prof. Kamren Watsica DDS',
                 'email' => '56796@student.com',
                 'password' => '$2y$10$gFtjhkIbFpD3cX4HvFsud.JuK0Gh2uhjySa10TpXZOc48mKJusrdy',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            243 => 
-            array (
+            243 =>
+            array(
                 'id' => 245,
                 'name' => 'Lauriane Dach',
                 'email' => '18084@student.com',
                 'password' => '$2y$10$SSIhPdLKPRHiwM2HiHxzYeLfO/q2UlRxzBqomwHYIvPtIv8UQYrFy',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            244 => 
-            array (
+            244 =>
+            array(
                 'id' => 246,
                 'name' => 'Mr. Toni Hagenes',
                 'email' => '78148@student.com',
                 'password' => '$2y$10$FuMSCzl88mZPTsmuc2JtM.HpP7hrErHamBwUA5Ibs8NheRG1qhCBO',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            245 => 
-            array (
+            245 =>
+            array(
                 'id' => 247,
                 'name' => 'Sedrick Runte',
                 'email' => '63377@student.com',
                 'password' => '$2y$10$2gkVT1Ra9CEHqjCl.hzk4uinjQWk2TzFcvMC9srpRmh1RTV/KVzza',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            246 => 
-            array (
+            246 =>
+            array(
                 'id' => 248,
                 'name' => 'Mike Ferry',
                 'email' => '73238@student.com',
                 'password' => '$2y$10$pYITBLLxWDddtNbUEB3VC.hrtVFY1LZkR7c.EH5lInqi7taaTC5BW',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            247 => 
-            array (
+            247 =>
+            array(
                 'id' => 249,
                 'name' => 'Maurice Lehner',
                 'email' => '4843@student.com',
                 'password' => '$2y$10$N/n79DCGP9saHkxAK/5kq.TuVOBRtUYrBH/HuCNd2vQ2zZfBzDak2',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            248 => 
-            array (
+            248 =>
+            array(
                 'id' => 250,
                 'name' => 'Angel Bruen PhD',
                 'email' => '6027@student.com',
                 'password' => '$2y$10$QxGvnluylALJRv2wFizmvuFHP8J.1g8rXeyI6DtEZYJkctbRD/dny',
                 'school_id' => 45,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:37',
                 'updated_at' => '2021-10-21 08:32:37',
             ),
-            249 => 
-            array (
+            249 =>
+            array(
                 'id' => 251,
                 'name' => 'Jazmin Keebler',
                 'email' => '21359@student.com',
                 'password' => '$2y$10$BWELBo7sVTrzeN21/OYOfevSQffaegwkreqNTXuReraqBJ5XQ7Z5K',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            250 => 
-            array (
+            250 =>
+            array(
                 'id' => 252,
                 'name' => 'Colton Beatty',
                 'email' => '56773@student.com',
                 'password' => '$2y$10$GgE5CqlaEgB4BUM0p8T15.dH0DtV3qqstIoUVO.Zq/oZtbKZd/IUy',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            251 => 
-            array (
+            251 =>
+            array(
                 'id' => 253,
                 'name' => 'Damaris Schaefer',
                 'email' => '47907@student.com',
                 'password' => '$2y$10$OfEeusCZto21COYLP8Z5IegH7Jw8uNLvwr8BPBo7tVfhug/cLQIkq',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            252 => 
-            array (
+            252 =>
+            array(
                 'id' => 254,
                 'name' => 'Waldo Thompson',
                 'email' => '39778@student.com',
                 'password' => '$2y$10$MfUBJ0GU.KkhnwZNke8aEOodN.dJtN/EWJUAtiYx5qhx1vOtUuz4a',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            253 => 
-            array (
+            253 =>
+            array(
                 'id' => 255,
                 'name' => 'Mabelle Abshire Sr.',
                 'email' => '49823@student.com',
                 'password' => '$2y$10$SFDkBWhF7rhiHYZaviltve5zaJ2qwRaq/q2GbYt4v3JM/QNHaaIKC',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            254 => 
-            array (
+            254 =>
+            array(
                 'id' => 256,
                 'name' => 'Ms. Carolina McLaughlin MD',
                 'email' => '12404@student.com',
                 'password' => '$2y$10$YrX3gBU2LKMBPr2qxBPiXOGV3fCB8W8YahOLpULKb0G/Z7LNSETYW',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            255 => 
-            array (
+            255 =>
+            array(
                 'id' => 257,
                 'name' => 'Lazaro Hill',
                 'email' => '78351@student.com',
                 'password' => '$2y$10$cmYV6Jd6Zyda32jKfM9z.eYq0sXLjschPMtVvTcJVilsEHYf25c1K',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            256 => 
-            array (
+            256 =>
+            array(
                 'id' => 258,
                 'name' => 'Mariane Stroman',
                 'email' => '65844@student.com',
                 'password' => '$2y$10$VT8WN7cm5sES9JLMuc93Jev2dH.Sp0yoWiFmuM2w0L38pvQD8EzeS',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            257 => 
-            array (
+            257 =>
+            array(
                 'id' => 259,
                 'name' => 'Nico Mueller',
                 'email' => '44884@student.com',
                 'password' => '$2y$10$44sFeK7pnx4sVcsG6gKbQenrou5ev4nGSO21S3cMvvrmp8r271zMq',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            258 => 
-            array (
+            258 =>
+            array(
                 'id' => 260,
                 'name' => 'Madisyn Roberts IV',
                 'email' => '53402@student.com',
                 'password' => '$2y$10$qrjdWErz0tvmSltlUokNIeBOXz5qGTKfzmhOMSxWBCkg0qPnBmA9S',
                 'school_id' => 49,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:38',
                 'updated_at' => '2021-10-21 08:32:38',
             ),
-            259 => 
-            array (
+            259 =>
+            array(
                 'id' => 261,
                 'name' => 'Reynold Champlin',
                 'email' => '34998@student.com',
                 'password' => '$2y$10$Gh2.789iZLK95CbEjSBo.uDEuBIgiIuH/grs8ysxn5/kea0OS2MX2',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            260 => 
-            array (
+            260 =>
+            array(
                 'id' => 262,
                 'name' => 'Ms. Savannah Hyatt V',
                 'email' => '37438@student.com',
                 'password' => '$2y$10$EMZnSleHuJvjsJF.IjNoQeuK60oWDiUF9mDbgBwEa.1tLS2OZqJA2',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            261 => 
-            array (
+            261 =>
+            array(
                 'id' => 263,
                 'name' => 'Sigrid Roob',
                 'email' => '8207@student.com',
                 'password' => '$2y$10$WDPqjGSvGHJIlpK436NUWeR6.0uQdOl/RCDHhJNEutGV/cmPJfx0K',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            262 => 
-            array (
+            262 =>
+            array(
                 'id' => 264,
                 'name' => 'Micheal Funk',
                 'email' => '36691@student.com',
                 'password' => '$2y$10$jAloGAfQ025gXe/qwv5jJee0iIyahO8.FLyCnylDpdSbq6lWcOlU6',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            263 => 
-            array (
+            263 =>
+            array(
                 'id' => 265,
                 'name' => 'Hipolito Mohr',
                 'email' => '29230@student.com',
                 'password' => '$2y$10$.ZSTuAI08DosqWgpce1P6uWRg.HHbvE00BOUFm5rdYmNkBxyw0q7K',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            264 => 
-            array (
+            264 =>
+            array(
                 'id' => 266,
                 'name' => 'Columbus Goyette',
                 'email' => '48933@student.com',
                 'password' => '$2y$10$2YsI3Hk6X72NQU2.EGkih.AlE8FIhD0kPVCLkLOjZXJCvd6W6eeR6',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            265 => 
-            array (
+            265 =>
+            array(
                 'id' => 267,
                 'name' => 'Isom Vandervort V',
                 'email' => '50574@student.com',
                 'password' => '$2y$10$fFH4E1HlazaPQDqj1mdqtephx0ZS8i/TKAyEaZcQ9DEMlGq7mV9uy',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            266 => 
-            array (
+            266 =>
+            array(
                 'id' => 268,
                 'name' => 'Dr. Sharon Walker',
                 'email' => '86139@student.com',
                 'password' => '$2y$10$mEvjLPSlAMmHdLh1Me/dseWiB8lRspvGklwveu/9bmNuqylIp0Yge',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            267 => 
-            array (
+            267 =>
+            array(
                 'id' => 269,
                 'name' => 'Emilie Bosco',
                 'email' => '77820@student.com',
                 'password' => '$2y$10$XRpCVnTCvpKXfuLBvQi4zOkZPKuTFDSkyEIxtdkM4.wsMjOEqrX0a',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            268 => 
-            array (
+            268 =>
+            array(
                 'id' => 270,
                 'name' => 'Kyleigh Lemke',
                 'email' => '61220@student.com',
                 'password' => '$2y$10$HIAT0fX3Mkzj8s1FqSmfJeTXyDcLLp339zYRL6nlVMN7Fhgdo2Owe',
                 'school_id' => 50,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:39',
                 'updated_at' => '2021-10-21 08:32:39',
             ),
-            269 => 
-            array (
+            269 =>
+            array(
                 'id' => 271,
                 'name' => 'Sunny Barrows',
                 'email' => '61045@student.com',
                 'password' => '$2y$10$rTDkqU38xoAS39ALQz.P9.HMsCGI6WKTZttSy1clcczsXfleSkCjO',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            270 => 
-            array (
+            270 =>
+            array(
                 'id' => 272,
                 'name' => 'Alejandrin Stracke',
                 'email' => '46235@student.com',
                 'password' => '$2y$10$dUyxBS0pjd7aNYyBN0tVv.8kUZEJxmbu7bKrTDA2Sj2R8HIMehlKe',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            271 => 
-            array (
+            271 =>
+            array(
                 'id' => 273,
                 'name' => 'Darien Lebsack PhD',
                 'email' => '27125@student.com',
                 'password' => '$2y$10$X7QXW6UP6iGClXwJ5IBvOOuyOhyX7PQf0SatVAjVa2yDD5gRwPZbK',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            272 => 
-            array (
+            272 =>
+            array(
                 'id' => 274,
                 'name' => 'Yadira Powlowski',
                 'email' => '59256@student.com',
                 'password' => '$2y$10$4HmvuipU8vQqpg4.03pIVecxMCtipbmVGXLIboPN9MESA1Zm68/Ii',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            273 => 
-            array (
+            273 =>
+            array(
                 'id' => 275,
                 'name' => 'Miss Asa Schuppe',
                 'email' => '25083@student.com',
                 'password' => '$2y$10$KHt37tuCPU1sHWpHsxKfq.2jqeKEvNSgsEr11jpG78ijD0a3/7GxO',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            274 => 
-            array (
+            274 =>
+            array(
                 'id' => 276,
                 'name' => 'Prof. Amya Grant',
                 'email' => '44001@student.com',
                 'password' => '$2y$10$EBEp6iEdUvMZS8w/kIN3h.cttuOHvoCOsarRj8hZRWmGYWYh0V7Zy',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            275 => 
-            array (
+            275 =>
+            array(
                 'id' => 277,
                 'name' => 'Fritz Murphy',
                 'email' => '43724@student.com',
                 'password' => '$2y$10$s0GZA/htnGkTzGHpeybzuux6VcHAMor9EFf4C12NfwDrMzMf61Zgy',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            276 => 
-            array (
+            276 =>
+            array(
                 'id' => 278,
                 'name' => 'Brionna Towne',
                 'email' => '8457@student.com',
                 'password' => '$2y$10$0sszlI6QXvCX17kkVKJAwuXqznjujo19MQ5kriA/whvDDYtHEVnYC',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            277 => 
-            array (
+            277 =>
+            array(
                 'id' => 279,
                 'name' => 'Rosina Leannon Jr.',
                 'email' => '69829@student.com',
                 'password' => '$2y$10$dvyhIPmYWxqCmyz5vXWFneo0foKXsdmbfoVaysPiHg6KAwvuo7Fny',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            278 => 
-            array (
+            278 =>
+            array(
                 'id' => 280,
                 'name' => 'Prof. Dusty Johnson I',
                 'email' => '30069@student.com',
                 'password' => '$2y$10$MsQ3cm1ykLIbazZAcImWLe6mK3hjyCioTVnJH6Ikek8fJJX9rOlDG',
                 'school_id' => 51,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            279 => 
-            array (
+            279 =>
+            array(
                 'id' => 1,
                 'name' => 'Mr. Seth VonRueden',
                 'email' => 'student@student.com',
                 'password' => '$2y$10$nGiMAXz93QspLkgaQuOR9Oniq66kwEyRPoChUYi4.buCmDz07Tdl6',
                 'school_id' => 1,
-                'line_id' => NULL,
+                'line_id' => null,
                 'created_at' => '2021-10-21 08:32:13',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
-        
-        
     }
 }

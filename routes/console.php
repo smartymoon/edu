@@ -41,7 +41,7 @@ follows,
 line_users,
 messages,
 admin_messages';
-            \Artisan::call('iseed', [
+    \Artisan::call('iseed', [
                 'tables' => $table,
                 '--force' => true,
             ]);

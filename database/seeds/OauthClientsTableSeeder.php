@@ -12,15 +12,13 @@ class OauthClientsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('oauth_clients')->delete();
         
-        \DB::table('oauth_clients')->insert(array (
-            0 => 
-            array (
+        \DB::table('oauth_clients')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
-                'user_id' => NULL,
+                'user_id' => null,
                 'name' => 'Edu Personal Access Client',
                 'secret' => '2Y2M6djcjBDCKvYAY6WcqQj37ZiRGWBktaEsffIk',
                 'redirect' => 'http://localhost',
@@ -30,10 +28,10 @@ class OauthClientsTableSeeder extends Seeder
                 'created_at' => '2021-10-09 15:56:56',
                 'updated_at' => '2021-10-09 15:56:56',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
-                'user_id' => NULL,
+                'user_id' => null,
                 'name' => 'Edu Password Grant Client',
                 'secret' => 'IU5Khqs3yTrCzDrhzNz3KzlE4CjkATBZyNEmgcto',
                 'redirect' => 'http://localhost',
@@ -44,7 +42,5 @@ class OauthClientsTableSeeder extends Seeder
                 'updated_at' => '2021-10-09 15:56:56',
             ),
         ));
-        
-        
     }
 }

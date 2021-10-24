@@ -12,11 +12,6 @@ class AdminOperationLogTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('admin_operation_log')->delete();
-        
-        
-        
     }
 }

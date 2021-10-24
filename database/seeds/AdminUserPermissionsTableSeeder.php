@@ -12,11 +12,6 @@ class AdminUserPermissionsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('admin_user_permissions')->delete();
-        
-        
-        
     }
 }

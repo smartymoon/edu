@@ -12,13 +12,11 @@ class MessagesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('messages')->delete();
         
-        \DB::table('messages')->insert(array (
-            0 => 
-            array (
+        \DB::table('messages')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -29,8 +27,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -41,8 +39,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 3,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -53,8 +51,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 4,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -65,8 +63,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 5,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -77,8 +75,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 6,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -89,8 +87,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 7,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -101,8 +99,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 8,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -113,8 +111,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 9,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -125,8 +123,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 10,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -137,8 +135,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 11,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -149,8 +147,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 12,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -161,8 +159,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 13,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -173,8 +171,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 14,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -185,8 +183,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 15,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -197,8 +195,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 16,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -209,8 +207,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 17,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -221,8 +219,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 18,
                 'from_id' => 1,
                 'from_type' => 'teacher',
@@ -233,8 +231,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 19,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -245,8 +243,8 @@ class MessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 20,
                 'from_id' => 1,
                 'from_type' => 'student',
@@ -258,7 +256,5 @@ class MessagesTableSeeder extends Seeder
                 'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
-        
-        
     }
 }

@@ -12,11 +12,6 @@ class OauthAuthCodesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('oauth_auth_codes')->delete();
-        
-        
-        
     }
 }

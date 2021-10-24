@@ -12,13 +12,11 @@ class AdminRolesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('admin_roles')->delete();
         
-        \DB::table('admin_roles')->insert(array (
-            0 => 
-            array (
+        \DB::table('admin_roles')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'name' => 'Administrator',
                 'slug' => 'administrator',
@@ -26,7 +24,5 @@ class AdminRolesTableSeeder extends Seeder
                 'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
-        
-        
     }
 }

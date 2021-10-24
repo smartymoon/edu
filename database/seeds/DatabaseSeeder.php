@@ -69,29 +69,29 @@ class DatabaseSeeder extends Seeder
 
         factory(\App\Teacher::class)->states(\App\Teacher::PRINCIPAL)->create([
             'email' => 'susan@edu.com'
-        ])->each(function($teacher) {
+        ])->each(function ($teacher) {
             $teacher->manageSchools()->saveMany(
                 factory(\App\School::class, 3)->states('approve')->make()
             );
             $teacher->manageSchools()->saveMany(
                 factory(\App\School::class, 3)->states('not')->make()
             );
-    });
+        });
 
         factory(\App\Teacher::class, 5)->states(\App\Teacher::PRINCIPAL)
             ->create()
-            ->each(function($teacher) {
+            ->each(function ($teacher) {
                 $teacher->manageSchools()->saveMany(
                     factory(\App\School::class, 1)->states('not')->make()
                 );
                 $teacher->manageSchools()->saveMany(
-                   factory(\App\School::class, 2)->states('approve')->make()
+                    factory(\App\School::class, 2)->states('approve')->make()
                 );
             });
 
         factory(\App\Teacher::class, 5)->states(\App\Teacher::PRINCIPAL)
             ->create()
-            ->each(function($teacher) {
+            ->each(function ($teacher) {
                 $teacher->manageSchools()->saveMany(
                     factory(\App\School::class, 3)->states('not')->make()
                 );
@@ -100,7 +100,7 @@ class DatabaseSeeder extends Seeder
                 );
             });
 
-        \App\School::approve()->get()->map(function($school) {
+        \App\School::approve()->get()->map(function ($school) {
             factory(\App\Invitation::class, 5)->create([
                 'school_id' => $school->id,
                 'principal_id' => $school->principal_id
@@ -110,7 +110,7 @@ class DatabaseSeeder extends Seeder
                 'if_register' => true,
                 'school_id' => $school->id,
                 'principal_id' => $school->principal_id
-            ])->each(function($invitation) use ($school, &$i) {
+            ])->each(function ($invitation) use ($school, &$i) {
                 if ($i == 0) {
                     factory(\App\Teacher::class)->states(\App\Teacher::NORMAL)->create([
                         'school_id' =>  $school->id,
@@ -196,5 +196,4 @@ class DatabaseSeeder extends Seeder
         Artisan::call('admin:install');
         Artisan::call('admin:generate-menu');
     }
-
 }

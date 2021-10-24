@@ -12,11 +12,6 @@ class OauthAccessTokensTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('oauth_access_tokens')->delete();
-        
-        
-        
     }
 }

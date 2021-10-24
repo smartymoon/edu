@@ -12,13 +12,11 @@ class AdminMessagesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('admin_messages')->delete();
         
-        \DB::table('admin_messages')->insert(array (
-            0 => 
-            array (
+        \DB::table('admin_messages')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -27,8 +25,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -37,8 +35,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 3,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -47,8 +45,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 4,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -57,8 +55,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 5,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -67,8 +65,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 6,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -77,8 +75,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 7,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -87,8 +85,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 8,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -97,8 +95,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 9,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -107,8 +105,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 10,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 1,
@@ -117,8 +115,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 11,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -127,8 +125,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 12,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -137,8 +135,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 13,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -147,8 +145,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 14,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -157,8 +155,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 15,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -167,8 +165,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 16,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -177,8 +175,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 17,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -187,8 +185,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 18,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -197,8 +195,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 19,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -207,8 +205,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 20,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 1,
@@ -217,8 +215,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => 21,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -227,8 +225,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => 22,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -237,8 +235,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => 23,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -247,8 +245,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => 24,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -257,8 +255,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            24 => 
-            array (
+            24 =>
+            array(
                 'id' => 25,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -267,8 +265,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            25 => 
-            array (
+            25 =>
+            array(
                 'id' => 26,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -277,8 +275,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            26 => 
-            array (
+            26 =>
+            array(
                 'id' => 27,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -287,8 +285,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            27 => 
-            array (
+            27 =>
+            array(
                 'id' => 28,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -297,8 +295,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            28 => 
-            array (
+            28 =>
+            array(
                 'id' => 29,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -307,8 +305,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            29 => 
-            array (
+            29 =>
+            array(
                 'id' => 30,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 2,
@@ -317,8 +315,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            30 => 
-            array (
+            30 =>
+            array(
                 'id' => 31,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -327,8 +325,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            31 => 
-            array (
+            31 =>
+            array(
                 'id' => 32,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -337,8 +335,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            32 => 
-            array (
+            32 =>
+            array(
                 'id' => 33,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -347,8 +345,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            33 => 
-            array (
+            33 =>
+            array(
                 'id' => 34,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -357,8 +355,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            34 => 
-            array (
+            34 =>
+            array(
                 'id' => 35,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -367,8 +365,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            35 => 
-            array (
+            35 =>
+            array(
                 'id' => 36,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -377,8 +375,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            36 => 
-            array (
+            36 =>
+            array(
                 'id' => 37,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -387,8 +385,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            37 => 
-            array (
+            37 =>
+            array(
                 'id' => 38,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -397,8 +395,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            38 => 
-            array (
+            38 =>
+            array(
                 'id' => 39,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -407,8 +405,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            39 => 
-            array (
+            39 =>
+            array(
                 'id' => 40,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 2,
@@ -417,8 +415,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            40 => 
-            array (
+            40 =>
+            array(
                 'id' => 41,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -427,8 +425,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            41 => 
-            array (
+            41 =>
+            array(
                 'id' => 42,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -437,8 +435,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            42 => 
-            array (
+            42 =>
+            array(
                 'id' => 43,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -447,8 +445,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            43 => 
-            array (
+            43 =>
+            array(
                 'id' => 44,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -457,8 +455,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            44 => 
-            array (
+            44 =>
+            array(
                 'id' => 45,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -467,8 +465,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            45 => 
-            array (
+            45 =>
+            array(
                 'id' => 46,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -477,8 +475,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            46 => 
-            array (
+            46 =>
+            array(
                 'id' => 47,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -487,8 +485,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            47 => 
-            array (
+            47 =>
+            array(
                 'id' => 48,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -497,8 +495,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            48 => 
-            array (
+            48 =>
+            array(
                 'id' => 49,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -507,8 +505,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            49 => 
-            array (
+            49 =>
+            array(
                 'id' => 50,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 3,
@@ -517,8 +515,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            50 => 
-            array (
+            50 =>
+            array(
                 'id' => 51,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -527,8 +525,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            51 => 
-            array (
+            51 =>
+            array(
                 'id' => 52,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -537,8 +535,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            52 => 
-            array (
+            52 =>
+            array(
                 'id' => 53,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -547,8 +545,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            53 => 
-            array (
+            53 =>
+            array(
                 'id' => 54,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -557,8 +555,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            54 => 
-            array (
+            54 =>
+            array(
                 'id' => 55,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -567,8 +565,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            55 => 
-            array (
+            55 =>
+            array(
                 'id' => 56,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -577,8 +575,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            56 => 
-            array (
+            56 =>
+            array(
                 'id' => 57,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -587,8 +585,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            57 => 
-            array (
+            57 =>
+            array(
                 'id' => 58,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -597,8 +595,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            58 => 
-            array (
+            58 =>
+            array(
                 'id' => 59,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -607,8 +605,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            59 => 
-            array (
+            59 =>
+            array(
                 'id' => 60,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 3,
@@ -617,8 +615,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            60 => 
-            array (
+            60 =>
+            array(
                 'id' => 61,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -627,8 +625,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            61 => 
-            array (
+            61 =>
+            array(
                 'id' => 62,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -637,8 +635,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            62 => 
-            array (
+            62 =>
+            array(
                 'id' => 63,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -647,8 +645,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            63 => 
-            array (
+            63 =>
+            array(
                 'id' => 64,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -657,8 +655,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            64 => 
-            array (
+            64 =>
+            array(
                 'id' => 65,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -667,8 +665,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            65 => 
-            array (
+            65 =>
+            array(
                 'id' => 66,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -677,8 +675,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            66 => 
-            array (
+            66 =>
+            array(
                 'id' => 67,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -687,8 +685,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            67 => 
-            array (
+            67 =>
+            array(
                 'id' => 68,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -697,8 +695,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            68 => 
-            array (
+            68 =>
+            array(
                 'id' => 69,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -707,8 +705,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            69 => 
-            array (
+            69 =>
+            array(
                 'id' => 70,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 4,
@@ -717,8 +715,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            70 => 
-            array (
+            70 =>
+            array(
                 'id' => 71,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -727,8 +725,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            71 => 
-            array (
+            71 =>
+            array(
                 'id' => 72,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -737,8 +735,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            72 => 
-            array (
+            72 =>
+            array(
                 'id' => 73,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -747,8 +745,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            73 => 
-            array (
+            73 =>
+            array(
                 'id' => 74,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -757,8 +755,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            74 => 
-            array (
+            74 =>
+            array(
                 'id' => 75,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -767,8 +765,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            75 => 
-            array (
+            75 =>
+            array(
                 'id' => 76,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -777,8 +775,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            76 => 
-            array (
+            76 =>
+            array(
                 'id' => 77,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -787,8 +785,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            77 => 
-            array (
+            77 =>
+            array(
                 'id' => 78,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -797,8 +795,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            78 => 
-            array (
+            78 =>
+            array(
                 'id' => 79,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -807,8 +805,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            79 => 
-            array (
+            79 =>
+            array(
                 'id' => 80,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 4,
@@ -817,8 +815,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            80 => 
-            array (
+            80 =>
+            array(
                 'id' => 81,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -827,8 +825,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            81 => 
-            array (
+            81 =>
+            array(
                 'id' => 82,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -837,8 +835,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            82 => 
-            array (
+            82 =>
+            array(
                 'id' => 83,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -847,8 +845,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            83 => 
-            array (
+            83 =>
+            array(
                 'id' => 84,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -857,8 +855,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            84 => 
-            array (
+            84 =>
+            array(
                 'id' => 85,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -867,8 +865,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            85 => 
-            array (
+            85 =>
+            array(
                 'id' => 86,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -877,8 +875,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            86 => 
-            array (
+            86 =>
+            array(
                 'id' => 87,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -887,8 +885,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            87 => 
-            array (
+            87 =>
+            array(
                 'id' => 88,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -897,8 +895,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            88 => 
-            array (
+            88 =>
+            array(
                 'id' => 89,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -907,8 +905,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            89 => 
-            array (
+            89 =>
+            array(
                 'id' => 90,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 5,
@@ -917,8 +915,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            90 => 
-            array (
+            90 =>
+            array(
                 'id' => 91,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -927,8 +925,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            91 => 
-            array (
+            91 =>
+            array(
                 'id' => 92,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -937,8 +935,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            92 => 
-            array (
+            92 =>
+            array(
                 'id' => 93,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -947,8 +945,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            93 => 
-            array (
+            93 =>
+            array(
                 'id' => 94,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -957,8 +955,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            94 => 
-            array (
+            94 =>
+            array(
                 'id' => 95,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -967,8 +965,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            95 => 
-            array (
+            95 =>
+            array(
                 'id' => 96,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -977,8 +975,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            96 => 
-            array (
+            96 =>
+            array(
                 'id' => 97,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -987,8 +985,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            97 => 
-            array (
+            97 =>
+            array(
                 'id' => 98,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -997,8 +995,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            98 => 
-            array (
+            98 =>
+            array(
                 'id' => 99,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -1007,8 +1005,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            99 => 
-            array (
+            99 =>
+            array(
                 'id' => 100,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 5,
@@ -1017,8 +1015,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            100 => 
-            array (
+            100 =>
+            array(
                 'id' => 101,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1027,8 +1025,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            101 => 
-            array (
+            101 =>
+            array(
                 'id' => 102,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1037,8 +1035,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            102 => 
-            array (
+            102 =>
+            array(
                 'id' => 103,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1047,8 +1045,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            103 => 
-            array (
+            103 =>
+            array(
                 'id' => 104,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1057,8 +1055,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            104 => 
-            array (
+            104 =>
+            array(
                 'id' => 105,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1067,8 +1065,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            105 => 
-            array (
+            105 =>
+            array(
                 'id' => 106,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1077,8 +1075,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            106 => 
-            array (
+            106 =>
+            array(
                 'id' => 107,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1087,8 +1085,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            107 => 
-            array (
+            107 =>
+            array(
                 'id' => 108,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1097,8 +1095,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            108 => 
-            array (
+            108 =>
+            array(
                 'id' => 109,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1107,8 +1105,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            109 => 
-            array (
+            109 =>
+            array(
                 'id' => 110,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 6,
@@ -1117,8 +1115,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            110 => 
-            array (
+            110 =>
+            array(
                 'id' => 111,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1127,8 +1125,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            111 => 
-            array (
+            111 =>
+            array(
                 'id' => 112,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1137,8 +1135,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            112 => 
-            array (
+            112 =>
+            array(
                 'id' => 113,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1147,8 +1145,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            113 => 
-            array (
+            113 =>
+            array(
                 'id' => 114,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1157,8 +1155,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            114 => 
-            array (
+            114 =>
+            array(
                 'id' => 115,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1167,8 +1165,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            115 => 
-            array (
+            115 =>
+            array(
                 'id' => 116,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1177,8 +1175,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            116 => 
-            array (
+            116 =>
+            array(
                 'id' => 117,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1187,8 +1185,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            117 => 
-            array (
+            117 =>
+            array(
                 'id' => 118,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1197,8 +1195,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            118 => 
-            array (
+            118 =>
+            array(
                 'id' => 119,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1207,8 +1205,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            119 => 
-            array (
+            119 =>
+            array(
                 'id' => 120,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 6,
@@ -1217,8 +1215,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            120 => 
-            array (
+            120 =>
+            array(
                 'id' => 121,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1227,8 +1225,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            121 => 
-            array (
+            121 =>
+            array(
                 'id' => 122,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1237,8 +1235,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            122 => 
-            array (
+            122 =>
+            array(
                 'id' => 123,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1247,8 +1245,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            123 => 
-            array (
+            123 =>
+            array(
                 'id' => 124,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1257,8 +1255,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            124 => 
-            array (
+            124 =>
+            array(
                 'id' => 125,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1267,8 +1265,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            125 => 
-            array (
+            125 =>
+            array(
                 'id' => 126,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1277,8 +1275,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            126 => 
-            array (
+            126 =>
+            array(
                 'id' => 127,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1287,8 +1285,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            127 => 
-            array (
+            127 =>
+            array(
                 'id' => 128,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1297,8 +1295,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            128 => 
-            array (
+            128 =>
+            array(
                 'id' => 129,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1307,8 +1305,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            129 => 
-            array (
+            129 =>
+            array(
                 'id' => 130,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 7,
@@ -1317,8 +1315,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            130 => 
-            array (
+            130 =>
+            array(
                 'id' => 131,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1327,8 +1325,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            131 => 
-            array (
+            131 =>
+            array(
                 'id' => 132,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1337,8 +1335,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            132 => 
-            array (
+            132 =>
+            array(
                 'id' => 133,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1347,8 +1345,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            133 => 
-            array (
+            133 =>
+            array(
                 'id' => 134,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1357,8 +1355,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            134 => 
-            array (
+            134 =>
+            array(
                 'id' => 135,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1367,8 +1365,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            135 => 
-            array (
+            135 =>
+            array(
                 'id' => 136,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1377,8 +1375,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            136 => 
-            array (
+            136 =>
+            array(
                 'id' => 137,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1387,8 +1385,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            137 => 
-            array (
+            137 =>
+            array(
                 'id' => 138,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1397,8 +1395,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            138 => 
-            array (
+            138 =>
+            array(
                 'id' => 139,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1407,8 +1405,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            139 => 
-            array (
+            139 =>
+            array(
                 'id' => 140,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 7,
@@ -1417,8 +1415,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            140 => 
-            array (
+            140 =>
+            array(
                 'id' => 141,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1427,8 +1425,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            141 => 
-            array (
+            141 =>
+            array(
                 'id' => 142,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1437,8 +1435,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            142 => 
-            array (
+            142 =>
+            array(
                 'id' => 143,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1447,8 +1445,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            143 => 
-            array (
+            143 =>
+            array(
                 'id' => 144,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1457,8 +1455,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            144 => 
-            array (
+            144 =>
+            array(
                 'id' => 145,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1467,8 +1465,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            145 => 
-            array (
+            145 =>
+            array(
                 'id' => 146,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1477,8 +1475,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            146 => 
-            array (
+            146 =>
+            array(
                 'id' => 147,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1487,8 +1485,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            147 => 
-            array (
+            147 =>
+            array(
                 'id' => 148,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1497,8 +1495,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            148 => 
-            array (
+            148 =>
+            array(
                 'id' => 149,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1507,8 +1505,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            149 => 
-            array (
+            149 =>
+            array(
                 'id' => 150,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 8,
@@ -1517,8 +1515,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            150 => 
-            array (
+            150 =>
+            array(
                 'id' => 151,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1527,8 +1525,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            151 => 
-            array (
+            151 =>
+            array(
                 'id' => 152,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1537,8 +1535,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            152 => 
-            array (
+            152 =>
+            array(
                 'id' => 153,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1547,8 +1545,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            153 => 
-            array (
+            153 =>
+            array(
                 'id' => 154,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1557,8 +1555,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            154 => 
-            array (
+            154 =>
+            array(
                 'id' => 155,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1567,8 +1565,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            155 => 
-            array (
+            155 =>
+            array(
                 'id' => 156,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1577,8 +1575,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            156 => 
-            array (
+            156 =>
+            array(
                 'id' => 157,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1587,8 +1585,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            157 => 
-            array (
+            157 =>
+            array(
                 'id' => 158,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1597,8 +1595,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            158 => 
-            array (
+            158 =>
+            array(
                 'id' => 159,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1607,8 +1605,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            159 => 
-            array (
+            159 =>
+            array(
                 'id' => 160,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 8,
@@ -1617,8 +1615,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            160 => 
-            array (
+            160 =>
+            array(
                 'id' => 161,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1627,8 +1625,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            161 => 
-            array (
+            161 =>
+            array(
                 'id' => 162,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1637,8 +1635,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            162 => 
-            array (
+            162 =>
+            array(
                 'id' => 163,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1647,8 +1645,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            163 => 
-            array (
+            163 =>
+            array(
                 'id' => 164,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1657,8 +1655,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            164 => 
-            array (
+            164 =>
+            array(
                 'id' => 165,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1667,8 +1665,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            165 => 
-            array (
+            165 =>
+            array(
                 'id' => 166,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1677,8 +1675,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            166 => 
-            array (
+            166 =>
+            array(
                 'id' => 167,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1687,8 +1685,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            167 => 
-            array (
+            167 =>
+            array(
                 'id' => 168,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1697,8 +1695,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            168 => 
-            array (
+            168 =>
+            array(
                 'id' => 169,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1707,8 +1705,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            169 => 
-            array (
+            169 =>
+            array(
                 'id' => 170,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 9,
@@ -1717,8 +1715,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            170 => 
-            array (
+            170 =>
+            array(
                 'id' => 171,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1727,8 +1725,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            171 => 
-            array (
+            171 =>
+            array(
                 'id' => 172,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1737,8 +1735,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            172 => 
-            array (
+            172 =>
+            array(
                 'id' => 173,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1747,8 +1745,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            173 => 
-            array (
+            173 =>
+            array(
                 'id' => 174,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1757,8 +1755,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            174 => 
-            array (
+            174 =>
+            array(
                 'id' => 175,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1767,8 +1765,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            175 => 
-            array (
+            175 =>
+            array(
                 'id' => 176,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1777,8 +1775,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            176 => 
-            array (
+            176 =>
+            array(
                 'id' => 177,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1787,8 +1785,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            177 => 
-            array (
+            177 =>
+            array(
                 'id' => 178,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1797,8 +1795,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            178 => 
-            array (
+            178 =>
+            array(
                 'id' => 179,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1807,8 +1805,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            179 => 
-            array (
+            179 =>
+            array(
                 'id' => 180,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 9,
@@ -1817,8 +1815,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            180 => 
-            array (
+            180 =>
+            array(
                 'id' => 181,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1827,8 +1825,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            181 => 
-            array (
+            181 =>
+            array(
                 'id' => 182,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1837,8 +1835,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            182 => 
-            array (
+            182 =>
+            array(
                 'id' => 183,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1847,8 +1845,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            183 => 
-            array (
+            183 =>
+            array(
                 'id' => 184,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1857,8 +1855,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            184 => 
-            array (
+            184 =>
+            array(
                 'id' => 185,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1867,8 +1865,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            185 => 
-            array (
+            185 =>
+            array(
                 'id' => 186,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1877,8 +1875,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            186 => 
-            array (
+            186 =>
+            array(
                 'id' => 187,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1887,8 +1885,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            187 => 
-            array (
+            187 =>
+            array(
                 'id' => 188,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1897,8 +1895,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            188 => 
-            array (
+            188 =>
+            array(
                 'id' => 189,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1907,8 +1905,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            189 => 
-            array (
+            189 =>
+            array(
                 'id' => 190,
                 'messageable_type' => 'App\\Teacher',
                 'messageable_id' => 10,
@@ -1917,8 +1915,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            190 => 
-            array (
+            190 =>
+            array(
                 'id' => 191,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1927,8 +1925,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            191 => 
-            array (
+            191 =>
+            array(
                 'id' => 192,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1937,8 +1935,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            192 => 
-            array (
+            192 =>
+            array(
                 'id' => 193,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1947,8 +1945,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            193 => 
-            array (
+            193 =>
+            array(
                 'id' => 194,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1957,8 +1955,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            194 => 
-            array (
+            194 =>
+            array(
                 'id' => 195,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1967,8 +1965,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            195 => 
-            array (
+            195 =>
+            array(
                 'id' => 196,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1977,8 +1975,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            196 => 
-            array (
+            196 =>
+            array(
                 'id' => 197,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1987,8 +1985,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            197 => 
-            array (
+            197 =>
+            array(
                 'id' => 198,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -1997,8 +1995,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            198 => 
-            array (
+            198 =>
+            array(
                 'id' => 199,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -2007,8 +2005,8 @@ class AdminMessagesTableSeeder extends Seeder
                 'created_at' => '2021-10-21 08:32:40',
                 'updated_at' => '2021-10-21 08:32:40',
             ),
-            199 => 
-            array (
+            199 =>
+            array(
                 'id' => 200,
                 'messageable_type' => 'App\\Student',
                 'messageable_id' => 10,
@@ -2018,7 +2016,5 @@ class AdminMessagesTableSeeder extends Seeder
                 'updated_at' => '2021-10-21 08:32:40',
             ),
         ));
-        
-        
     }
 }
