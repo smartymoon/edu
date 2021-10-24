@@ -9,10 +9,6 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        dump(env('PASSPORT_PUBLIC_KEY'));
-        dump(env('PASSPORT_PRIVATE_KEY'));
-        dump(config('app.passport_public_key'));
-        dump(config('app.passport_private_key'));
-        return 'I am api, ';
+        return 'I am api';
     }
 }
