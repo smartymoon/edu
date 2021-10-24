@@ -31,14 +31,14 @@ class LineUserController extends AdminController
 
         $grid->model()->latest();
         $grid->disableCreateButton();
-        $grid->actions(function($actions) {
+        $grid->actions(function ($actions) {
             $actions->disableEdit();
             $actions->disableView();
         });
 
         $grid->column('id', __('Id'));
         $grid->column('official_id', __('Official id'));
-        $grid->column('name', __('Name'))->modal('send line message', function($model) {
+        $grid->column('name', __('Name'))->modal('send line message', function ($model) {
             $form = new ModalForm();
             $form->hidden('user_id')->default($model->official_id);
             $form->textarea('message');

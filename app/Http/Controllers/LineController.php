@@ -62,9 +62,9 @@ class LineController extends Controller
         if ($teacher) {
             if ($lineUser->hasBindTeacher()) {
                 return $this->fail("you can only bind line to most one teacher account");
-            } else if ($teacher->hasBindLine()) {
+            } elseif ($teacher->hasBindLine()) {
                 return $this->fail("email {$validated['email']}  has already bind to a line user");
-            } else if (!\Hash::check($validated['password'], $teacher->password)) {
+            } elseif (!\Hash::check($validated['password'], $teacher->password)) {
                 return $this->fail("password is wrong");
             } else {
                 $teacher->bindToLine($lineUser->id);
@@ -86,13 +86,13 @@ class LineController extends Controller
         if ($student) {
             if ($student->hasBindLine()) {
                 return $this->fail("email {$validated['email']}  has already bind to a line user");
-            } else if (!\Hash::check($validated['password'], $student->password)){
+            } elseif (!\Hash::check($validated['password'], $student->password)) {
                 return $this->fail("password is wrong");
             } else {
                 $student->bindToLine($lineUser->id);
                 return $this->success('bind successful', [
-                    'role' => Student::Student,
-                    'auth' => $student->createToken('After Bind Line', [Student::Student]),
+                    'role' => Student::STUDENT,
+                    'auth' => $student->createToken('After Bind Line', [Student::STUDENT]),
                     'user' => [
                         'id' => $student->id,
                         'email' => $student->email,
@@ -114,11 +114,10 @@ class LineController extends Controller
             'official_id' => 'required'
         ]);
 
-        if ($validated['type'] === Student::Student)
-        {
+        if ($validated['type'] === Student::STUDENT) {
             $user =  Student::findOrFail($validated['user_id']);
-            $scope = Student::Student;
-        } else if ($validated['type'] === 'teacher') {
+            $scope = Student::STUDENT;
+        } elseif ($validated['type'] === 'teacher') {
             $user =  Teacher::findOrFail($validated['user_id']);
             $scope = $user->role;
         } else {
@@ -145,7 +144,6 @@ class LineController extends Controller
 
     public function messageCallback(Request $request)
     {
-
         $signature = $request->header(HTTPHeader::LINE_SIGNATURE);
         if (empty($signature)) {
             return $this->fail('500', 'no signature');

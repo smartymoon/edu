@@ -33,13 +33,13 @@ class AuthServiceProvider extends ServiceProvider
 
 
         Passport::tokensCan([
-            Teacher::Principal => 'Principal is great',
-            Teacher::Normal => 'normal teacher is better',
-            Student::Student => 'student in a school',
+            Teacher::PRINCIPAL => 'Principal is great',
+            Teacher::NORMAL => 'normal teacher is better',
+            Student::STUDENT => 'student in a school',
         ]);
 
-        Passport::routes(function(RouteRegistrar $router) {
-            Route::middleware(OAuthMiddleware::class)->group(function() use ($router) {
+        Passport::routes(function (RouteRegistrar $router) {
+            Route::middleware(OAuthMiddleware::class)->group(function () use ($router) {
                 $router->forAccessTokens();
             });
         });

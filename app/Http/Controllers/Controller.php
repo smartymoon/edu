@@ -13,7 +13,7 @@ class Controller extends BaseController
 
     public function success($message = '', $data = '')
     {
-       return [
+        return [
             'code' => 200,
             'message' => $message,
             'data' => $data

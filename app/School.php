@@ -22,7 +22,7 @@ class School extends Model
 
     public function scopeApprove($query)
     {
-       return $this->where('if_approve', true);
+        return $this->where('if_approve', true);
     }
 
     public function scopeNotApprove($query)

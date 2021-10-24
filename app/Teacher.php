@@ -13,8 +13,8 @@ class Teacher extends Authenticatable
 {
     use Notifiable, HasApiTokens;
 
-    const Principal =  'principal';
-    const Normal =  'normal';
+    const PRINCIPAL =  'principal';
+    const NORMAL =  'normal';
 
     protected $guarded = [];
     protected $hidden = ['password'];

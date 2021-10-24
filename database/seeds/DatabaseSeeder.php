@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
         \DB::insert("INSERT INTO oauth_personal_access_clients (id, client_id, created_at, updated_at) VALUES (1, 1, '2021-10-10 05:27:31', '2021-10-10 05:27:31');");
         \DB::insert("INSERT INTO line_users (id, official_id, name, created_at, updated_at) VALUES (1, 'U585911a40a7dc7ccbd4791ba90a03218', 'PeterSun', '2021-10-12 10:53:51', '2021-10-12 10:53:54');");
 
-        factory(\App\Teacher::class)->states(\App\Teacher::Principal)->create([
+        factory(\App\Teacher::class)->states(\App\Teacher::PRINCIPAL)->create([
             'email' => 'susan@edu.com'
         ])->each(function($teacher) {
             $teacher->manageSchools()->saveMany(
@@ -78,7 +78,7 @@ class DatabaseSeeder extends Seeder
             );
     });
 
-        factory(\App\Teacher::class, 5)->states(\App\Teacher::Principal)
+        factory(\App\Teacher::class, 5)->states(\App\Teacher::PRINCIPAL)
             ->create()
             ->each(function($teacher) {
                 $teacher->manageSchools()->saveMany(
@@ -89,7 +89,7 @@ class DatabaseSeeder extends Seeder
                 );
             });
 
-        factory(\App\Teacher::class, 5)->states(\App\Teacher::Principal)
+        factory(\App\Teacher::class, 5)->states(\App\Teacher::PRINCIPAL)
             ->create()
             ->each(function($teacher) {
                 $teacher->manageSchools()->saveMany(
@@ -112,12 +112,12 @@ class DatabaseSeeder extends Seeder
                 'principal_id' => $school->principal_id
             ])->each(function($invitation) use ($school, &$i) {
                 if ($i == 0) {
-                    factory(\App\Teacher::class)->states(\App\Teacher::Normal)->create([
+                    factory(\App\Teacher::class)->states(\App\Teacher::NORMAL)->create([
                         'school_id' =>  $school->id,
                         'email' => 'normal@teacher.com'
                     ]);
                 } else {
-                    factory(\App\Teacher::class)->states(\App\Teacher::Normal)->create([
+                    factory(\App\Teacher::class)->states(\App\Teacher::NORMAL)->create([
                         'school_id' =>  $school->id,
                     ]);
                 }

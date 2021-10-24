@@ -120,5 +120,4 @@ class MessageController extends Controller
         $query->where('seen', false)->update(['seen' => true]);
         return $messages;
     }
-
 }

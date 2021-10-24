@@ -52,12 +52,12 @@ class Message extends Model
     // student 9 techer 1
     public static function getMessageFrom($fromType, $fromId, $toType, $toId)
     {
-        $query = self::where(function($query) use ($fromId, $fromType, $toId, $toType) {
+        $query = self::where(function ($query) use ($fromId, $fromType, $toId, $toType) {
             $query->where('from_type', $fromType) // student
                     ->where('from_id', $fromId) // 9
                     ->where('to_type', $toType) // teacher
                     ->where('to_id', $toId); // 1
-        })->orWhere(function($query) use ($fromId, $fromType, $toId, $toType) {
+        })->orWhere(function ($query) use ($fromId, $fromType, $toId, $toType) {
             $query->where('from_type', $toType)
                 ->where('from_id', $toId)
                 ->where('to_type', $fromType)

@@ -16,13 +16,13 @@ class TeacherController extends Controller
 
     public function storeNormalTeacher(Request $request)
     {
-       $validated = $this->validate($request, [
+        $validated = $this->validate($request, [
            'slug' => 'required',
            'name' => 'required|string|max:20',
            'password' => 'required|string|min:6|confirmed',
        ]);
 
-       $invitation = Invitation::where('slug', $validated['slug'])->first();
+        $invitation = Invitation::where('slug', $validated['slug'])->first();
 
         if ($invitation->if_register) {
             return $this->fail('You already registered');
@@ -30,12 +30,12 @@ class TeacherController extends Controller
 
 
         $teacher = null;
-        \DB::transaction(function()  use ($validated, $invitation, &$teacher){
+        \DB::transaction(function () use ($validated, $invitation, &$teacher) {
             $teacher = Teacher::create([
                 'name' => $validated['name'],
                 'email' => $invitation->email,
                 'password' => bcrypt($validated['password']),
-                'role' => Teacher::Normal,
+                'role' => Teacher::NORMAL,
                 'school_id' => $invitation->school_id,
             ]);
             $invitation->if_register = true;
@@ -46,7 +46,7 @@ class TeacherController extends Controller
             'Welcome '. $teacher->name,
             [
                 'role' => $teacher->role,
-                'auth' => $teacher->createToken('After invitation', [Teacher::Normal]),
+                'auth' => $teacher->createToken('After invitation', [Teacher::NORMAL]),
                 'user' => [
                     'id' => $teacher->id,
                     'email' => $teacher->email,

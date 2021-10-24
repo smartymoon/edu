@@ -14,7 +14,6 @@ use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class LoginController extends Controller
 {
-
     public function studentEchoAuth(Request $request)
     {
         return Broadcast::auth($request);
@@ -44,7 +43,7 @@ class LoginController extends Controller
         }
 
         $http = new Client();
-        $scope = $student ? Student::Student : $teacher->role;
+        $scope = $student ? Student::STUDENT : $teacher->role;
 
         try {
             $response = $http->request('POST', request()->root() . '/oauth/token', [

@@ -69,7 +69,7 @@ class RegisterController extends Controller
 
         event(new Registered($teacher = $this->create($request->all())));
 
-        $auth = $teacher->createToken('After register', [Teacher::Principal]);
+        $auth = $teacher->createToken('After register', [Teacher::PRINCIPAL]);
 
         return $this->success(
             'Congratulation, register successful',
@@ -93,7 +93,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'role' => Teacher::Principal,
+            'role' => Teacher::PRINCIPAL,
         ]);
     }
 }

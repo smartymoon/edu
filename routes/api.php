@@ -31,7 +31,7 @@ Route::post('/line_message/callback', 'LineController@messageCallback');
 // for teacher
 Route::middleware(['teacher', 'auth:api'])->group(function() {
     // for principal
-    Route::middleware('scope:'. Teacher::Principal)->group(function() {
+    Route::middleware('scope:'. Teacher::PRINCIPAL)->group(function() {
         Route::get('/schools',  'SchoolController@index');
         Route::post('/schools', 'SchoolController@store');
 
@@ -44,12 +44,12 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
     });
 
     // for normal teacher
-    Route::middleware('scope:'. Teacher::Normal)->group(function() {
+    Route::middleware('scope:'. Teacher::NORMAL)->group(function() {
 
     });
 
     // for both principal and normal teacher
-    Route::middleware("scope:". Teacher::Principal . "," . Teacher::Normal)->group(function() {
+    Route::middleware("scope:". Teacher::PRINCIPAL . "," . Teacher::NORMAL)->group(function() {
         Route::get('/schools/{school}/students', 'SchoolController@students');
         Route::get('/students_follow_me', 'TeacherController@studentsFollowMe');
 

@@ -18,12 +18,11 @@ class OAuthMiddleware
      */
     public function handle($request, Closure $next)
     {
-
         if ($request->method() === 'POST' && $request->getPathInfo() === '/oauth/token') {
             $scope = $request->input('scope');
-            if ($scope === Teacher::Normal || $scope === Teacher::Principal) {
+            if ($scope === Teacher::NORMAL || $scope === Teacher::PRINCIPAL) {
                 config(['auth.guards.api.provider' => 'teachers']);
-            } else if ($scope === Student::Student) {
+            } elseif ($scope === Student::STUDENT) {
                 \Log::info('in student');
                 config(['auth.guards.api.provider' => 'students']);
             }

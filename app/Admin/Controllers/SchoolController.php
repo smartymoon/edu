@@ -27,9 +27,9 @@ class SchoolController extends AdminController
         $grid = new Grid(new School());
         $grid->model()->latest();
         $grid->disableCreateButton();
-        $grid->actions(function($actions) {
-           $actions->disableEdit();
-           $actions->disableView();
+        $grid->actions(function ($actions) {
+            $actions->disableEdit();
+            $actions->disableView();
         });
 
         $grid->column('id', __('Id'));

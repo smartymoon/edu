@@ -31,13 +31,13 @@ class StudentController extends AdminController
         $grid->model()->latest();
 
         $grid->disableCreateButton();
-        $grid->actions(function($actions) {
+        $grid->actions(function ($actions) {
             $actions->disableEdit();
             $actions->disableView();
         });
 
         $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'))->modal('send message', function($model) {
+        $grid->column('name', __('Name'))->modal('send message', function ($model) {
             $form = new ModalForm();
             $form->hidden('type')->default('student');
             $form->hidden('user_id')->default($model->id);

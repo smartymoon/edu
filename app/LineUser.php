@@ -11,7 +11,6 @@ class LineUser extends Model
 
     public function relativeUsers()
     {
-
     }
 
     public function bindUser(Model $user)

@@ -19,14 +19,14 @@ $factory->define(App\Teacher::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->numberBetween(100, 90000) . '@teacher.com',
         'password' => \Illuminate\Support\Facades\Hash::make('123456'),
-        'role' => \App\Teacher::Principal
+        'role' => \App\Teacher::PRINCIPAL
     ];
 });
 
-$factory->state(App\Teacher::class, \App\Teacher::Principal, [
-    'role' => \App\Teacher::Principal,
+$factory->state(App\Teacher::class, \App\Teacher::PRINCIPAL, [
+    'role' => \App\Teacher::PRINCIPAL,
 ]);
 
-$factory->state(App\Teacher::class, \App\Teacher::Normal, [
-    'role' => \App\Teacher::Normal,
+$factory->state(App\Teacher::class, \App\Teacher::NORMAL, [
+    'role' => \App\Teacher::NORMAL,
 ]);

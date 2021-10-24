@@ -27,7 +27,7 @@ class AdminMessageController extends AdminController
         $grid = new Grid(new AdminMessage());
         $grid->model()->latest();
 
-        $grid->actions(function($actions) {
+        $grid->actions(function ($actions) {
             $actions->disableEdit();
             $actions->disableView();
         });

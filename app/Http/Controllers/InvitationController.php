@@ -40,5 +40,4 @@ class InvitationController extends Controller
             'url' => $url
         ]);
     }
-
 }

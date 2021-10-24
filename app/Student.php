@@ -12,7 +12,7 @@ class Student extends Authenticatable
 {
     protected $fillable = ['name', 'password', 'email', 'school_id', 'line_id'];
     protected $hidden = ['password'];
-    const Student = 'student';
+    const STUDENT = 'student';
 
     use Notifiable, HasApiTokens;
 
@@ -26,7 +26,7 @@ class Student extends Authenticatable
         return $this->belongsToMany(Teacher::class, 'follows');
     }
 
-    public function line()
+    public function line(): BelongsTo
     {
         return $this->belongsTo(LineUser::class);
     }
@@ -44,6 +44,6 @@ class Student extends Authenticatable
 
     public function adminMessage()
     {
-       return $this->morphOne(AdminMessage::class, 'messageable');
+        return $this->morphOne(AdminMessage::class, 'messageable');
     }
 }
