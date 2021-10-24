@@ -49,63 +49,6 @@ class LineController extends Controller
         return $bindUsers;
     }
 
-    public function bindUser($official_id, Request $request)
-    {
-        $validated = $this->validate($request, [
-            'email' => 'required|string|email|max:255',
-            'password' => 'required|string|min:6',
-        ]);
-
-        $lineUser = LineUser::where('official_id', $official_id)->firstOrFail();
-
-        $teacher = Teacher::where('email', $validated['email'])->first();
-        if ($teacher) {
-            if ($lineUser->hasBindTeacher()) {
-                return $this->fail("you can only bind line to most one teacher account");
-            } else if ($teacher->hasBindLine()) {
-                return $this->fail("email {$validated['email']}  has already bind to a line user");
-            } else if (!\Hash::check($validated['password'], $teacher->password)) {
-                return $this->fail("password is wrong");
-            } else {
-                $teacher->bindToLine($lineUser->id);
-                // give a token and role
-                return $this->success('bind successful', [
-                    'role' => $teacher->role,
-                    'auth' => $teacher->createToken('After Bind Line', [$teacher->role]),
-                    'user' => [
-                        'id' => $teacher->id,
-                        'email' => $teacher->email,
-                        'name' => $teacher->name,
-                        'school_id' => $teacher->school_id
-                    ]
-                ]);
-            }
-        }
-
-        $student = Student::where('email', $validated['email'])->first();
-        if ($student) {
-            if ($student->hasBindLine()) {
-                return $this->fail("email {$validated['email']}  has already bind to a line user");
-            } else if (!\Hash::check($validated['password'], $student->password)){
-                return $this->fail("password is wrong");
-            } else {
-                $student->bindToLine($lineUser->id);
-                return $this->success('bind successful', [
-                    'role' => Student::Student,
-                    'auth' => $student->createToken('After Bind Line', [Student::Student]),
-                    'user' => [
-                        'id' => $student->id,
-                        'email' => $student->email,
-                        'name' => $student->name,
-                        'school_id' => $student->school_id
-                    ]
-                ]);
-            }
-        }
-
-        return $this->fail("email {$validated['email']}  not exists");
-    }
-
     public function loginUsingId(Request $request)
     {
         $validated = $this->validate($request, [
@@ -178,5 +121,23 @@ class LineController extends Controller
             \Log::info($resp->getHTTPStatus() . ': ' . $resp->getRawBody());
         }
         return 'ok';
+    }
+
+    public function bindAuthUser(Request $request)
+    {
+        $validated = $this->validate($request, [
+            'official_id' => 'required|exists:line_users,official_id'
+        ]);
+
+        $line_id = LineUser::where('official_id', $validated['official_id'])->value('id');
+        $user = $request->user();
+
+        if ($user instanceof Teacher && Teacher::where('line_id', $line_id)->count()) {
+            return $this->fail('this line account already bind a teacher');
+        }
+
+        $user->line_id = $line_id;
+        $user->save();
+        return $this->success('bind line successfully');
     }
 }

@@ -23,7 +23,6 @@ Route::post('/normal_teacher', 'TeacherController@storeNormalTeacher');
 
 Route::get('/line/callback', 'LineController@callback');
 Route::get('/line/{official_id}/users', 'LineController@getBindUsers');
-Route::post('/line/{official_id}/users', 'LineController@bindUser');
 Route::post('/line/login', 'LineController@loginUsingId');
 Route::post('/line_message/callback', 'LineController@messageCallback');
 
@@ -37,10 +36,6 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
 
         Route::get('/invitations', 'InvitationController@index');
         Route::post('/invitations', 'InvitationController@store');
-
-        Route::get('hello', function() {
-            return auth()->user();
-        });
     });
 
     // for normal teacher
@@ -62,6 +57,8 @@ Route::middleware(['teacher', 'auth:api'])->group(function() {
 
         Route::get('/teacher/admin-messages', 'MessageController@getAdminMessage');
         Route::get('/teacher/admin-messages/check', 'MessageController@checkAdminMessage');
+
+        Route::post('/teacher/line/bind', 'LineController@bindAuthUser');
     });
 });
 
@@ -80,4 +77,5 @@ Route::middleware(['student', 'auth:api'])->group(function() {
     Route::put('/message/student/{message}/read', 'MessageController@setSeen');
     Route::get('/student/admin-messages', 'MessageController@getAdminMessage');
     Route::get('/student/admin-messages/check', 'MessageController@checkAdminMessage');
+    Route::post('/student/line/bind', 'LineController@bindAuthUser');
 });
