@@ -177,4 +177,22 @@ class LineController extends Controller
         }
         return 'ok';
     }
+
+    public function bindAuthUser(Request $request)
+    {
+        $validated = $this->validate($request, [
+            'official_id' => 'required|exists:line_users,official_id'
+        ]);
+
+        $line_id = LineUser::where('official_id', $validated['official_id'])->value('id');
+        $user = $request->user();
+
+        if ($user instanceof Teacher && Teacher::where('line_id', $line_id)->count()) {
+            return $this->fail('this line account already bind a teacher');
+        }
+
+        $user->line_id = $line_id;
+        $user->save();
+        return $this->success('bind line successfully');
+    }
 }
