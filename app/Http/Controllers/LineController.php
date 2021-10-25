@@ -186,8 +186,11 @@ class LineController extends Controller
         $line_id = LineUser::where('official_id', $validated['official_id'])->value('id');
         $user = $request->user();
 
-        if ($user instanceof Teacher && Teacher::where('line_id', $line_id)->count()) {
-            return $this->fail('this line account already bind a teacher');
+        if ($user instanceof Teacher) {
+            $bindTeachers = Teacher::where('line_id', $line_id)->select('id')->get();
+            if ($bindTeachers->count() === 1 && $bindTeachers[0]->id !== $user->id) {
+                return $this->fail('this line account already bind a teacher');
+            }
         }
 
         $user->line_id = $line_id;
